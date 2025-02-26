@@ -330,6 +330,7 @@ html, body {
 	/* padding: 0 7rem; */
 }
 .program-sec .program-item {
+	display: block;
 	position: relative;
 	width: 358rem;
 	height: 417rem;
