@@ -314,13 +314,16 @@ html, body {
 }
 .program-sec .program-slide {
 	overflow: hidden;
-	width: calc(100% + 26rem);
-	padding-right: 26rem;
+	/* width: calc(100% + 26rem); */
+	/* padding-right: 26rem; */
+}
+.program-sec .program-slide .swiper-wrapper {
+	justify-content: space-around;
 }
 .program-sec .program-slide .swiper-slide {
-	width: auto;
+	width: 358rem;
 	box-sizing: border-box;
-	padding: 0 7rem;
+	/* padding: 0 7rem; */
 }
 .program-sec .program-item {
 	position: relative;
@@ -446,11 +449,11 @@ html, body {
 		margin-top: calc(100vw * (40 / 1535));
 	}
 	.program-sec .program-slide {
-		width: calc(100vw * (calc(100% + 26) / 1535));
-		padding-right: calc(100vw * (26 / 1535));
+		/* width: calc(100vw * (calc(100% + 26) / 1535)); */
+		/* padding-right: calc(100vw * (26 / 1535)); */
 	}
 	.program-sec .program-slide .swiper-slide {
-		padding: 0 calc(100vw * (7 / 1535));
+		width: calc(100vw * (356 / 1535));
 	}
 	.program-sec .program-item {
 		width: calc(100vw * (358 / 1535));
