@@ -1,0 +1,13 @@
+{
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.detectIndentation": false,
+    "editor.trimAutoWhitespace": true,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": false,
+    "eslint.codeActionsOnSave.rules": null,
+	"editor.renderWhitespace": "all",
+	"prettier.printWidth": 150,
+	"liveServer.settings.port": 5503,
+	"editor.hover.enabled": false
+}
