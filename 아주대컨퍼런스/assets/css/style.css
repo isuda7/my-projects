@@ -376,14 +376,7 @@ html, body {
 }
 .program-sec .program-list {
 	display: flex;
-}
-.program-sec .program-slide .swiper-wrapper {
-	justify-content: space-around;
-}
-.program-sec .program-slide .swiper-slide {
-	width: 358rem;
-	box-sizing: border-box;
-	/* padding: 0 7rem; */
+	justify-content: space-between;
 }
 .program-sec .program-item {
 	display: block;
@@ -427,17 +420,17 @@ html, body {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: 270px;
-	height: 75px;
+	width: 270rem;
+	height: 75rem;
 	/*font-weight: 600;*/
-	font-size: 30px;
-	line-height: 44px;
+	font-size: 28rem;
+	line-height: 40rem;
 	color: #fff;
-	border-radius: 12px;
+	border-radius: 12rem;
 	background-color: #0077DD;
 	text-decoration: none;
 	letter-spacing: -1.6px;
-	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
+	box-shadow: 5rem 5rem 10rem 0 rgba(0, 0, 0, 0.35);
 }
 
 .program-sec .program-item .program-con .btn a:hover {
@@ -566,13 +559,6 @@ html, body {
 	}
 	.program-sec .sec-body {
 		margin-top: calc(100vw * (40 / 1535));
-	}
-	.program-sec .program-slide {
-		/* width: calc(100vw * (calc(100% + 26) / 1535)); */
-		/* padding-right: calc(100vw * (26 / 1535)); */
-	}
-	.program-sec .program-slide .swiper-slide {
-		width: calc(100vw * (356 / 1535));
 	}
 	.program-sec .program-item {
 		width: calc(100vw * (358 / 1535));
@@ -749,14 +735,23 @@ html, body {
 		width: 40rem;
 		line-height: 1.5;
 	}
-
+	.program-sec .program-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.program-sec .program-item {
+		margin: auto;
+		width: 358rem;
+		max-width: 100%;
+	}
+	.program-sec .program-item .program-con .tit {
+		font-size: 34rem;
+	}
 	.program-sec .program-item .program-con .btn {
 		margin-top: 10px;
 	}
 	.program-sec .program-item .program-con .btn a {
-		height: 38px;
-		font-size: 15px;
-		border-radius: 5px;
+		width: 100%;
 	}
 }
 
@@ -768,5 +763,21 @@ html, body {
 
 	.map-sec .map-wrap .map {
 		background-image: none;
+	}
+}
+
+
+@media all and (max-width: 390px) {
+	.program-sec .program-list {
+		width: 100%;
+		overflow: auto;
+	}
+	.program-sec .program-item {
+		width: 330rem;
+		padding-top: 100rem;
+	}
+	.program-sec .program-item .program-con .txt{
+		font-size: 28rem;
+		line-height: 32rem;
 	}
 }
