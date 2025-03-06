@@ -21,7 +21,6 @@ html,body,div,ul,ol,dl,li,dt,dd,p,h1,h2,h3,h4,h5,h6,table,thead,tbody,tr,th,td,c
 	-o-box-sizing: inherit;
 	-webkit-print-color-adjust: exact;
 	color-adjust: exact !important;
-	overscroll-behavior: none;
 }
 
 :before, :after {
@@ -83,7 +82,7 @@ html, body {
 	position: relative;
 	z-index: 10;
 	min-height: 100%;
-	padding-top: 104rem;
+	padding-top: 25rem;
 	padding-bottom: 70rem;
 	background: linear-gradient(to bottom, #e3eeff, #f3e7e9);
 }
@@ -123,36 +122,53 @@ html, body {
 /*-------------------------------------------------------------------
 	@Contents
 -------------------------------------------------------------------*/
+
+
 .header {
 	display: flex;
-	align-items: center;
-	flex-direction: column;
+	align-items: center; /* 수직 정렬 */
+	justify-content: space-between; /* 좌우 배치 */
+	padding: 0 2rem; /* 양쪽 여백 추가 */
 }
-.header .ajou-home {
+
+.header .logo {
+	width: 200rem;
+	height: 60rem;
+	display: flex;
+	align-items: center; /* 내부 아이템 정렬 */
+}
+
+.header a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 34rem;
-	height: 134rem;
+	gap: 14rem; /* 원래 단위 수정 */
+	height: 60rem; /* 원래 단위 수정 */
 	margin: 0;
-	padding: 0 90rem;
-	border-radius: 40rem;
-	background-color: #9898a0;
-	font-size: 58rem;
+	padding: 0 22rem; /* 원래 단위 수정 */
+	border-radius: 10rem; /* 원래 단위 수정 */
+	background-color: #0077DD;
+	font-size: 22rem; /* 원래 단위 수정 */
 	line-height: 1.5;
-	font-weight: 600;
+	/*font-weight: 600;*/
 	color: #fff;
-	letter-spacing: 1rem;
+	letter-spacing: 1rem; /* 원래 단위 수정 */
 	word-break: keep-all;
 	text-decoration: none;
 	text-align: center;
 	box-shadow: 5rem 5rem 8rem 0 rgba(0, 0, 0, 0.5);
 }
+
+.header a:hover {
+	background-color: #0754b4;
+}
+
 .header .ajou-home img {
 	width: 80rem;
 }
+
 .header h1 {
-	margin-top: 94rem;
+	margin-top: 54rem;
 	font-size: 60rem;
 	line-height: 72rem;
 	color: #000;
@@ -167,46 +183,68 @@ html, body {
 /* s: 개최지역 안내 */
 .map-sec .map-wrap {
 	position: relative;
-	margin-top: 96px;
+	margin-top: 25px;
 	margin-left: calc(var(--spacer-side) * -1);
 	margin-right: calc(var(--spacer-side) * -1);
 	text-align: center;
 }
+
+.map-sec .sec-header h2 {
+	margin-top: 40rem;
+	font-weight: 600;
+	font-size: 55rem;
+	line-height: 72rem;
+	color: #000;
+	text-align: left;
+}
+.map-sec .sec-header h2 img {
+	width: 50rem;
+	margin-right: 30rem;
+	vertical-align: middle;
+}
+
 .map-sec .map-wrap .map {
 	position: relative;
+	background-image: url('../../assets/img/delight.png');
+	background-size: 180rem;
+	background-position: left 220rem bottom;
+	background-repeat: no-repeat;
 }
+
 .map-sec .map-wrap .map img {
-	width: 100%;
+	width: 75%;
 }
 .map-sec .map-wrap .map-box {
 	position: absolute;
 	left: 0;
 	top: 0;
 	z-index: 20;
-	width: 326px;
-	height: 360px;
+	width: 300px;
+	height: 330px;
 	padding: 10px 0px 25px 0px;
 	background-color: #fff;
 	text-align: center;
+	border-radius: 25px;
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.8); /* 배경만 투명 */
 }
 .map-sec .map-wrap .map-box .num {
 	font-weight: 300;
 	font-size: 36px;
-	line-height: 44px;
+	line-height: 42px;
 	color: #356665;
 }
 .map-sec .map-wrap .map-box .city {
 	margin-top: 8px;
 	font-weight: 600;
-	font-size: 48px;
-	line-height: 58px;
+	font-size: 45px;
+	line-height: 50px;
 	color: #1f3d3c;
 }
 .map-sec .map-wrap .map-box .date {
-	margin-top: 20px;
+	margin-top: 10px;
 	font-weight: 300;
-	font-size: 36px;
+	font-size: 34px;
 	line-height: 44px;
 	color: #000;
 }
@@ -221,53 +259,58 @@ html, body {
 .map-sec .map-wrap .map-box .btn {
 	display: flex;
 	justify-content: center;
-	margin-top: 28px;
+	margin-top: 20px;
 }
 .map-sec .map-wrap .map-box .btn a {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	width: 220px;
-	height: 75px;
-	font-weight: 600;
-	font-size: 36px;
+	height: 65px;
+	/*font-weight: 600;*/
+	font-size: 34px;
 	line-height: 44px;
 	color: #fff;
 	border-radius: 12px;
-	background-color: #bcad9d;
+	background-color: #0077DD;
 	text-decoration: none;
 	letter-spacing: -1.6px;
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
 }
+
+.map-sec .map-wrap .map-box .btn a:hover {
+	background-color: #0754b4;
+}
+
 .map-sec .map-wrap .map-box.type-01 {
-	top: 90rem;
-	left: 84rem;
+	top: 40rem;
+	left: 190rem;
 }
 .map-sec .map-wrap .map-box.type-02 {
-	top: 140rem;
-	left: 720rem;
+	top: 10rem;
+	left: 755rem;
 }
 .map-sec .map-wrap .map-box.type-03 {
-	top: 748rem;
+	top: 568rem;
 	left: 1063rem;
 }
 .map-sec .map-wrap .map-box.type-04 {
-	top: 960rem;
+	top: 720rem;
 	left: 567rem;
 }
 .map-sec .map-wrap .map-box.type-05 {
-	top: 488rem;
-	left: 85rem;
+	top: 390rem;
+	left: 190rem;
 }
 .map-sec .map-wrap .map-box.type-06 {
-	top: 362rem;
+	top: 222rem;
 	left: 1063rem;
 }
 .map-sec .table-wrap {
 	margin-top: 135rem;
 }
 .map-sec .table-wrap table th {
-	border-top:0;
+	/*border-top:0;*/
 }
 .map-sec .table-wrap table td ul {
 	padding: 10rem 0;
@@ -281,8 +324,9 @@ html, body {
 	display: block;
 	text-align: left;
 	font-weight: 600;
-	width: 43%;
+	width: 10%;
 }
+
 .map-sec .table-wrap table td ul li span {
 	flex: 1 1 auto;
 	display: block;
@@ -291,6 +335,20 @@ html, body {
 	font-weight: 300;
 	width: 57%;
 }
+
+.map-sec .table-wrap table td ul span {
+	flex: 1 1 auto;
+	display: block;
+	font-size:21rem;
+	padding-left:67rem;
+	letter-spacing:-0.8rem;
+	text-align: left;
+	font-weight: 300;
+	width: 95%;
+}
+
+/*font-size:22rem;padding-left:67rem;letter-spacing:-0.8rem;*/
+
 .map-sec .table-wrap table td ul li + li {
 	margin-top: 20rem;
 }
@@ -303,23 +361,21 @@ html, body {
 }
 .program-sec .sec-header h2 {
 	font-weight: 600;
-	font-size: 60rem;
+	font-size: 55rem;
 	line-height: 72rem;
 	color: #000;
-	text-align: center;
+	text-align: left;
 }
 .program-sec .sec-header h2 img {
-	width: 80rem;
+	width: 50rem;
 	margin-right: 30rem;
 	vertical-align: middle;
 }
 .program-sec .sec-body {
 	margin-top: 40rem;
 }
-.program-sec .program-slide {
-	overflow: hidden;
-	/* width: calc(100% + 26rem); */
-	/* padding-right: 26rem; */
+.program-sec .program-list {
+	display: flex;
 }
 .program-sec .program-slide .swiper-wrapper {
 	justify-content: space-around;
@@ -334,7 +390,7 @@ html, body {
 	position: relative;
 	width: 358rem;
 	height: 417rem;
-	padding: 110rem 40rem 40rem 30rem;
+	padding: 105rem 40rem 40rem 30rem;
 	background: url('../img/bg-program.png') no-repeat 0 0 / contain;
 	color: #000;
 }
@@ -351,15 +407,43 @@ html, body {
 }
 .program-sec .program-item .program-con .tit {
 	font-size: 36rem;
-	line-height: 42rem;
+	line-height: 40rem;
 	font-weight: 600;
 }
 .program-sec .program-item .program-con .txt {
-	margin-top: 30rem;
+	margin-top: 10rem;
 	font-size: 30rem;
 	line-height: 36rem;
 	font-weight: 400;
 }
+
+.program-sec .program-item .program-con .btn {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.program-sec .program-item .program-con .btn a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 270px;
+	height: 75px;
+	/*font-weight: 600;*/
+	font-size: 30px;
+	line-height: 44px;
+	color: #fff;
+	border-radius: 12px;
+	background-color: #0077DD;
+	text-decoration: none;
+	letter-spacing: -1.6px;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
+}
+
+.program-sec .program-item .program-con .btn a:hover {
+	background-color: #0754b4;
+}
+
 /* e: 고교 연계 프로그램 */
 
 /* s: 지역 박람회 */
@@ -368,19 +452,26 @@ html, body {
 }
 .exposition-sec .sec-header h2 {
 	font-weight: 600;
-	font-size: 60rem;
+	font-size: 55rem;
 	line-height: 72rem;
 	color: #000;
-	text-align: center;
+	text-align: left;
 }
 .exposition-sec .sec-header h2 img {
-	width: 80rem;
+	width: 50rem;
 	margin-right: 30rem;
 	vertical-align: middle;
 }
 .exposition-sec .sec-body {
-	margin-top: 60rem;
+	margin-top: 10rem;
 }
+
+.exposition-sec .sec-info {
+	width:100%;
+	text-align:right;
+	font-size: 25rem;
+}
+
 .exposition-sec .table-wrap .table th,
 .exposition-sec .table-wrap .table td {
 	padding: 15rem 15rem;
@@ -392,13 +483,19 @@ html, body {
 /* e: 지역 박람회 */
 
 @media all and (max-width: 1535px) and (min-width:768px) {
+
+	.header .logo {
+		width: calc(100vw * (200 / 1535));
+		height: calc(100vw * (60 / 1535));
+	}
+
 	.header .ajou-home {
-		gap: calc(100vw * (34 / 1535));
-		height: calc(100vw * (134 / 1535));
-		padding: 0 calc(100vw * (90 / 1535));
-		border-radius: calc(100vw * (40 / 1535));
-		font-size: calc(100vw * (58 / 1535));
-		letter-spacing: calc(100vw * (1 / 1535));
+		gap: calc(100vw * (14 / 1535));
+		height: calc(100vw * (60 / 1535));
+		padding: 0 calc(100vw * (22 / 1535));
+		border-radius: calc(100vw * (10 / 1535));
+		font-size: calc(100vw * (22 / 1535));
+		letter-spacing: calc(100vw * (0.5 / 1535));
 		box-shadow: calc(100vw * (5 / 1535)) calc(100vw * (5 / 1535)) calc(100vw * (8 / 1535)) 0 rgba(0, 0, 0, 0.5);
 	}
 	.header .ajou-home img {
@@ -413,6 +510,16 @@ html, body {
 	.map-sec .table-wrap {
 		margin-top: calc(100vw * (135 / 1535));
 	}
+
+	.map-sec .sec-header h2 {
+		font-size: calc(100vw * (55 / 1535));
+		line-height: calc(100vw * (72 / 1535));
+	}
+	.map-sec .sec-header h2 img {
+		width: calc(100vw * (50 / 1535));
+		margin-right: calc(100vw * (30 / 1535));
+	}
+
 	.table-wrap table th,
 	.table-wrap table td {
 		padding: calc(100vw * (27 / 1535)) calc(100vw * (15 / 1535));
@@ -430,9 +537,16 @@ html, body {
 		font-size: calc(100vw * (30 / 1535));
 		line-height: calc(100vw * (40 / 1535));
 	}
+
 	.map-sec .table-wrap table td ul li span {
-		padding-left: calc(100vw * (20 / 1535));
+		/*padding-left: calc(100vw * (20 / 1535));*/
 	}
+
+	.map-sec .table-wrap table td ul span {
+		font-size: calc(100vw * (21 / 1535));
+		padding-left: calc(100vw * (67 / 1535));
+	}
+
 	.map-sec .table-wrap table td ul li + li {
 		margin-top: calc(100vw * (20 / 1535));
 	}
@@ -443,11 +557,11 @@ html, body {
 		margin-top: calc(100vw * (145 / 1535));
 	}
 	.program-sec .sec-header h2 {
-		font-size: calc(100vw * (60 / 1535));
+		font-size: calc(100vw * (55 / 1535));
 		line-height: calc(100vw * (72 / 1535));
 	}
 	.program-sec .sec-header h2 img {
-		width: calc(100vw * (80 / 1535));
+		width: calc(100vw * (50 / 1535));
 		margin-right: calc(100vw * (30 / 1535));
 	}
 	.program-sec .sec-body {
@@ -463,7 +577,7 @@ html, body {
 	.program-sec .program-item {
 		width: calc(100vw * (358 / 1535));
 		height: calc(100vw * (417 / 1535));
-		padding: calc(100vw * (110 / 1535)) calc(100vw * (40 / 1535)) calc(100vw * (40 / 1535)) calc(100vw * (30 / 1535));
+		padding: calc(100vw * (105 / 1535)) calc(100vw * (40 / 1535)) calc(100vw * (40 / 1535)) calc(100vw * (30 / 1535));
 	}
 	.program-sec .program-item .program-label {
 		right: calc(100vw * (37 / 1535));
@@ -475,13 +589,27 @@ html, body {
 	}
 	.program-sec .program-item .program-con .tit {
 		font-size: calc(100vw * (36 / 1535));
-		line-height: calc(100vw * (42 / 1535));
+		line-height: calc(100vw * (40 / 1535));
 	}
 	.program-sec .program-item .program-con .txt {
-		margin-top: calc(100vw * (30 / 1535));
+		margin-top: calc(100vw * (10 / 1535));
 		font-size: calc(100vw * (30 / 1535));
 		line-height: calc(100vw * (36 / 1535));
 	}
+
+	.program-sec .program-item .program-con .btn {
+		margin-top: calc(100vw * (25 / 1535));
+	}
+	.program-sec .program-item .program-con .btn a {
+		width: calc(100vw * (270 / 1535));
+		height: calc(100vw * (75 / 1535));
+		font-size: calc(100vw * (30 / 1535));
+		line-height: calc(100vw * (44 / 1535));
+		border-radius: calc(100vw * (12 / 1535));
+		letter-spacing: calc(100vw * (-1.6 / 1535));
+		box-shadow: calc(100vw * (5 / 1535)) calc(100vw * (5 / 1535)) calc(100vw * (10 / 1535)) 0 rgba(0, 0, 0, 0.35);
+	}
+
 	/* e: 고교 연계 프로그램 */
 
 	/* s: 지역 박람회 */
@@ -489,16 +617,21 @@ html, body {
 		margin-top: calc(100vw * (145 / 1535));
 	}
 	.exposition-sec .sec-header h2 {
-		font-size: calc(100vw * (60 / 1535));
+		font-size: calc(100vw * (55 / 1535));
 		line-height: calc(100vw * (72 / 1535));
 	}
 	.exposition-sec .sec-header h2 img {
-		width: calc(100vw * (80 / 1535));
+		width: calc(100vw * (50 / 1535));
 		margin-right: calc(100vw * (30 / 1535));
 	}
 	.exposition-sec .sec-body {
-		margin-top: calc(100vw * (60 / 1535));
+		margin-top: calc(100vw * (10 / 1535));
 	}
+
+	.exposition-sec .sec-info {
+		font-size: calc(100vw * (25 / 1535));
+	}
+
 	.exposition-sec .table-wrap .table th,
 	.exposition-sec .table-wrap .table td {
 		padding: calc(100vw * (15 / 1535)) calc(100vw * (15 / 1535));
@@ -513,27 +646,35 @@ html, body {
 	.header h1 span {
 		display: block;
 	}
+
 	.map-sec .map-wrap {
-		margin-top: calc(100vw * (96 / 1535));
+		margin-top: calc(100vw * (25 / 1535));
 	}
+
+	.map-sec .map-wrap .map {
+		background-size: calc(100vw * (180 / 1535));
+		background-position: left calc(100vw * (220 / 1535)) bottom;
+	}
+
 	.map-sec .map-wrap .map-box {
-		width: calc(100vw * (326 / 1535));
-		height: calc(100vw * (360 / 1535));
+		width: calc(100vw * (300 / 1535));
+		height: calc(100vw * (330 / 1535));
 		padding: calc(100vw * (10 / 1535)) 0 calc(100vw * (25 / 1535)) 0;
+		border-radius: calc(100vw * (25 / 1535));
 		box-shadow: calc(100vw * (5 / 1535)) calc(100vw * (5 / 1535)) calc(100vw * (10 / 1535)) 0 rgba(0, 0, 0, 0.1);
 	}
 	.map-sec .map-wrap .map-box .num {
 		font-size: calc(100vw * (36 / 1535));
-		line-height: calc(100vw * (44 / 1535));
+		line-height: calc(100vw * (42 / 1535));
 	}
 	.map-sec .map-wrap .map-box .city {
 		margin-top: calc(100vw * (8 / 1535));
-		font-size: calc(100vw * (48 / 1535));
-		line-height: calc(100vw * (58 / 1535));
+		font-size: calc(100vw * (45 / 1535));
+		line-height: calc(100vw * (50 / 1535));
 	}
 	.map-sec .map-wrap .map-box .date {
-		margin-top: calc(100vw * (20 / 1535));
-		font-size: calc(100vw * (36 / 1535));
+		margin-top: calc(100vw * (10 / 1535));
+		font-size: calc(100vw * (34 / 1535));
 		line-height: calc(100vw * (44 / 1535));
 	}
 	.map-sec .map-wrap .map-box .name {
@@ -542,40 +683,42 @@ html, body {
 		line-height: calc(100vw * (44 / 1535));
 		letter-spacing: calc(100vw * (-1.6 / 1535));
 	}
+
 	.map-sec .map-wrap .map-box .btn {
-		margin-top: calc(100vw * (28 / 1535));
+		margin-top: calc(100vw * (20 / 1535));
 	}
 	.map-sec .map-wrap .map-box .btn a {
 		width: calc(100vw * (220 / 1535));
-		height: calc(100vw * (75 / 1535));
-		font-size: calc(100vw * (36 / 1535));
+		height: calc(100vw * (65 / 1535));
+		font-size: calc(100vw * (34 / 1535));
 		line-height: calc(100vw * (44 / 1535));
 		border-radius: calc(100vw * (12 / 1535));
 		letter-spacing: calc(100vw * (-1.6 / 1535));
 		box-shadow: calc(100vw * (5 / 1535)) calc(100vw * (5 / 1535)) calc(100vw * (10 / 1535)) 0 rgba(0, 0, 0, 0.35);
 	}
+
 	.map-sec .map-wrap .map-box.type-01 {
-		top: calc(100vw * (90 / 1535));
-		left: calc(100vw * (84 / 1535));
+		top: calc(100vw * (40 / 1535));
+		left: calc(100vw * (190 / 1535));
 	}
 	.map-sec .map-wrap .map-box.type-02 {
-		top: calc(100vw * (140 / 1535));
-		left: calc(100vw * (720 / 1535));
+		top: calc(100vw * (10 / 1535));
+		left: calc(100vw * (755 / 1535));
 	}
 	.map-sec .map-wrap .map-box.type-03 {
-		top: calc(100vw * (748 / 1535));
+		top: calc(100vw * (568 / 1535));
 		left: calc(100vw * (1063 / 1535));
 	}
 	.map-sec .map-wrap .map-box.type-04 {
-		top: calc(100vw * (960 / 1535));
+		top: calc(100vw * (720 / 1535));
 		left: calc(100vw * (567 / 1535));
 	}
 	.map-sec .map-wrap .map-box.type-05 {
-		top: calc(100vw * (488 / 1535));
-		left: calc(100vw * (85 / 1535));
+		top: calc(100vw * (390 / 1535));
+		left: calc(100vw * (190 / 1535));
 	}
 	.map-sec .map-wrap .map-box.type-06 {
-		top: calc(100vw * (362 / 1535));
+		top: calc(100vw * (222 / 1535));
 		left: calc(100vw * (1063 / 1535));
 	}
 }
@@ -586,28 +729,44 @@ html, body {
 	}
 	.header .ajou-home,
 	.header h1 {
-		padding: 0 45rem;
-		font-size: 40rem;
-		line-height: 1.5;
+		padding: 0 25rem;
+		font-size: 27rem;
+		line-height: 0.5;
 	}
 	.header .ajou-home img {
 		width: 60rem;
 		margin-right: 10rem;
 	}
+	.map-sec .sec-header h2,
 	.exposition-sec .sec-header h2,
 	.program-sec .sec-header h2 {
-		font-size: 48rem;
+		font-size: 46rem;
 		line-height: 1.5;
 	}
 
 	.exposition-sec .sec-header h2 img,
 	.program-sec .sec-header h2 img {
-		width: 60rem;
+		width: 40rem;
 		line-height: 1.5;
 	}
+
+	.program-sec .program-item .program-con .btn {
+		margin-top: 10px;
+	}
+	.program-sec .program-item .program-con .btn a {
+		height: 38px;
+		font-size: 15px;
+		border-radius: 5px;
+	}
 }
+
+
 @media all and (max-width: 580px) {
 	.header .ajou-home img {
 		display: none;
+	}
+
+	.map-sec .map-wrap .map {
+		background-image: none;
 	}
 }
