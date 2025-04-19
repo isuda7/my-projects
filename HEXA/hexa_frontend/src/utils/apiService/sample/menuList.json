@@ -1,0 +1,250 @@
+{
+  "code": "200",
+  "message": "SUCCESS",
+  "data": [
+    {
+      "type": "MENU",
+      "code": "M110000000",
+      "name": "Dash Board",
+      "path": "dash-board",
+      "useYn": "Y",
+      "crud": {
+        "createYn": "Y",
+        "readYn": "Y",
+        "updateYn": "Y",
+        "deleteYn": "Y"
+      },
+      "menuList": [
+        {
+          "type": "MENU",
+          "code": "M110100000",
+          "name": "Dash Board",
+          "path": "hq",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        }
+      ]
+    },
+    {
+      "type": "MENU",
+      "code": "M120000000",
+      "name": "User Management",
+      "path": "user-management",
+      "useYn": "Y",
+      "crud": {
+        "createYn": "Y",
+        "readYn": "Y",
+        "updateYn": "Y",
+        "deleteYn": "Y"
+      },
+      "menuList": [
+        {
+          "type": "MENU",
+          "code": "M120100000",
+          "name": "HQ",
+          "path": "hq",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        }
+      ]
+    },
+    {
+      "type": "MENU",
+      "code": "M130000000",
+      "name": "Firmware",
+      "path": "firmware",
+      "useYn": "Y",
+      "crud": {
+        "createYn": "Y",
+        "readYn": "Y",
+        "updateYn": "Y",
+        "deleteYn": "Y"
+      },
+      "menuList": [
+        {
+          "type": "MENU",
+          "code": "M130100000",
+          "name": "Firmware Management",
+          "path": "firmware-management",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        }
+      ]
+    },
+    {
+      "type": "MENU",
+      "code": "M140000000",
+      "name": "Settings",
+      "path": "settings",
+      "useYn": "Y",
+      "crud": {
+        "createYn": "Y",
+        "readYn": "Y",
+        "updateYn": "Y",
+        "deleteYn": "Y"
+      },
+      "menuList": [
+        {
+          "type": "MENU",
+          "code": "M140100000",
+          "name": "Notice",
+          "path": "notice",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        },
+        {
+          "type": "MENU",
+          "code": "M140200000",
+          "name": "Role",
+          "path": "role",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        },
+        {
+          "type": "MENU",
+          "code": "M140300000",
+          "name": "Code",
+          "path": "code",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        },
+        {
+          "type": "MENU",
+          "code": "M140400000",
+          "name": "Battery Model",
+          "path": "battery-model",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        },
+        {
+          "type": "MENU",
+          "code": "M140500000",
+          "name": "Inverter Brand & Model",
+          "path": "inverter-model",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        },
+        {
+          "type": "MENU",
+          "code": "M140600000",
+          "name": "Others History",
+          "path": "others-history",
+          "useYn": "N",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        },
+        {
+          "type": "MENU",
+          "code": "M140700000",
+          "name": "Battery & Inverter Match",
+          "path": "match",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        },
+        {
+          "type": "MENU",
+          "code": "M140800000",
+          "name": "Alert Description",
+          "path": "alert-description",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        },
+        {
+          "type": "MENU",
+          "code": "M140900000",
+          "name": "Terms & Policy",
+          "path": "terms-policy",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        }
+      ]
+    },
+    {
+      "type": "MENU",
+      "code": "M150000000",
+      "name": "Guide",
+      "path": "guide",
+      "useYn": "Y",
+      "crud": {
+        "createYn": "Y",
+        "readYn": "Y",
+        "updateYn": "Y",
+        "deleteYn": "Y"
+      },
+      "menuList": [
+        {
+          "type": "MENU",
+          "code": "M150100000",
+          "name": "Guide Management",
+          "path": "installation-photos",
+          "useYn": "Y",
+          "crud": {
+            "createYn": "Y",
+            "readYn": "Y",
+            "updateYn": "Y",
+            "deleteYn": "Y"
+          }
+        }
+      ]
+    }
+  ]
+}

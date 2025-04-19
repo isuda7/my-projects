@@ -1,0 +1,88 @@
+.guide {
+  position: relative;
+  font-size: 14px;
+}
+.guide table {
+  width: 100%;
+  table-layout: fixed;
+}
+.guide table thead tr th {
+  height: 40px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #444;
+  border-right: 1px solid #fff;
+}
+.guide table tbody {
+  border-top: 1px solid #333;
+}
+.guide table tbody tr {
+  background-color: rgb(244 244 244);
+}
+.guide table tbody tr td {
+  height: auto;
+  padding: 8px 20px;
+  border-right: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 0;
+  line-height: 1.5;
+}
+.guide table tbody tr:first-child td {
+  border-top: 0 !important;
+}
+
+.guide table tbody tr td a {
+  /* text-decoration: none; */
+  color: #666;
+}
+
+.guide table tbody tr td:nth-child(6) {
+  text-align: center;
+}
+.num {
+  position: absolute;
+  top: -35px;
+  left: 100px;
+}
+
+tr.modify {
+  color: red;
+  background-color: rgb(255 255 255) !important;
+}
+.modify span::before {
+  content: "수정";
+  color: red;
+  padding-right: 10px;
+}
+
+tr.check {
+  background-color: rgb(255, 248, 233) !important;
+}
+tr.check span:before {
+  content: "검수";
+  color: red;
+  padding-right: 10px;
+}
+tr.done {
+  background-color: rgb(255 255 255) !important;
+}
+tr.done span:before {
+  content: "완료";
+  color: blue;
+  padding-right: 10px;
+}
+tr.ing {
+  background-color: rgb(242, 216, 226) !important;
+}
+tr.ing span:before {
+  content: "작업중";
+  color: gray;
+  padding-right: 10px;
+}
+tr.exception {
+  background-color: rgb(255 255 255) !important;
+}
+tr.del td {
+  text-decoration: line-through;
+  opacity: 0.3;
+}

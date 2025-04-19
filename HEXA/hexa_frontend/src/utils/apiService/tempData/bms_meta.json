@@ -1,0 +1,156 @@
+{
+  "BMS_META": {
+    "AppVersion": {
+      "TAG_VALUE": "01000004",
+      "TAG_VALUE_BIN": "04000001"
+    },
+    "BmsMode": {
+      "TAG_VALUE": "Normal Mode",
+      "TAG_VALUE_BIN": "0000"
+    },
+    "SystemStatus": {
+      "TAG_VALUE": "Pass",
+      "TAG_VALUE_BIN": "0000"
+    },
+    "BmsHwVersion": {
+      "TAG_VALUE": "00000001",
+      "TAG_VALUE_BIN": "00000001"
+    },
+    "BmsSerialNumber": {
+      "TAG_VALUE": "2201200338.0",
+      "TAG_VALUE_BIN": "d2a63383"
+    },
+    "BPU Serial Number": {
+      "TAG_VALUE": "2206291028.0",
+      "TAG_VALUE_BIN": "54548183"
+    },
+    "Pack Serial Number": {
+      "TAG_VALUE": "1346454347.0",
+      "TAG_VALUE_BIN": "4b434150"
+    },
+    "Capacity": {
+      "TAG_VALUE": "module 2ea",
+      "TAG_VALUE_BIN": "0105"
+    },
+    "Voltage Type": {
+      "TAG_VALUE": "RESU3M",
+      "TAG_VALUE_BIN": "0105"
+    },
+    "PackPartNumber": {
+      "TAG_VALUE": "EEA00462AAKKK2206291028",
+      "TAG_VALUE_BIN": "454541303034363241414b4b4b3232303632393130323800ffffffffffffffffffffffffffffffff"
+    },
+    "BatteryName": {
+      "TAG_VALUE": "RESU FLEX",
+      "TAG_VALUE_BIN": "5245535520464c455800000000000000000000000000000000000000000000000000000000000000"
+    },
+    "ModuleCellSeriesNum": {
+      "TAG_VALUE": "16.0",
+      "TAG_VALUE_BIN": "1000"
+    },
+    "ModuleNum": {
+      "TAG_VALUE": "4.0",
+      "TAG_VALUE_BIN": "0400"
+    },
+    "TotalTemperatureNum": {
+      "TAG_VALUE": "16.0",
+      "TAG_VALUE_BIN": "1000"
+    },
+    "TotalAuxVoltNum": {
+      "TAG_VALUE": "8.0",
+      "TAG_VALUE_BIN": "0800"
+    },
+    "TotalBmicNum": {
+      "TAG_VALUE": "4.0",
+      "TAG_VALUE_BIN": "0400"
+    },
+    "TotalCellNum": {
+      "TAG_VALUE": "64.0",
+      "TAG_VALUE_BIN": "4000"
+    },
+    "DCDCVersion": {
+      "TAG_VALUE": "00000000",
+      "TAG_VALUE_BIN": "00000000"
+    },
+    "MBMSSerialNum1": {
+      "TAG_VALUE": "2209150294.0",
+      "TAG_VALUE_BIN": "56f5ac83"
+    },
+    "MBMSSerialNum2": {
+      "TAG_VALUE": "2209150703.0",
+      "TAG_VALUE_BIN": "eff6ac83"
+    },
+    "MBMSSerialNum3": {
+      "TAG_VALUE": "2209150011.0",
+      "TAG_VALUE_BIN": "3bf4ac83"
+    },
+    "MBMSSerialNum4": {
+      "TAG_VALUE": "2209150046.0",
+      "TAG_VALUE_BIN": "5ef4ac83"
+    },
+    "MBMSSerialNum5": {
+      "TAG_VALUE": "0.0",
+      "TAG_VALUE_BIN": "00000000"
+    },
+    "MBMSSerialNum6": {
+      "TAG_VALUE": "0.0",
+      "TAG_VALUE_BIN": "00000000"
+    },
+    "MBMSSerialNum7": {
+      "TAG_VALUE": "0.0",
+      "TAG_VALUE_BIN": "00000000"
+    },
+    "MBMSSerialNum8": {
+      "TAG_VALUE": "0.0",
+      "TAG_VALUE_BIN": "00000000"
+    },
+    "mbms1 module cell type": {
+      "TAG_VALUE": "210f",
+      "TAG_VALUE_BIN": "210f"
+    },
+    "mbms2 module cell type": {
+      "TAG_VALUE": "210f",
+      "TAG_VALUE_BIN": "210f"
+    },
+    "mbms3 module cell type": {
+      "TAG_VALUE": "210f",
+      "TAG_VALUE_BIN": "210f"
+    },
+    "mbms4 module cell type": {
+      "TAG_VALUE": "210f",
+      "TAG_VALUE_BIN": "210f"
+    },
+    "mbms5 module cell type": {
+      "TAG_VALUE": "0000",
+      "TAG_VALUE_BIN": "0000"
+    },
+    "mbms6 module cell type": {
+      "TAG_VALUE": "0000",
+      "TAG_VALUE_BIN": "0000"
+    },
+    "mbms7 module cell type": {
+      "TAG_VALUE": "0000",
+      "TAG_VALUE_BIN": "0000"
+    },
+    "mbms8 module cell type": {
+      "TAG_VALUE": "0000",
+      "TAG_VALUE_BIN": "0000"
+    },
+    "SocHighLimit": {
+      "TAG_VALUE": "10000.0",
+      "TAG_VALUE_BIN": "1027"
+    },
+    "SocLowLimit": {
+      "TAG_VALUE": "0.0",
+      "TAG_VALUE_BIN": "0000"
+    },
+    "InverterFwVersion": {
+      "TAG_VALUE": "Unknown",
+      "TAG_VALUE_BIN": "0179000000000000000000000000000000000000"
+    },
+    "InverterName": {
+      "TAG_VALUE": "Unknown",
+      "TAG_VALUE_BIN": "0000159d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    }
+  }
+}

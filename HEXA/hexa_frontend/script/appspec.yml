@@ -1,0 +1,33 @@
+version: 0.0
+
+os: linux
+
+files:
+  - source:  /frontend.tar.gz # 현재 프로젝트의 루트 경로
+    destination: /u01/deploy/mngr_web  # EC2 내부 배포 할 위치
+    overwrite: yes # 덮어쓰기
+  - source:  /backup.sh # 현재 프로젝트의 루트 경로
+    destination: /u01/deploy/mngr_web  # EC2 내부 배포 할 위치
+    overwrite: yes # 덮어쓰기
+  - source:  /deploy.sh # 현재 프로젝트의 루트 경로
+    destination: /u01/deploy/mngr_web  # EC2 내부 배포 할 위치
+    overwrite: yes # 덮어쓰기
+
+hooks:
+  BeforeInstall: # 배포하기 전에 아래 명령어를 실
+    - location: backup.sh
+      runas: wasadm
+  # AfterInstall: # 배포가 끝나면 아래 명령어를 실행
+    # - location: execute-deploy.sh
+    #   timeout: 60
+  ApplicationStart: # ApplicationStart 단계에서 해당 파일을 실행
+    - location: deploy.sh
+    #   timeout: 60
+      runas: wasadm
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: wasadm
+    group: appadm
+    mode: 755

@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+// Palette color
+$base-primary: #f58f13;
+$base-white: #ffffff;
+$base-black: #010101;
+
+// Background color
+$bg-white: $base-white;
+$bg-disable: #f5f6f8;
+$bg-login: #f3f3f3;
+$bg-tab: #f9f9f9;
+$bg-boardname: #f8f9fa;
+$bg-table: #fafafa;
+$bg-gnbover: #f58f13;
+$bg-22: #222222;
+$bg-33: #333333;
+$bg-44: #444444;
+$bg-55: #555555;
+$bg-77: #777777;
+
+$bg-input-m: #2f2f2f;
+$bg-06: rgba(0, 0, 0, 0.6);
+$bg-08: rgba(0, 0, 0, 0.08);
+
+// Font color
+$text-black-a1: #111111;
+$text-black-a2: #333333;
+$text-black-a3: #666666;
+$text-black-a4: #999999;
+$text-black-a5: #b2b2b2;
+$text-77: #777777;
+$text-gnb-2depout: #7e7d8f;
+$text-table-head: #434856;
+$text-disable: #cdcdcd;
+$text-red: #e74133;
+$text-yellow: #f58f13;
+
+// Button color
+$co-black: #222222;
+$co-7b: #7b7b7b;
+$co-db: #dbdbdb;
+$co-b6: #b6b6b6;
+$co-primary: #da7800;
+
+// Icon color
+$check: #dbdbdb;
+$point: $base-primary;
+$line: #222222;
+
+// Line color
+$line-input: #d6d6d6;
+$line-basic: #e1e4e8;
+$line-table-head: #edeeef;
+$line-red: #e74133;
+
+//////////////////////////////////////////////////////////////////////////// color
+$white: #ffffff;
+$black: #000000;
+$red: #e74133;
+$blue: #0095ff;
+$blue2: #399be3;
+$bluebar: #cde7ff;
+$bluebg: #f0f9ff;
+$blueline: #b2e9ee;
+
+$gray-1: #191919;
+$gray-2: #737373;
+$gray-3: #898989;
+$gray-4: #b2b2b2;
+$gray-5: #dedee8;
+$gray-6: #404040;
+
+$base: #b6b6b6;
+$basehover: #969696;
+$primary: #3ec2cf;
+$primaryhover: #258f99;
+$light: #d6f0f2;
+$lighthover: #c9e8eb;
+$light2: #e4f5f6;
+$info: #edeeef;
+$infohover: #e3e4e6;
+
+$bg-1: #2f3034;
+$bg-2: #222326;
+$bg-3: #f5f6f8;
+$bg-4: #f8f8fa;
+$bg-5: #f2f6f6;
+$bg-6: #f1f4f6;
+$bg-7: #f2fafb;
+$bg-8: #e5e5e5;
+
+$line-1: #f2f2f2;
+$line-2: #232323;
+$line-3: #dbdbdb;
+$line-4: #e8e8e8;
+$line-5: #e4e4f6;
+$line-6: #d7e3e4;
+
+// chart color
+$chart-normal: #5addea;
+$chart-disconnect: #e2e2e2;
+$chart-alert: #f9c74f;
+$chart-warning: #f9c74f;
+$chart-error: #f8961e;
+$chart-fault: #f94144;
+
+// @include font(600, 24px, $red);
+@mixin font($weight: 400, $size: 14px, $color: $gray-1) {
+  font: {
+    weight: $weight;
+    size: $size;
+  }
+  color: $color;
+  @content;
+}
+
+// @include txtellipse(3);
+@mixin txtellipse($line: 1) {
+  @if ($line == 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+  }
+}
+
+// @include bg(){}
+@mixin bg($posX: 50%, $posY: 50%) {
+  background-repeat: no-repeat;
+  background-position: $posX $posY;
+  @content;
+}

@@ -1,0 +1,764 @@
+{
+  "HV": {
+    "saved_time": {
+      "tag_value": "20231123120600000",
+      "tag_value_bin": "28405f65"
+    },
+    "BMSRunningTime": {
+      "tag_value": "69251816.0",
+      "tag_value_bin": "0420b2e8"
+    },
+    "MinCellVoltage": {
+      "tag_value": "3.6324",
+      "tag_value_bin": "8de4"
+    },
+    "MaxCellVoltage": {
+      "tag_value": "3.6414",
+      "tag_value_bin": "8e3e"
+    },
+    "AvgCellVoltage": {
+      "tag_value": "3.6381",
+      "tag_value_bin": "8e1d"
+    },
+    "SumSerialCellVoltage": {
+      "tag_value": "254.6728",
+      "tag_value_bin": "0026dc28"
+    },
+    "MinCellNumber": {
+      "tag_value": "22.0",
+      "tag_value_bin": "0016"
+    },
+    "MaxCellNumber": {
+      "tag_value": "2.0",
+      "tag_value_bin": "0002"
+    },
+    "MinTemperature": {
+      "tag_value": "11.4",
+      "tag_value_bin": "0072"
+    },
+    "MaxTemperature": {
+      "tag_value": "12.5",
+      "tag_value_bin": "007d"
+    },
+    "AvgTemperature": {
+      "tag_value": "11.8",
+      "tag_value_bin": "0076"
+    },
+    "MaxTemperatureNumber": {
+      "tag_value": "1",
+      "tag_value_bin": "0108"
+    },
+    "MinTemperatureNumber": {
+      "tag_value": "8",
+      "tag_value_bin": "0108"
+    },
+    "current": {
+      "tag_value": "0.300",
+      "tag_value_bin": "0000012c"
+    },
+    "SOC": {
+      "tag_value": "37.39",
+      "tag_value_bin": "0e9b"
+    },
+    "SOH": {
+      "tag_value": "95.36",
+      "tag_value_bin": "2540"
+    },
+    "ChargePowerLimit": {
+      "tag_value": "3290.0",
+      "tag_value_bin": "00000cda"
+    },
+    "DischargePowerLimit": {
+      "tag_value": "7220.0",
+      "tag_value_bin": "00001c34"
+    },
+    "ChargeCurrentLimit": {
+      "tag_value": "12.918",
+      "tag_value_bin": "00003276"
+    },
+    "DischargeCurrentLimit": {
+      "tag_value": "28.350",
+      "tag_value_bin": "00006ebe"
+    },
+    "BMSMode": {
+      "tag_value": "NormalMode",
+      "tag_value_bin": "0001"
+    },
+    "BMSState": {
+      "tag_value": "RunningState",
+      "tag_value_bin": "0001"
+    },
+    "LoggingStatus": {
+      "tag_value": "none",
+      "tag_value_bin": "0001"
+    },
+    "BMSenablesignalStatus": {
+      "tag_value": "on",
+      "tag_value_bin": "0001"
+    },
+    "CircuitBreakerCommandStatus": {
+      "tag_value": "close",
+      "tag_value_bin": "0001"
+    },
+    "CircuitBreakerFeedbackStatus": {
+      "tag_value": "close",
+      "tag_value_bin": "0001"
+    },
+    "RMDServeruse": {
+      "tag_value": "enableconnecttoserver",
+      "tag_value_bin": "0001"
+    },
+    "Pre-chargeCommandStatus": {
+      "tag_value": "open",
+      "tag_value_bin": "0000"
+    },
+    "MainContactor2CommandStatus": {
+      "tag_value": "open",
+      "tag_value_bin": "0000"
+    },
+    "inverter_enable": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "kickstart_switch": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "terminal_resistor_485": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "terminal_resistor_can": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "BMSHardwareVersion1": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "BMSHardwareVersion2": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "BMSHardwareVersion3": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "BMSHardwareVersion4": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "CircuitBreakFeedback": {
+      "tag_value": "enable",
+      "tag_value_bin": "60001000"
+    },
+    "MainContactorFeedback": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "MainContactor2Feedback": {
+      "tag_value": "disable",
+      "tag_value_bin": "60001000"
+    },
+    "ShutdownReason": {
+      "tag_value": "NoShutdown",
+      "tag_value_bin": "0000"
+    },
+    "SDCardErrorCode": {
+      "tag_value": "0000",
+      "tag_value_bin": "0000"
+    },
+    "BmsRunTime": {
+      "tag_value": "1567723.0",
+      "tag_value_bin": "0017ebeb"
+    },
+    "MinCellSOC": {
+      "tag_value": "35.16",
+      "tag_value_bin": "0dbc"
+    },
+    "MaxCellSOC": {
+      "tag_value": "38.72",
+      "tag_value_bin": "0f20"
+    },
+    "[Alarm]Frequentblancing": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]RMDLOC": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]OverVoltage": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]UnderVoltage": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]OverTemperature": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]OverChargePower": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]UnderTemperature": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]OverChargeCurrent": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]OverDischargePower": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]TemperatureDeviation": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]CellVoltageimbalance": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Warning]OverDischargeCurrent": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID9]OverVoltage": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID10]UnderVoltage": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID12]OverTemperature": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID13]UnderTemperature": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID17]OverChargePower": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID15]OverChargeCurrent": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID18]OverDischargePower": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID14]TemperatureDeviation": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID11]CellVoltageimbalance": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID16]OverDischargeCurrent": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault1][FaultID19]InternalCommunicationError": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]DCDCdiagfault2": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID20OverVoltage": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID21UnderVoltage": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID22OverTemperature": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID23UnderTemperature": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID26OverChargePower": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID40PackUnderVoltage": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID24OverChargeCurrent": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID27OverDischargePower": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID25OverDischargeCurrent": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID30->41UrgentUnderVoltage": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID28ExternalCommunicationError": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[Fault2]FaultID29InternalCommunicationError": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[HWFault2]ADCError": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[HWFault2]BMSinitfail": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[HWFault2]Powerofffail": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[HWFault2]I2CMultiplexerError": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[HWFault2]BMSconfigurationfail": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[HWFault2]ADCReferenceVoltageError": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[HWFault2]CurrentCommunicationError": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[HWFault2]ThermisterOpenShortError": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[HWFault2]ExternalFlashDataCRCError": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "SleepMode": {
+      "tag_value": "sleepmodeimpossible",
+      "tag_value_bin": "0001"
+    },
+    "LifeTimeDischargeEnergy": {
+      "tag_value": "5027520.0",
+      "tag_value_bin": "004cb6c0"
+    },
+    "CycleCount": {
+      "tag_value": "371.0",
+      "tag_value_bin": "00000173"
+    },
+    "BPI_Voltage": {
+      "tag_value": "255.1",
+      "tag_value_bin": "09f7"
+    },
+    "BPI_Current": {
+      "tag_value": "0.4",
+      "tag_value_bin": "0004"
+    },
+    "IPI_Voltage": {
+      "tag_value": "429.9",
+      "tag_value_bin": "10cb"
+    },
+    "IPI_Current": {
+      "tag_value": "0.2",
+      "tag_value_bin": "0002"
+    },
+    "Temperature": {
+      "tag_value": "26.4",
+      "tag_value_bin": "0108"
+    },
+    "UpperSystemStatus": {
+      "tag_value": "ParsingError[Hex:0300]",
+      "tag_value_bin": "0003"
+    },
+    "[DCDCDiag1]GeneralFault2(CBTrip)": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID52.PrechargeFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID56.GFDFault2(CBTrip)": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID51.ReversepolarityFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID55.INVCommunicationFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID1.BatteryOverVoltageFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID2.BatteryOverCurrentFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID3.DCLinkOverVoltageFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID4.DCLinkOverCurrentFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID5.DCDCOverTemperature1Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID5.DCDCOverTemperature2Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID53.HouseKeeperFault2(CBtrip)": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID6.BMS(CAN)CommunicationFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID7.INVCommunicationFault2(CBTrip)": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID64.MismatchingInverterFault2(CBtrip)": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID54.Inductor1InductorOverCurrentFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID54.Inductor2InductorOverCurrentFault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID56.NegativeGroundFaultDetectionFault2(CBTrip)": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag1]FaultID56.PositiveGroundFaultDetectionFault2(CBTrip)": {
+      "tag_value": "normal",
+      "tag_value_bin": "00000000"
+    },
+    "[DCDCDiag2]FaultID57.CBOpen_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID58.BMSEnable_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID59.InverterEnable_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID60.BatteryOverVoltage_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID8.DCLinkOverVoltage_HW_Fault2(CBTrip)": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID61.BatteryNegativeOverCurrent_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID61.BatteryPositiveOverCurrent_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID62.DCLinkNegativeOverCurrent_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID62.DCLinkPositiveOverCurrent_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID63.Inductor1NegativeOverCurrnet_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID63.Inductor1PositiveOverCurrnet_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID63.Inductor2NegativeOverCurrnet_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag2]FaultID63.Inductor2PositiveOverCurrnet_HW_Fault1": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag3][FaultID69]PhaseFault2(GeneralError69)": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag3][FaultID69]UpdateFault2(GeneralError69)": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag3][FaultID69]AuxPowerFault2(GeneralError69)": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag3][FaultID69]EOLtimeoutFault2(GeneralError69)": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag3][FaultID69]DCDCInternalLOCFault2(GeneralError69)": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "[DCDCDiag3][FaultID69]BatteryundervoltageFault2(GeneralError69)": {
+      "tag_value": "normal",
+      "tag_value_bin": "0000"
+    },
+    "SurgePowerFlag": {
+      "tag_value": "notused",
+      "tag_value_bin": "0000"
+    },
+    "CV0": {
+      "tag_value": "3.6388",
+      "tag_value_bin": null
+    },
+    "CV1": {
+      "tag_value": "3.6414",
+      "tag_value_bin": null
+    },
+    "CV2": {
+      "tag_value": "3.6391",
+      "tag_value_bin": null
+    },
+    "CV3": {
+      "tag_value": "3.6411",
+      "tag_value_bin": null
+    },
+    "CV4": {
+      "tag_value": "3.6410",
+      "tag_value_bin": null
+    },
+    "CV5": {
+      "tag_value": "3.6384",
+      "tag_value_bin": null
+    },
+    "CV6": {
+      "tag_value": "3.6384",
+      "tag_value_bin": null
+    },
+    "CV7": {
+      "tag_value": "3.6369",
+      "tag_value_bin": null
+    },
+    "CV8": {
+      "tag_value": "3.6376",
+      "tag_value_bin": null
+    },
+    "CV9": {
+      "tag_value": "3.6388",
+      "tag_value_bin": null
+    },
+    "CV10": {
+      "tag_value": "3.6399",
+      "tag_value_bin": null
+    },
+    "CV11": {
+      "tag_value": "3.6395",
+      "tag_value_bin": null
+    },
+    "CV12": {
+      "tag_value": "3.6399",
+      "tag_value_bin": null
+    },
+    "CV13": {
+      "tag_value": "3.6399",
+      "tag_value_bin": null
+    },
+    "CV14": {
+      "tag_value": "3.6350",
+      "tag_value_bin": null
+    },
+    "CV15": {
+      "tag_value": "3.6369",
+      "tag_value_bin": null
+    },
+    "CV16": {
+      "tag_value": "3.6381",
+      "tag_value_bin": null
+    },
+    "CV17": {
+      "tag_value": "3.6376",
+      "tag_value_bin": null
+    },
+    "CV18": {
+      "tag_value": "3.6381",
+      "tag_value_bin": null
+    },
+    "CV19": {
+      "tag_value": "3.6327",
+      "tag_value_bin": null
+    },
+    "CV20": {
+      "tag_value": "3.6343",
+      "tag_value_bin": null
+    },
+    "CV21": {
+      "tag_value": "3.6324",
+      "tag_value_bin": null
+    },
+    "CV22": {
+      "tag_value": "3.6339",
+      "tag_value_bin": null
+    },
+    "CV23": {
+      "tag_value": "3.6346",
+      "tag_value_bin": null
+    },
+    "CV24": {
+      "tag_value": "3.6392",
+      "tag_value_bin": null
+    },
+    "CV25": {
+      "tag_value": "3.6366",
+      "tag_value_bin": null
+    },
+    "CV26": {
+      "tag_value": "3.6373",
+      "tag_value_bin": null
+    },
+    "CV27": {
+      "tag_value": "3.6377",
+      "tag_value_bin": null
+    },
+    "CV28": {
+      "tag_value": "3.6355",
+      "tag_value_bin": null
+    },
+    "CV29": {
+      "tag_value": "3.6374",
+      "tag_value_bin": null
+    },
+    "CV30": {
+      "tag_value": "3.6370",
+      "tag_value_bin": null
+    },
+    "CV31": {
+      "tag_value": "3.6374",
+      "tag_value_bin": null
+    },
+    "CV32": {
+      "tag_value": "3.6358",
+      "tag_value_bin": null
+    },
+    "CV33": {
+      "tag_value": "3.6373",
+      "tag_value_bin": null
+    },
+    "CV34": {
+      "tag_value": "3.6381",
+      "tag_value_bin": null
+    },
+    "CV35": {
+      "tag_value": "3.6387",
+      "tag_value_bin": null
+    },
+    "CV36": {
+      "tag_value": "3.6388",
+      "tag_value_bin": null
+    },
+    "CV37": {
+      "tag_value": "3.6399",
+      "tag_value_bin": null
+    },
+    "CV38": {
+      "tag_value": "3.6403",
+      "tag_value_bin": null
+    },
+    "CV39": {
+      "tag_value": "3.6384",
+      "tag_value_bin": null
+    },
+    "CV40": {
+      "tag_value": "3.6388",
+      "tag_value_bin": null
+    },
+    "CV41": {
+      "tag_value": "3.6388",
+      "tag_value_bin": null
+    },
+    "CV42": {
+      "tag_value": "3.6380",
+      "tag_value_bin": null
+    },
+    "CV43": {
+      "tag_value": "3.6388",
+      "tag_value_bin": null
+    },
+    "CV44": {
+      "tag_value": "3.6388",
+      "tag_value_bin": null
+    },
+    "CV45": {
+      "tag_value": "3.6395",
+      "tag_value_bin": null
+    },
+    "CV46": {
+      "tag_value": "3.6391",
+      "tag_value_bin": null
+    },
+    "CV47": {
+      "tag_value": "3.6373",
+      "tag_value_bin": null
+    },
+    "CV48": {
+      "tag_value": "3.6384",
+      "tag_value_bin": null
+    },
+    "CV49": {
+      "tag_value": "3.6365",
+      "tag_value_bin": null
+    },
+    "CV50": {
+      "tag_value": "3.6377",
+      "tag_value_bin": null
+    },
+    "CV51": {
+      "tag_value": "3.6396",
+      "tag_value_bin": null
+    }
+  }
+}

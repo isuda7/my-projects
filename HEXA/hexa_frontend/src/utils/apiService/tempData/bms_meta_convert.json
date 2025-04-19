@@ -1,0 +1,268 @@
+[
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "AppVersion",
+    "value": "01000004",
+    "remarks": "04000001"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "BmsMode",
+    "value": "Normal Mode",
+    "remarks": "0000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "SystemStatus",
+    "value": "Pass",
+    "remarks": "0000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "BmsHwVersion",
+    "value": "00000001",
+    "remarks": "00000001"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "BmsSerialNumber",
+    "value": "2201200338.0",
+    "remarks": "d2a63383"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "BPU Serial Number",
+    "value": "2206291028.0",
+    "remarks": "54548183"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "Pack Serial Number",
+    "value": "1346454347.0",
+    "remarks": "4b434150"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "Capacity",
+    "value": "module 2ea",
+    "remarks": "0105"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "Voltage Type",
+    "value": "RESU3M",
+    "remarks": "0105"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "PackPartNumber",
+    "value": "EEA00462AAKKK2206291028",
+    "remarks": "454541303034363241414b4b4b3232303632393130323800ffffffffffffffffffffffffffffffff"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "BatteryName",
+    "value": "RESU FLEX",
+    "remarks": "5245535520464c455800000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "ModuleCellSeriesNum",
+    "value": "16.0",
+    "remarks": "1000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "ModuleNum",
+    "value": "4.0",
+    "remarks": "0400"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "TotalTemperatureNum",
+    "value": "16.0",
+    "remarks": "1000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "TotalAuxVoltNum",
+    "value": "8.0",
+    "remarks": "0800"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "TotalBmicNum",
+    "value": "4.0",
+    "remarks": "0400"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "TotalCellNum",
+    "value": "64.0",
+    "remarks": "4000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "DCDCVersion",
+    "value": "00000000",
+    "remarks": "00000000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "MBMSSerialNum1",
+    "value": "2209150294.0",
+    "remarks": "56f5ac83"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "MBMSSerialNum2",
+    "value": "2209150703.0",
+    "remarks": "eff6ac83"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "MBMSSerialNum3",
+    "value": "2209150011.0",
+    "remarks": "3bf4ac83"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "MBMSSerialNum4",
+    "value": "2209150046.0",
+    "remarks": "5ef4ac83"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "MBMSSerialNum5",
+    "value": "0.0",
+    "remarks": "00000000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "MBMSSerialNum6",
+    "value": "0.0",
+    "remarks": "00000000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "MBMSSerialNum7",
+    "value": "0.0",
+    "remarks": "00000000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "MBMSSerialNum8",
+    "value": "0.0",
+    "remarks": "00000000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "mbms1 module cell type",
+    "value": "210f",
+    "remarks": "210f"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "mbms2 module cell type",
+    "value": "210f",
+    "remarks": "210f"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "mbms3 module cell type",
+    "value": "210f",
+    "remarks": "210f"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "mbms4 module cell type",
+    "value": "210f",
+    "remarks": "210f"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "mbms5 module cell type",
+    "value": "0000",
+    "remarks": "0000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "mbms6 module cell type",
+    "value": "0000",
+    "remarks": "0000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "mbms7 module cell type",
+    "value": "0000",
+    "remarks": "0000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "mbms8 module cell type",
+    "value": "0000",
+    "remarks": "0000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "SocHighLimit",
+    "value": "10000.0",
+    "remarks": "1027"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "SocLowLimit",
+    "value": "0.0",
+    "remarks": "0000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "InverterFwVersion",
+    "value": "Unknown",
+    "remarks": "0179000000000000000000000000000000000000"
+  },
+  {
+    "item": "BMS_META",
+    "groupname": "",
+    "description": "InverterName",
+    "value": "Unknown",
+    "remarks": "0000159d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  }
+]

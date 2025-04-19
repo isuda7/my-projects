@@ -1,0 +1,316 @@
+{
+  "hexaStationStatMonthly": [
+    {
+      "stationName": "GS25 강동점",
+      "stationId": "a",
+      "stationInstallDate": "2021-05-01",
+      "sum": 200000,
+      "stat": [
+        {
+          "year": 2024,
+          "month": 1,
+          "chargeCnt": 100,
+          "swapCnt": 50,
+          "authFailCnt": 5,
+          "swapFailCnt": 2
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "chargeCnt": -3445,
+          "swapCnt": 55,
+          "authFailCnt": 6,
+          "swapFailCnt": 3
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "chargeCnt": 120,
+          "swapCnt": 60,
+          "authFailCnt": 7,
+          "swapFailCnt": 4
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "chargeCnt": 130,
+          "swapCnt": 65,
+          "authFailCnt": 8,
+          "swapFailCnt": 5
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "chargeCnt": 140,
+          "swapCnt": 70,
+          "authFailCnt": 9,
+          "swapFailCnt": 6
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "chargeCnt": 150,
+          "swapCnt": 75,
+          "authFailCnt": 10,
+          "swapFailCnt": 7
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "chargeCnt": 160,
+          "swapCnt": 80,
+          "authFailCnt": 11,
+          "swapFailCnt": 8
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "chargeCnt": 170,
+          "swapCnt": 85,
+          "authFailCnt": 12,
+          "swapFailCnt": 9
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "chargeCnt": 180,
+          "swapCnt": 90,
+          "authFailCnt": 13,
+          "swapFailCnt": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "chargeCnt": 190,
+          "swapCnt": 95,
+          "authFailCnt": 14,
+          "swapFailCnt": 11
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "chargeCnt": 200,
+          "swapCnt": 100,
+          "authFailCnt": 15,
+          "swapFailCnt": 12
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "chargeCnt": 210,
+          "swapCnt": 105,
+          "authFailCnt": 16,
+          "swapFailCnt": 13
+        }
+      ]
+    },
+    {
+      "stationName": "GS25 강북점",
+      "stationInstallDate": "2021-05-01",
+      "stationId": "b",
+      "sum": 200000,
+      "stat": [
+        {
+          "year": 2024,
+          "month": 1,
+          "chargeCnt": 220,
+          "swapCnt": 110,
+          "authFailCnt": 17,
+          "swapFailCnt": 14
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "chargeCnt": -37484,
+          "swapCnt": 115,
+          "authFailCnt": 18,
+          "swapFailCnt": 15
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "chargeCnt": 240,
+          "swapCnt": 120,
+          "authFailCnt": 19,
+          "swapFailCnt": 16
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "chargeCnt": 250,
+          "swapCnt": 125,
+          "authFailCnt": 20,
+          "swapFailCnt": 17
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "chargeCnt": 260,
+          "swapCnt": 130,
+          "authFailCnt": 21,
+          "swapFailCnt": 18
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "chargeCnt": 270,
+          "swapCnt": 135,
+          "authFailCnt": 22,
+          "swapFailCnt": 19
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "chargeCnt": 280,
+          "swapCnt": 140,
+          "authFailCnt": 23,
+          "swapFailCnt": 20
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "chargeCnt": 290,
+          "swapCnt": 145,
+          "authFailCnt": 24,
+          "swapFailCnt": 21
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "chargeCnt": 300,
+          "swapCnt": 150,
+          "authFailCnt": 25,
+          "swapFailCnt": 22
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "chargeCnt": 310,
+          "swapCnt": 155,
+          "authFailCnt": 26,
+          "swapFailCnt": 23
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "chargeCnt": 320,
+          "swapCnt": 160,
+          "authFailCnt": 27,
+          "swapFailCnt": 24
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "chargeCnt": 330,
+          "swapCnt": 165,
+          "authFailCnt": 28,
+          "swapFailCnt": 25
+        }
+      ]
+    },
+    {
+      "stationName": "GS25 강남점",
+      "stationInstallDate": "2021-05-01",
+      "stationId": "c",
+      "sum": 200000,
+      "stat": [
+        {
+          "year": 2024,
+          "month": 1,
+          "chargeCnt": 340,
+          "swapCnt": 170,
+          "authFailCnt": 29,
+          "swapFailCnt": 26
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "chargeCnt": 350,
+          "swapCnt": 175,
+          "authFailCnt": 30,
+          "swapFailCnt": 27
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "chargeCnt": -47333,
+          "swapCnt": 180,
+          "authFailCnt": 31,
+          "swapFailCnt": 28
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "chargeCnt": 370,
+          "swapCnt": 185,
+          "authFailCnt": 32,
+          "swapFailCnt": 29
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "chargeCnt": 380,
+          "swapCnt": 190,
+          "authFailCnt": 33,
+          "swapFailCnt": 30
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "chargeCnt": 390,
+          "swapCnt": 195,
+          "authFailCnt": 34,
+          "swapFailCnt": 31
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "chargeCnt": 400,
+          "swapCnt": 200,
+          "authFailCnt": 35,
+          "swapFailCnt": 32
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "chargeCnt": 410,
+          "swapCnt": 205,
+          "authFailCnt": 36,
+          "swapFailCnt": 33
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "chargeCnt": 420,
+          "swapCnt": 210,
+          "authFailCnt": 37,
+          "swapFailCnt": 34
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "chargeCnt": 430,
+          "swapCnt": 215,
+          "authFailCnt": 38,
+          "swapFailCnt": 35
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "chargeCnt": 440,
+          "swapCnt": 220,
+          "authFailCnt": 39,
+          "swapFailCnt": 36
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "chargeCnt": 450,
+          "swapCnt": 225,
+          "authFailCnt": 40,
+          "swapFailCnt": 37
+        }
+      ]
+    }
+  ]
+}

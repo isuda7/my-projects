@@ -1,0 +1,33 @@
+{
+  "dropdowns": {
+    "nodata": "데이터 없음",
+    "clear": "삭제",
+    "comboArrowBtnAriaLabelExpand": "",
+    "comboArrowBtnAriaLabelCollapse": "",
+    "dropDownListArrowBtnAriaLabel": "선택"
+  },
+  "upload": {
+    "cancel": "취소",
+    "clearSelectedFiles": "",
+    "dropFilesHere": "",
+    "headerStatusUploaded": "",
+    "headerStatusUploading": "",
+    "invalidFileExtension": "",
+    "invalidFiles": "",
+    "invalidMaxFileSize": "",
+    "invalidMinFileSize": "",
+    "remove": "삭제",
+    "retry": "",
+    "select": "선택",
+    "uploadSelectedFiles": "",
+    "total": "",
+    "files": "",
+    "selectTitle": "",
+    "selectNoFilesTitle": "",
+    "statusUploaded": "",
+    "statusUploadFailed": "",
+    "dropZoneHint": "",
+    "defaultDropZoneNote": "",
+    "dropZoneNote": ""
+  }
+}

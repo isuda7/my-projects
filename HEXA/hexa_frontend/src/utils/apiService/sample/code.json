@@ -1,0 +1,34 @@
+{
+  "test" : {
+    "code": "200",
+    "message": "SUCCESS",
+    "data": [
+      {
+        "code": "ADMIN",
+        "value": "어드민"
+      },
+      {
+        "code": "ADMIN1",
+        "value": "어드민1"
+      }
+    ]
+  },
+  "noticeType" : {
+    "code": "200",
+    "message": "SUCCESS",
+    "data": [
+      {
+        "code": "1",
+        "value": "타입1"
+      },
+      {
+        "code": "2",
+        "value": "타입2"
+      },
+      {
+        "code": "3",
+        "value": "타입3"
+      }
+    ]
+  }
+}

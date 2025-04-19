@@ -1,0 +1,657 @@
+[
+  {
+    "type": "MENU",
+    "code": "M010000000",
+    "name": "DashBoard",
+    "path": "dash-board",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M010100001",
+        "name": "HQ",
+        "path": "hq",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M010100000",
+        "name": "Region Admin",
+        "path": "region-admin",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M030000000",
+    "name": "User Management",
+    "path": "user-management",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M030100000",
+        "name": "HQ",
+        "path": "hq",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M030200000",
+        "name": "Company",
+        "path": "company",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M030300000",
+        "name": "Branch",
+        "path": "branch",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M030400000",
+        "name": "User",
+        "path": "user",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M040000000",
+    "name": "Firmware",
+    "path": "firmware",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M040100000",
+        "name": "firmware-management",
+        "path": "",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M050000000",
+    "name": "Settings",
+    "path": "settings",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M050100000",
+        "name": "Notice",
+        "path": "notice",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M050100000",
+        "name": "Role",
+        "path": "role",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M050100000",
+        "name": "Code",
+        "path": "code",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M050100000",
+        "name": "Battery Model",
+        "path": "battery-model",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M050100000",
+        "name": "Inverter Model",
+        "path": "inverter-model",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M050100000",
+        "name": "Others History",
+        "path": "others-history",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M050100000",
+        "name": "Battery & Inverter Match",
+        "path": "match",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M050100000",
+        "name": "Alert Description",
+        "path": "alert-description",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M050100000",
+        "name": "Terms & Policy",
+        "path": "terms-policy",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M060000000",
+    "name": "Guide",
+    "path": "guide",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M070100000",
+        "name": "Installation Photos",
+        "path": "installation-photos",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M020000000",
+    "name": "System",
+    "path": "system",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M020100000",
+        "name": "System Management",
+        "path": "management",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M020200000",
+        "name": "System Group",
+        "path": "group",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M020300000",
+        "name": "Device",
+        "path": "device",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M070000000",
+    "name": "Alert",
+    "path": "alert",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M070100000",
+        "name": "Alert History",
+        "path": "alert-history",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M070000000",
+    "name": "Support",
+    "path": "support",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M070100000",
+        "name": "Notice",
+        "path": "notice",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M070100000",
+        "name": "Help Center",
+        "path": "help-center",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M070100000",
+        "name": "Privacy Policy",
+        "path": "privacy-policy",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M070100000",
+        "name": "Terms of Service",
+        "path": "service",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M070000000",
+    "name": "FOTA",
+    "path": "fota",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M070100000",
+        "name": "FOTA Management ",
+        "path": "fota-management ",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M070000000",
+    "name": "Transfer",
+    "path": "transfer",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M070100000",
+        "name": "Transfer Management",
+        "path": "transfer-management",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M090000000",
+    "name": "Sample",
+    "path": "sample",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M090100000",
+        "name": "Common-Component",
+        "path": "common-component",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M090200000",
+        "name": "Grid-Component",
+        "path": "grid-component",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M090300000",
+        "name": "Tap-Component",
+        "path": "tap-component",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M090400000",
+        "name": "Accordion-Component",
+        "path": "accordion-component",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },
+      {
+        "type": "MENU",
+        "code": "M090500000",
+        "name": "Modal-Component",
+        "path": "modal-component",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  },
+  {
+    "type": "MENU",
+    "code": "M090000000",
+    "name": "Publisher",
+    "path": "pub",
+    "useYn": "Y",
+    "crud": {
+      "createYn": "Y",
+      "readYn": "Y",
+      "updateYn": "Y",
+      "deleteYn": "Y"
+    },
+    "menuList": [
+      {
+        "type": "MENU",
+        "code": "M090100000",
+        "name": "Guide",
+        "path": "Guide/guide",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      },{
+        "type": "MENU",
+        "code": "M090100000",
+        "name": "ComponentsList",
+        "path": "guide/ComponentsList",
+        "useYn": "Y",
+        "crud": {
+          "createYn": "Y",
+          "readYn": "Y",
+          "updateYn": "Y",
+          "deleteYn": "Y"
+        },
+        "menuList": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOOROO Info</title>
+    <link rel="stylesheet" href="css/qr.css" />
+  </head>
+
+  <body>
+    <div class="wrap-mobile">
+      <header class="m-header">
+        <h1 class="m-t-header"><span class="sr-only">KooRoo</span></h1>
+      </header>
+      <div class="m-content">
+        <div class="m-information">
+          지금 이용하시는 스테이션은 <br />
+          <span id="stationID">stationID</span> 입니다.
+        </div>
+        <script>
+          const qrid = new URLSearchParams(window.location.search).get('qrid');          
+          document.getElementById('stationID').textContent = qrid || 'Not provided';          
+        </script>
+
+        <div class="m-customer">
+          <h2 class="m-t-title">쿠루 고객지원 센터</h2>
+          <div class="m-customer-box">
+            <a href="tel:02-3773-4800">02-3773-4800</a>
+            <a href="tel:02-3773-4801">02-3773-4801</a>
+          </div>
+        </div>
+
+        <div class="m-link">
+          <a class="link-home" href="https://www.kooroo.co.kr/" target="_blank"
+            >KooRoo 홈페이지</a
+          >
+          <a
+            class="link-buy"
+            href="https://www.kooroo.co.kr/purchase_consultation"
+            target="_blank"
+            >전기스쿠터 구매하기</a
+          >
+        </div>
+
+        <div class="m-video">
+          <h2 class="m-t-title">배터리 교체 영상</h2>
+          <div class="m-player">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/jHsN4bq35wc?si=blpG2MEeG0WeRNC8"
+              title="쿠루의 BSS 튜토리얼을 소개합니다."
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="m-download">
+          <h2 class="m-t-title">KooRoo App 다운로드</h2>
+          <div class="m-download-box">
+            <a class="link-app" href="https://apps.apple.com/kr/app/kooroo/id1671482840"
+              ><img
+                src="images/img-playstore.png"
+                alt="Download on th Ap Store"
+            /></a>
+            <a class="link-google"  href="https://play.google.com/store/apps/details?id=lg.energy.solution.bss"
+              ><img src="images/img-googleplay.png" alt="Get it on Google Play"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <footer class="m-footer">
+        Copyright ⓒ 2025 LG Energy Solution. All Rights Reserved
+      </footer>
+    </div>
+  </body>
+</html>
