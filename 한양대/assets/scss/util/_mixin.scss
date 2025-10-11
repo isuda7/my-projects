@@ -1,0 +1,71 @@
+/*
+* media query
+*/
+$breakpoints: (
+  'mobile':(max-width:768px),
+  'tablet':(max-width:1024px),
+  'desk':(min-width:1025px),
+  'deskMax':(max-width:1280px)
+);
+
+@mixin mq($name) {
+  $raw-query: map-get($breakpoints, $name);
+
+  @if $raw-query {
+    $query: if(
+    type-of($raw-query) == 'string',
+    unquote($raw-query),
+    inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$name}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+// ellipsis text
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+@mixin ellipsisLine2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+
+  -webkit-line-clamp: 2;
+}
+@mixin ellipsisLine3 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+
+  -webkit-line-clamp: 3;
+}
+
+@mixin clearFloat {
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin deskMaxWidth {
+  margin: 0 auto;
+  max-width: 120rem;
+  @content;
+}

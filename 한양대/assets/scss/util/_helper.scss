@@ -1,0 +1,42 @@
+.br-pc {
+  display: block;
+}
+.br-mo {
+  display: none;
+}
+
+@include mq(mobile) {
+  .br-pc {
+    display: none;
+  }
+  .br-mo {
+    display: block;
+  }
+}
+
+.fw300 {
+  font-weight: 300;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+
+.blind {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}

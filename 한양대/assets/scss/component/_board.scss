@@ -1,0 +1,802 @@
+.board {
+  margin: 2em 0;
+  border-top: 2px solid $black;
+
+  &__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.5rem;
+    border-bottom: 1px solid $border-line;
+    color: $grey-base;
+
+    &.item > * {
+      font-size: 1.4em !important;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $border-line;
+
+    &.item {
+      height: 6.8rem;
+    }
+
+    &:hover .ellipsis {
+      text-decoration: underline;
+    }
+
+    .item__no,
+    .item__date,
+    .item__view {
+      font-family: 'Roboto';
+      font-weight: 300;
+      color: $grey-lighten-1;
+    }
+
+    .item__name {
+      font-weight: 300;
+      color: $grey-lighten-1;
+    }
+
+    .item__cate {
+      display: inline-block;
+      text-align: center;
+
+      .badge {
+        width: 7.2rem;
+        white-space: pre-line;
+        word-wrap: break-word;
+        word-break: keep-all;
+      }
+    }
+
+    .item__title {
+      text-align: left !important;
+    }
+
+    .item__file span {
+      display: inline-block;
+      overflow: hidden;
+      width: 1.6rem;
+      height: 1.7rem;
+      background: url('../images/common/ico-file-clip.png') no-repeat center / cover;
+      line-height: 500px;
+    }
+  }
+
+  &__no-data {
+    position: relative;
+    padding: 8.5em 0;
+    height: auto !important;
+    background-color: #f8f8f8;
+    text-align: center;
+
+    &.board__head {
+      display: none;
+    }
+
+    p {
+      position: relative;
+      padding-top: 11.5em;
+      color: $grey-base;
+      text-align: center;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 10.5em;
+        height: 9.5em;
+        background: url('../images/common/ico-nodata.png') no-repeat center / contain;
+        content: '';
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .item {
+    > * {
+      flex: 0 0 auto;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    &__no {
+      width: 75px;
+    }
+
+    &__cate {
+      width: 110px;
+    }
+
+    &__title {
+      display: inline-block;
+      flex: 1;
+
+@include ellipsis;
+
+      > * {
+        position: relative;
+        vertical-align: middle;
+      }
+
+      .ellipsis {
+        position: relative;
+
+        &.lock {
+          padding-left: 2.4rem;
+        }
+
+        &.lock::before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          display: inline-block;
+          width: 1.8rem;
+          height: 2rem;
+          background: url('../images/common/ico-lock.png') no-repeat left center / contain;
+          vertical-align: top;
+          content: '';
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &__file {
+      width: 85px;
+    }
+
+    &__date {
+      width: 110px;
+    }
+
+    &__view {
+      width: 80px;
+    }
+
+    &__name {
+      width: 85px;
+    }
+
+    &__qna {
+      width: 110px;
+    }
+
+    .qna-state {
+      display: inline-block;
+      padding: 0;
+      min-width: 7.2rem;
+      background-color: $white;
+      border: 1px solid $grey-lighten-1;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      color: $grey-base;
+
+      &__complete {
+        background-color: $grey-darken-3;
+        border-color: $grey-darken-3;
+        font-weight: 400;
+        color: $white;
+      }
+    }
+  }
+
+  .item--is-fixed {
+    background-color: $board-fixed-item;
+
+    .item__no span {
+      display: inline-block;
+      overflow: hidden;
+      width: 1.7rem;
+      height: 1.7rem;
+      background: url('../images/common/ico-board-fixed.png') no-repeat center / cover;
+      line-height: 500px;
+    }
+
+    .item__title {
+      font-weight: 500;
+      color: $grey-darken-1;
+    }
+  }
+
+  &__status {
+    .item__date {
+      width: 200px;
+    }
+
+    .item__cate {
+      padding-right: 18px;
+      width: auto;
+      min-width: 7.2rem;
+      text-align: left;
+    }
+  }
+
+  &__view {
+    position: relative;
+
+    & + .board__view {
+      margin-top: 5em;
+    }
+
+    .head {
+      justify-content: space-between;
+      padding: 3em;
+      height: auto;
+
+      &__title.lock strong::before {
+        display: inline-block;
+        margin-right: .6rem;
+        width: 1.8rem;
+        height: 1.5em;
+        background: url('../images/common/ico-lock.png') no-repeat left center / 100% auto;
+        vertical-align: top;
+        content: '';
+      }
+
+      .badge {
+        flex: 0 0 auto;
+        margin-right: 4px;
+        padding: .6rem;
+        height: 2em;
+      }
+      strong {
+        margin-left: 1em;
+        font-size: 2em;
+        font-weight: 700;
+        color: $grey-darken-2;
+      }
+    }
+
+    .head__info {
+      font-size: 1.5em;
+      font-weight: 300;
+      color: $grey-lighten-1;
+    }
+
+    .info__name {
+      position: relative;
+      margin-right: 1em;
+      padding-right: 1em;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 1em;
+        background-color: $grey-lighten-5;
+        content: '';
+        transform: translateY(-50%);
+      }
+    }
+
+    .info__date {
+      font-family: 'Roboto';
+    }
+  }
+
+  &__attachment {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid $border-line;
+
+    dl {
+      display: flex;
+      width: 50%;
+
+      &:only-child {
+        width: 100%;
+      }
+    }
+
+    dt {
+      padding: 1.143em 0;
+      width: 9.286em;
+      background-color: $table-bg-th;
+      font-size: 1.4em;
+      font-weight: 500;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    dd {
+      padding: 1.5em;
+
+@include ellipsis;
+
+      span {
+        font-size: 1.4em;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  &__event {
+    span {
+      font-family: 'Roboto';
+    }
+  }
+
+  &__file {
+    display: flex;
+
+    .ico-file {
+      position: relative;
+      display: block;
+      margin-top: .571em;
+      padding-left: 2em;
+
+@include ellipsis;
+
+      &:hover a {
+        text-decoration: underline;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: inline-block;
+        width: 1.143em;
+        height: 1.214em;
+        background: url('../images/common/ico-file-clip.png') no-repeat center / cover;
+        content: '';
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__content {
+    padding: 4rem;
+    border-bottom: 1px solid $border-line;
+    font-size: 1.4em;
+  }
+}
+
+.board-list {
+  margin-top: 4em;
+  border-bottom: 1px solid $border-line;
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0 2.5rem;
+    height: 7rem;
+    border-top: 1px solid $border-line;
+
+    > * {
+      display: inline-block;
+      flex: 0 0 auto;
+      font-size: 1.4em;
+      font-style: normal;
+      vertical-align: middle;
+      ;
+    }
+
+    .board-list__title {
+      display: inline-block;
+      flex: 1;
+      margin: 0 3rem;
+      vertical-align: middle;
+      cursor: pointer;
+
+@include ellipsis;
+
+      &:hover a {
+        text-decoration: underline;
+      }
+    }
+
+    em {
+      position: relative;
+      padding: 0 3rem 0 2.5rem;
+      font-weight: 500;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -.7rem;
+        width: 1px;
+        height: 1.5rem;
+        background: #e1e1e1;
+        content: '';
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 2px;
+        margin-top: -.3rem;
+        width: .5rem;
+        height: .5rem;
+        border-top: 2px solid $grey-base;
+        border-right: 2px solid $grey-base;
+        content: '';
+        transform: rotate(135deg);
+      }
+    }
+    &.board-list__prev em::before {
+      transform: rotate(-45deg);
+    }
+    .board-list__date {
+      font-family: 'Roboto';
+      font-weight: 300;
+      color: $grey-lighten-1;
+    }
+  }
+  .no-data {
+    color: $grey-lighten-1;
+  }
+}
+
+.board-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .total {
+    font-size: 1.6rem;
+
+    &__icon {
+      position: relative;
+      display: inline-block;
+      margin-right: .4rem;
+      width: 1.5rem;
+      height: 1.1rem;
+
+      span {
+        position: absolute;
+        left: 50%;
+        display: block;
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+        height: 1px;
+        background-color: $grey-darken-2;
+        transform: translateX(-50%);
+      }
+
+      span:first-child {
+        top: 0;
+      }
+
+      span:nth-child(2) {
+        top: .5rem;
+      }
+
+      span:last-child {
+        bottom: 0;
+      }
+    }
+
+    strong {
+      font-family: 'Roboto';
+      font-weight: 700;
+      color: $blue-base;
+    }
+  }
+
+  .search legend {
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .search {
+    display: flex;
+
+    > * {
+      vertical-align: top;
+    }
+
+    &__select {
+      margin-right: .4rem;
+      width: 12rem;
+      min-width: 12rem;
+      height: 4rem;
+    }
+
+    &__input {
+      width: 32rem;
+      height: 4rem;
+    }
+
+    .btn__search {
+      display: inline-block;
+      overflow: hidden;
+      width: 4rem;
+      height: 4rem;
+      background-color: $blue-base;
+      line-height: 500px;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.8em;
+        height: 1.8em;
+        background: url('../images/common/ico-search.png') no-repeat center / contain;
+        content: '';
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+@include mq(tablet) {
+  .board-top {
+    display: block;
+
+    .search {
+      margin-top: 1em;
+
+      &__select {
+        width: 10rem;
+        min-width: 10rem;
+      }
+
+      &__input {
+        flex: 1;
+        width: calc(100% - 14.4rem);
+      }
+    }
+  }
+
+  .board__no-data {
+    padding: 5em 0;
+    p {
+      position: relative;
+      padding-top: 7em;
+      font-size: 1.3rem;
+      text-align: center;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 6em;
+        height: 5.5em;
+        background: url('../images/common/ico-nodata.png') no-repeat center / contain;
+        content: '';
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@include mq(mobile) {
+  .board {
+    &:not(.board__view) .board__head {
+      display: none !important;
+    }
+
+    &__status {
+      .board__item {
+        padding-right: 1.5em;
+      }
+
+      .item__cate {
+        min-width: auto;
+      }
+    }
+
+    &__item {
+      display: block;
+      padding: 2em 5.4em 2em 1.5em;
+      height: auto !important;
+
+      &.item > * {
+        display: inline-block;
+        width: auto;
+      }
+    }
+
+    &__file .ico-file {
+      padding-left: 1.5em;
+    }
+
+    .item__no {
+      display: none;
+    }
+
+    .item__cate {
+      padding-right: 8px;
+      width: auto;
+      vertical-align: top;
+
+      .badge {
+        width: auto;
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+        white-space: normal;
+      }
+    }
+
+    .item__title {
+      margin-bottom: .8rem;
+      max-height: 5.2rem;
+      font-size: 1.6em;
+      vertical-align: top;
+
+@include ellipsisLine2;
+
+      .ellipsis.lock::before {
+        width: 2rem;
+        height: 1.6rem;
+        vertical-align: baseline;
+      }
+    }
+
+    .item__file {
+      position: absolute;
+      top: 50%;
+      right: 1.5em;
+      transform: translateY(-50%);
+
+      span {
+        width: 1.4rem;
+        height: 1.5rem;
+      }
+    }
+
+    .item__name {
+      position: relative;
+      margin-right: 1em;
+      padding-right: 1em;
+      font-size: 1.2em;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 1em;
+        background-color: $grey-lighten-5;
+        content: '';
+        transform: translateY(-50%);
+      }
+    }
+
+    .item__view {
+      position: relative;
+      margin-left: 1em;
+      padding-left: 3.5rem;
+      font-size: 1.3em;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 1px;
+        height: 1em;
+        background-color: $grey-lighten-5;
+        content: '';
+        transform: translateY(-50%);
+      }
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 3rem;
+        height: 1.4rem;
+        background: url('../images/common/ico-view-count.png') no-repeat 1.5rem center / 1.5rem .9rem;
+        content: '';
+        transform: translateY(-50%);
+      }
+    }
+
+    &__qna .board__item {
+      padding-right: 9em;
+    }
+
+    .item__qna {
+      position: absolute;
+      top: 50%;
+      right: 1.5em;
+      transform: translateY(-50%);
+    }
+
+    .item .qna-state {
+      min-width: auto;
+      background-color: unset;
+      border: 0;
+      font-weight: 400;
+      line-height: normal;
+
+      &__complete {
+        color: $blue-base;
+      }
+    }
+  }
+
+  .board__view {
+    .head,
+    .head__title {
+      display: block;
+    }
+    .head {
+      padding: 2em 1.5em;
+    }
+    .head .badge {
+      padding: .4rem;
+      height: auto;
+      font-size: 1.4rem;
+    }
+    .head__title > * {
+      vertical-align: top;
+    }
+    .head__title strong {
+      margin-left: .5em;
+      font-size: 1.8em;
+    }
+    .head__info {
+      margin-top: .8em;
+      font-size: 1.4em;
+    }
+  }
+
+  .board__attachment {
+    display: block;
+
+    dl {
+      width: 100%;
+
+      &:not(:only-child):not(:first-child) {
+        border-top: 1px solid $border-line;
+      }
+    }
+
+    dt {
+      width: 8rem;
+    }
+    dt,
+    dd {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      line-height: 2.2rem;
+    }
+    dd span {
+      display: inline-block;
+      line-height: 2.2rem;
+      vertical-align: middle;
+    }
+  }
+
+  .board__content {
+    padding: 1.429em 1.071em;
+    font-size: 1.6em;
+    line-height: 1.8;
+  }
+
+  .board-list li {
+    padding: 0 1.5rem;
+    height: 5rem;
+
+    em {
+      padding-right: 2rem;
+    }
+
+    .board-list__title {
+      margin: 0 0 0 2rem;
+    }
+
+    .board-list__date {
+      display: none;
+    }
+  }
+}
