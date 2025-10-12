@@ -6042,10 +6042,10 @@ select::-ms-expand {
 
 @media (max-width: 1100px) {
 	.modal__notice {
-		padding-top: 7rem;
+		padding-top: 9rem;
 	}
 	.pop-notice__intro h2 {
-		font-size: 5rem;
+		font-size: 4.8rem;
 	}
     .pop-notice__intro .intro-btns {
 		max-width: 570px;
@@ -6078,7 +6078,7 @@ select::-ms-expand {
 		grid-template-columns: repeat(2, 1fr);
     }
     .pop-notice__intro .intro-btns.n1 {
-		max-width: 100%;
+		max-width: 320px;
 		margin-top: 4rem;
 		display: flex;
 		justify-content: center;
@@ -6097,6 +6097,9 @@ select::-ms-expand {
 		flex-direction: column;
 		justify-content: center;
 	}
+    .pop-notice__intro .intro-btns.n1 {
+		max-width: 100%;
+    }
 }
 
 .modal__notice .pop-notice__item {
