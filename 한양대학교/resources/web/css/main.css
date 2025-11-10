@@ -45,14 +45,14 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 .maincontents .section.active .ii {top:0; opacity:1; transition:all 0.6s ease-out; -webkit-transition:all 0.6s ease-out; -webkit-transition-delay:.4s; transition-delay:.4s}
 
 .maincontents .section1 h1 {position:relative; width:126.8rem; max-width:96%; height:100%; flex-direction:column; padding-top:0; margin:0 auto; background:url('../images/bg_hanyang_lion.png') no-repeat 50% 50%; overflow:hidden; font-size:0}
-.maincontents .section1 h1 strong {opacity:0; margin-bottom:3rem; font-size:8rem; line-height: 1.5; color:#fff; font-weight:200; -webkit-animation:bottomToTop .5s linear; animation:bottomToTop .5s linear}
+.maincontents .section1 h1 strong {opacity:0; margin-bottom: 3rem; font-size:4.8rem; line-height: 1.6; color:#fff; font-weight:200; -webkit-animation:bottomToTop .5s linear; animation:bottomToTop .5s linear}
 .maincontents .section1 h1 strong b {font-weight:700}
-.maincontents .section1 h1 font {font-size: 4.8rem; display: block;}
+.maincontents .section1 h1 font {display: block;}
 .maincontents .section1 h1 span {opacity:0; font-weight:400; font-size:2.2rem; color:#fff; -webkit-animation:bottomToTop .5s linear; animation:bottomToTop .5s linear}
-.maincontents .section1 h1 .btn-group {display: flex; flex-wrap:wrap; justify-content: center; margin-top: 2rem; gap: 1rem;}
+.maincontents .section1 h1 .btn-group {display: flex; flex-wrap:wrap; justify-content: center; gap: 1.6rem; margin-top: 1.6rem;}
 .maincontents .section1 h1 .btn-group button {
-    width: max(26rem, 260px);
-    height: max(7.2rem, 72px);
+    width: max(25rem, 250px);
+    height: max(7.2rem, 45px);
 	padding: 5px 10px;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -61,15 +61,28 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
     border-radius: 1.2rem;
     color: #fff;
     font-weight: 700;
-    font-size: max(1.5rem, 14px);
+    font-size: max(1.5rem, 12px);
 }
-
+.maincontents .section1 h1 .btn-group button:hover {background:rgba(255,255,255,0.3); border-color:rgba(255,255,255,0.5)}
+.maincontents .section1 h1 .btn-group.full {width: 100%;}
+.maincontents .section1 h1 .btn-group.full button {
+	flex: 1 1 auto;
+}
 /* 20251110 section1 스와이프 적용 */
-.maincontents .section1 {}
 .maincontents .section1 .section1-swiper {
 	position: relative;
 	width: 100%;
 	padding: 2rem 0 6rem 0;
+}
+.maincontents .section1 .section1-swiper .swiper-wrapper {
+	height: 100%;
+}
+.maincontents .section1 .section1-swiper .swiper-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 .section1-swiper .swiper-control {
     position: absolute;
@@ -148,13 +161,13 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
     border: 0;
     font-size: 0;
     background: url('../images/icon-pause.svg') no-repeat 50%;
-    background-size: 25px auto;
+    background-size: 28px auto;
     vertical-align: middle
 }
 
 .section1-swiper .swiper-control .btn-pause.pause {
     background-image: url('../images/icon-play-36-white.svg');
-    background-size: 25px auto;
+    background-size: 36px auto;
 }
 
 .maincontents .section2 > div {display:flex; display:-webkit-flex; display:-moz-flex; display:-ms-flex; align-items:center; -webkit-align-items:center; -ms-align-items:center; justify-content:center; flex-direction:column; height:100%}
@@ -298,7 +311,7 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 .maincontents .section3 .ipsi-layer-contents .ipsi-dashboard .notice-boardlist > ul > li > div p {max-height:15rem; margin-top:2.5rem; color:#000; font-size:2.2rem; font-weight:700; line-height:1.3}
 .maincontents .section3 .ipsi-layer-contents .ipsi-dashboard .notice-boardlist > ul > li > div .date {position:absolute; left:4rem; bottom:3.2rem; color:rgba(153,153,153,0.8); font-size:1.6rem; font-weight:300}
 .maincontents .section3 .ipsi-layer-contents .ipsi-dashboard .direct-menu {position:relative; width:100%; height:19.6rem; justify-content:space-between}
-.maincontents .section3 .ipsi-layer-contents .ipsi-dashboard .direct-menu ul.ipsi-btnset {display:-webkit-flex; display:-moz-flex; display:-ms-flex; align-items:flex-start; -webkit-align-items:flex-start; -ms-align-items:flex-start; justify-content:space-between; width:100%; height:100%; overflow::hidden; border-radius:1.2rem}
+.maincontents .section3 .ipsi-layer-contents .ipsi-dashboard .direct-menu ul.ipsi-btnset {display:-webkit-flex; display:-moz-flex; display:-ms-flex; align-items:flex-start; -webkit-align-items:flex-start; -ms-align-items:flex-start; justify-content:space-between; width:100%; height:100%; overflow:hidden; border-radius:1.2rem}
 .maincontents .section3 .ipsi-layer-contents .ipsi-dashboard .direct-menu ul.ipsi-btnset > li {width:calc(100% / 3); height:100%; border-style:solid; transition:all 0.3s; -webkit-transition:all 0.3s}
 .maincontents .section3 .ipsi-layer-contents .ipsi-dashboard .direct-menu ul.ipsi-btnset > li > a {display:-webkit-flex; display:-moz-flex; display:-ms-flex; align-items:flex-start; -webkit-align-items:flex-start; -ms-align-items:flex-start; justify-content:flex-start; flex-direction:column; width:100%; height:100%; padding:3.6rem; background-repeat:no-repeat; background-position:calc(100% - 3rem) calc(100% - 3rem); color:#013c4e; font-size:2rem; font-weight:700}
 .maincontents .section3 .ipsi-layer-contents .ipsi-dashboard .direct-menu ul.ipsi-btnset > li > a > strong {font-size:2.8rem; font-weight:700}
@@ -311,7 +324,6 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 .maincontents .section3 .ipsi-layer-contents .swiper-horizontal > .swiper-scrollbar .swiper-scrollbar-drag {background:#333; border-radius:0.1rem 0 0 0.1rem; cursor:pointer}
 .maincontents .section3 .ipsi-layer-contents .swiper-horizontal > .swiper-scrollbar .swiper-scrollbar-drag::after {position:absolute; right:-4.8rem; top:50%; width:4.8rem; height:4.8rem; margin-top:-2.4rem; background:#fff url('../images/icon_arrow_09.png') no-repeat 50% 50.5%; background-size:2.3rem auto; border:1px solid #dfdfdf; box-shadow:0 0 1.6rem 0 #0000001f; border-radius:50%; content:''}
 
-#wrap.section3-layer-show .header {}
 #wrap.section3-layer-show .page-menu {opacity:0}
 #wrap.section3-layer-show .maincontents .section3 .ipsi-type.rightPos {opacity:0}
 #wrap.section3-layer-show .maincontents .section3 .ipsi-type.rightPos > ul > li > a {pointer-events:none}
@@ -409,6 +421,7 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 	.scrolldown {left:3rem}
 
 	.maincontents .section1 h1 {max-width:90%}
+	.maincontents .section1 h1 strong {font-size: 4rem;}
 
 	.maincontents .section2 > div h1 span {font-size:4.6rem}
 	.maincontents .section2 .major-notice {max-width:90%; height:30rem}
@@ -442,8 +455,8 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 @media only screen and (max-width:1279px) {
 	.scrolldown {width:2rem; height:3.5rem;  background:url('../images/icon_scrolldown.png') no-repeat 50% 100%; background-size:100% auto}
 
-	.maincontents .section1 h1 {width:80%; max-width:80%; height:100%; padding-top:5%; background-size:80% auto}
-	.maincontents .section1 h1 strong {font-size:6.5rem;}
+	.maincontents .section1 h1 {max-width: 80%; height:100%; background-size:80% auto}
+	.maincontents .section1 h1 strong {font-size:4rem;}
 	.maincontents .section1 h1 strong .mobile-only {display:none !important}
 
 	.maincontents .section2 .major-notice {width:calc(100% - 8rem); max-width:calc(100% - 8rem); height:30rem}
@@ -469,7 +482,7 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 
 	.fp-viewing-page3 .page-menu {bottom:8rem}
 
-	.maincontents .section1 h1 {padding-top:5%; background-size:60%}
+	.maincontents .section1 h1 {background-size:60%}
 
 	.maincontents .section2 > div h1 {width:calc(100% - 8rem)}
 	.maincontents .section2 .major-notice ul li > div > p {font-size:2.8rem}
@@ -548,6 +561,10 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 	body#main .header .btn-allmenu .icon-E:after {top:1rem}
 	body .maincontents .fp-overflow::-webkit-scrollbar-track {background-color:#eff3f6}
 	body .maincontents .fp-overflow::-webkit-scrollbar-thumb {background-color:#d5d9dc; border:0}
+
+	/* .maincontents .section1 h1 strong font {font-size: 3rem;} */
+	.maincontents .section1 .section1-swiper {height: 100%; padding-bottom: 2rem;}
+	.maincontents .section1 h1 .btn-group.full button {flex: none;}
 
 	.maincontents .section2 > div h1 {height:40%; padding-top:21%; padding-bottom:3%}
 	.maincontents .section2 > div h1 span {font-size:4.2rem; line-height:1.4}
@@ -670,9 +687,10 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 @media only screen and (max-width:639px) {
 	.scrolldown {left:9%}
 
-	.maincontents .section1 h1 {width:85%; max-width:85%; height:calc(100% - 25%); padding:0; justify-content:flex-end; align-items:center; background-size:60% auto; text-align: center;}
+	.maincontents .section1 .section1-swiper {padding-bottom: 8rem;}
+	.maincontents .section1 h1 {width:85%; max-width:85%; padding:0; align-items:center; background-size:60% auto; text-align: center;}
 	.maincontents .section1 h1 span {font-size:2.8rem; font-weight:400}
-	.maincontents .section1 h1 strong {font-size:6rem}
+	.maincontents .section1 h1 strong {font-size:5rem}
 
 	.maincontents .section2 > div h1 {width:100%; height:50%; padding-top:24%}
 	.maincontents .section2 > div h1 span {line-height:1.4; font-size:4.5}

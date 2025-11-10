@@ -561,6 +561,14 @@ input[type="checkbox"]:checked + label::after {content:''; width:2.2rem; height:
 	body.ovHidden .container .subvisual {height:100vh}
 	body.ovHidden .container .subvisual h1 {top:50%}
 
+	.header {height:9rem}
+	.header .logo {top:3rem; left:3rem; width:27rem; height:3.6rem}
+	.header .logo span {width:17rem; height:100%}
+	.header .logo strong {width:8.2rem; font-size:2.4rem}
+	.header ul.util {top:2.8rem; right:3rem; width:auto; height:3.8rem}
+	.header ul.util > li > .btn-round {font-size:1.6rem}
+	.header ul.util > li:nth-child(3) {padding-top:0}
+
 	.header .logo {left:5%; transition-delay:0.7s; -webkit-transition-delay:0.7s}
 	.header::before {display:none}
 	.header ul.util {right:5%}
