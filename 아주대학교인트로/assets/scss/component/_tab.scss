@@ -1,0 +1,130 @@
+.tab {
+  position: relative;
+  margin-bottom: 6em;
+  width: 100%;
+
+  &__select {
+    display: none;
+  }
+}
+
+@include mq(desk) {
+  .tab__list {
+    position: relative;
+    display: flex;
+    padding-left: 1px;
+    width: 100%;
+    font-size: 0;
+  }
+
+  .tab__item {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex: 1 1 auto;
+    margin-left: -1px;
+    height: 5.8rem;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-bottom-color: $blue-base;
+    color: #c7c7c7;
+    vertical-align: middle;
+    text-align: center;
+
+    &:hover {
+      color: $blue-base;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 1.6rem;
+      vertical-align: middle;
+    }
+
+    &::after {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      content: '';
+    }
+
+    &--is-active {
+      z-index: 1;
+      background-color: $white;
+      border-color: $blue-base;
+      border-bottom-color: $white;
+      font-weight: 700;
+      color: $blue-base;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        content: '';
+      }
+
+      &::before {
+        top: 0;
+        background-color: $blue-base;
+      }
+    }
+  }
+
+  .tab__reference .tab__item {
+    width: calc(100% / 8);
+  }
+}
+
+@include mq(tablet) {
+  .tab {
+    margin-bottom: 2em;
+  }
+  .tab__select {
+    position: relative;
+    display: block;
+    padding: .667em 2rem .667em 1rem;
+    width: 100%;
+    background: url('../images/common/ico-select-arrow.png') no-repeat center right;
+    border: 2px solid $grey-darken-1;
+    border-radius: 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .tab__list {
+    position: absolute;
+    z-index: 2;
+    top: 4.5rem;
+    left: 0;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    background: $white;
+    border: 2px solid $grey-darken-1;
+    border-top: 0;
+  }
+
+  .tab__item {
+    display: block;
+    margin-bottom: -1px;
+    padding: 0 1.2rem;
+    height: 4.2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 4.2rem;
+    color: $grey-lighten-1;
+
+    br {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $grey-lighten-4;
+      color: $grey-darken-2;
+    }
+  }
+}

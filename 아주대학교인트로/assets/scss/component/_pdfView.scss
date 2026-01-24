@@ -1,0 +1,151 @@
+// PDF 뷰어 영역
+.pdf-viewer {
+  position: relative;
+  font-size: 1.6em;
+  color: $grey-darken-2;
+  vertical-align: middle;
+  &__header {
+    margin-bottom: 30px;
+    &::after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+  &__button {
+    display: table;
+    float: left;
+    width: 100%;
+    max-width: 72.5%;
+    height: 60px;
+    table-layout: fixed;
+    a {
+      position: relative;
+      display: table-cell;
+      font-weight: 500;
+      vertical-align: middle;
+      text-align: center;
+      &:not(:first-child):before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -18px;
+        width: 1px;
+        height: 36px;
+        background-color: #ddd;
+        content: '';
+      }
+      &:hover {
+        color: $orange-base;
+      }
+    }
+    img {
+      margin-right: 12px;
+    }
+  }
+  &__select {
+    float: right;
+    width: 24.166667%;
+    height: 60px;
+    background-position: 95%;
+  }
+  &__viewer {
+    float: left;
+    width: 72.5%;
+    min-height: 500px;
+    embed,
+    object {
+      width: 100%;
+      height: 1080px;
+    }
+  }
+  &__aside {
+    float: right;
+    width: 24.166667%;
+    li {
+      margin-bottom: 3px;
+      background-color: #f1f2f5;
+    }
+    a {
+      display: block;
+      padding: 14px 10px 14px 45px;
+      background: url('../images/common/ico-left-arrow.png') no-repeat 20px
+      center;
+      line-height: 1.5;
+      color: $grey-darken-3;
+    }
+    li.selected {
+      background-color: #2985cc;
+      a {
+        background-image: url('../images/common/ico-w-left-arrow.png');
+        color: $white;
+      }
+    }
+  }
+} // PDF 뷰어 영역 끝
+
+// 'mobile':(max-width:768px),
+// 'tablet':(max-width:1024px),
+// 'desk':(min-width:1025px),
+// 'deskMax':(max-width:1200px)
+
+
+@include mq(tablet) {
+  .pdf-viewer {
+    &__button span {
+      display: none;
+    }
+  }
+}
+
+@include mq(mobile) {
+  .pdf-viewer {
+    font-size: 14px;
+    &__header {
+      position: relative;
+      padding-top: 75px;
+    }
+    &__button {
+      float: none;
+      max-width: 100%;
+    }
+    &__select {
+      position: absolute;
+      top: 0;
+      left: 0;
+      float: none;
+      width: 100%;
+      height: 4.5rem;
+      background: url(../images/common/ico-select-arrow_m.png) no-repeat calc(100% - 13px) center / auto 20%;
+      border: 2px solid $grey-darken-2;
+    }
+    &__aside {
+      display: none;
+    }
+    &__viewer {
+      float: none;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .pdf-viewer {
+    &__header {
+      padding-top: 60px;
+    }
+    &__select {
+      height: 45px;
+    }
+    &__button {
+      img {
+        margin-right: 4px;
+      }
+      a {
+        &:first-of-type {
+          padding-right: 7px;
+        }
+      }
+    }
+  }
+}
