@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------------------------
+	@Web Fonts
+-------------------------------------------------------------------*/
+@font-face {
+  font-family: 'Daum';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url("https://cdn.jsdelivr.net/korean-webfonts/1/corps/daum/Daum/Daum-SemiBold.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/korean-webfonts/1/corps/daum/Daum/Daum-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: 'GangwonEduHyeonokT Medium';
+  src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Gwe/GangwonEduHyeonokT_OTFMediumA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-pr {
+	font-family: 'Pretendard Variable', sans-serif;
+	font-weight: 400;
+}
+.ff-da {
+	font-family: 'Daum', sans-serif;
+	font-weight: 600;
+}
+.ff-ga {
+	font-family: 'GangwonEduHyeonokT Medium', sans-serif;
+}
+.ff-go {
+	font-family: 'GongGothicMedium', sans-serif;
+}
+
+
+/*-------------------------------------------------------------------
+	@Resets
+-------------------------------------------------------------------*/
+html,body,div,ul,ol,dl,li,dt,dd,p,h1,h2,h3,h4,h5,h6,table,thead,tbody,tr,th,td,caption,address,article,aside,canvas,details,figure,figcaption,main,footer,header,menu,nav,section,button,form,select,textarea,input,fieldset,legend,label,a,span,strong,em,address,dfn,xmp,small,i,b {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	letter-spacing: inherit;
+	list-style: none;
+	font-style: normal;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+	color: inherit;
+	line-height: inherit;
+	box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	-o-box-sizing: inherit;
+	-webkit-print-color-adjust: exact;
+	color-adjust: exact !important;
+}
+
+:before, :after {
+	box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	-o-box-sizing: inherit;
+}
+body {
+	color: #444;
+	font-family: "Pretendard Variable", "sans-serif";
+	font-size: 14rem;
+	line-height: 1.4;
+	letter-spacing: -0.02em;
+	word-break: break-all;
+	word-wrap: break-word;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+[role="button"] {
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------------------
+	@Layout
+-------------------------------------------------------------------*/
+/* Variables */
+:root {
+	--spacer-side: 60rem;
+	--max-inner: 1713rem;
+}
+
+/* Page */
+html, body {
+	height: 100%;
+}
+
+/* 디자인 1:1비율 : 1px  */
+html {
+	font-size: 0.75px;
+}
+
+body::after {
+	content:'';
+	display: block;
+	position: fixed;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../img_susi/img-background.jpg') no-repeat center center / 100% 100%;
+}
+
+
+.inner {
+	width: 100%;
+	max-width: calc(var(--max-inner) + (var(--spacer-side) * 2));
+	padding-left: var(--spacer-side);
+	padding-right: var(--spacer-side);
+	margin: auto;
+}
+.wrapper {
+	position: relative;
+	z-index: 10;
+	min-height: 100%;
+	/* opacity: 0.75; */
+}
+
+.footer {
+	margin-top: 200rem;
+	text-align: center;
+}
+/*-------------------------------------------------------------------
+	@Components
+-------------------------------------------------------------------*/
+.table-wrap table {
+	display: block;
+	table-layout: fixed;
+	width: 100%;
+	min-width: calc(767px - (var(--spacer-side) * 2));
+	border-collapse: collapse;
+}
+.table-wrap table thead {
+	display: none;
+}
+.table-wrap table th,
+.table-wrap table td {
+	padding: 0 0;
+	font-weight: 400;
+	font-size: 32rem;
+	line-height: 40rem;
+	text-align: left;
+	border: 1rem solid transparent;
+}
+.table-wrap table tbody {
+	display: flex;
+	flex-direction: column;
+	gap: 40rem;
+	width: 100%;
+}
+.table-wrap table tbody tr {
+	display: flex;
+	width: 100%;
+}
+.table-wrap table td {
+	display: flex;
+	align-items: center;
+}
+.table-wrap table td:nth-child(1) {
+	width: 110rem;
+}
+.table-wrap table td:nth-child(2) {
+	width: 21.5%;
+}
+.table-wrap table td:nth-child(3) {
+	width: 27.5%;
+}
+.table-wrap table td:nth-child(4) {
+	width: auto;
+	flex:1 1 auto;
+}
+.table-wrap table td p {
+	display: flex;
+	align-items: center;
+	height: 28.8rem;
+	font-size: 24rem;
+	line-height: 28.8rem;
+	font-family: 'Pretendard Variable', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+.table-wrap table td.cel-date p {
+	font-size: 29rem;
+	line-height: 34.8rem;
+}
+.table-wrap table td:first-child {
+	padding-left: 0;
+}
+
+.table-wrap table td .label-area {
+	background-color: #26AA61;
+	padding: 5rem 14rem;
+	font-size: 27rem;
+	border-radius: 12rem;
+	font-family: 'Daum', sans-serif;
+	font-weight: 600;
+}
+/*-------------------------------------------------------------------
+	@Contents
+-------------------------------------------------------------------*/
+/* header */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 59rem;
+	padding-left: 36rem;
+	padding-right: 22rem;
+}
+.header .logo {
+	display: flex;
+	margin: 0;
+	margin-right: auto;
+	width: 332rem;
+	height: 86rem;
+	background: url('../img_susi/img-logo-1.png') no-repeat center center / contain;
+}
+.header .logo .blind {
+	display: none;
+}
+.header .emoji-down,
+.header .ajou-home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 230rem;
+	height: 84rem;
+	margin-left: 16rem;
+	background-color: #8B8BF7;
+	color: #fff;
+	text-decoration: none;
+	font-size: 26.4rem;
+	line-height: 30rem;
+	text-align: left;
+	border-radius: 15rem;
+}
+.header .emoji-down {
+	position: relative;
+	width: 330rem;
+	padding-left: 100rem;
+}
+.header .emoji-down::before {
+	content:'';
+	position: absolute;
+	left: 16rem;
+	bottom: 8rem;
+	display: block;
+	width: 74px;
+	aspect-ratio: 84/90;
+	background: url('../img_susi/img-character-07.png') no-repeat center center / contain;
+}
+.header .emoji-down::after {
+	content:'';
+	position: absolute;
+	right: 8rem;
+	top: -16rem;
+	display: block;
+	width: 60px;
+	aspect-ratio: 63/40;
+	background: url('../img_susi/img-txt-sort.png') no-repeat center center / contain;
+}
+/* section */
+.section {
+	margin-top: 24rem;
+	padding-bottom: 30rem;
+}
+.sec-header .slogan {
+	padding-right: 22rem;
+	font-size: 58.84rem;
+	line-height: 70.6rem;
+	text-align: right;
+	letter-spacing: -0.1rem;
+}
+.sec-header .slogan-eng {
+	display: block;
+	color: rgba(255,255,255,0.4);
+}
+.sec-header .slogan-kor {
+	display: block;
+	margin-top: -2rem;
+	color: rgba(255,255,255,1);
+	word-break: keep-all;
+}
+.sec-body {
+	display: flex;
+	gap: 20rem;
+	margin-top: 39rem;
+}
+
+/* program-grid */
+.program-grid {
+	--box-gap: 16rem;
+	--box-round: 20rem;
+	--grid-round: 0rem;
+	--after: none;
+	--character-width: 100rem;
+	--actions-align: center;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	/* min-height: 730rem; */
+	overflow: hidden;
+	border-radius: var(--grid-round);
+	gap: var(--box-gap);
+}
+
+/* program-sub */
+.program-sub {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: var(--box-gap);
+	flex: 1 1 auto;
+	height: 100%;
+}
+.program-sub + .program-sub::after {
+	content: '';
+	display: var(--after);
+	position: absolute;
+	width:1px;
+	left: 0%;
+	top: 30rem;
+	bottom: 30rem;
+	background-color: #305AC4;
+	/* opacity: 0.2; */
+}
+.program-box + .program-box::after {
+	content: '';
+	display: var(--after);
+	position: absolute;
+	height:1px;
+	top: 0%;
+	left: 30rem;
+	right: 30rem;
+	background-color: #305AC4;
+	/* opacity: 0.2; */
+}
+.program-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/* flex-wrap: wrap; */
+	position: relative;
+	flex: 1 1 auto;
+	height: 100%;
+	padding: 40rem 32rem;
+	border-radius: var(--box-round);
+	background-color: #fff;
+}
+.program-sub .character {
+	width: var(--character-width);
+}
+.program-sub .character img {
+	width: 100%;
+	vertical-align: top;
+}
+.program-sub .program-title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 90rem;
+	gap: 30rem;
+	/* padding-left: calc(var(--character-width) + 10rem); */
+	font-size: 32rem;
+	color: #000;
+	text-align: left;
+	word-break: keep-all;
+}
+.program-sub .program-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: var(--actions-align);
+	flex: 1 1 auto;
+	gap: 16rem;
+	height: 100%;
+	width: 100%;
+	/* padding-left: calc(var(--character-width) + 30rem); */
+	margin-top: 30rem;
+	padding: 0 16rem;
+	text-align: left;
+}
+.program-sub .program-action .btn {
+	flex: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 20rem 30rem;
+	text-decoration: none;
+	background-color: #305AC4;
+	font-size: 28rem;
+	line-height: 1.4;
+	word-break: keep-all;
+	color: #fff;
+	border-radius: 15rem;
+	text-align: center;
+	cursor: pointer;
+}
+.program-sub .program-action .btn:first-child:last-child {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.program-sub .program-action .btn.xs {
+	min-height: 80rem;
+}
+.program-sub .program-action .btn.xm {
+	min-height: 120rem;
+}
+.program-sub .program-action .btn.xl {
+	min-height: 160rem;
+}
+.program-sub .program-action .btn.auto {
+	min-height: 80rem;
+	height: 100%;
+	flex: 1 1 auto;
+}
+.program-sub:nth-child(1) .program-action,
+.program-sub:nth-child(2) .program-action {
+	gap: 40rem;
+}
+.program-sub .program-date {
+	padding-left: var(--character-width);
+	margin-top: 15rem;
+	font-size: 23.4rem;
+	line-height: 28rem;
+	color: #000;
+	text-align: center;
+}
+.program-sub .program-date:last-child {
+	padding-left: 0;
+	text-align: center;
+}
+
+/* PC/Tablet : 레이아웃 조정 */
+@media (max-width:1380px) {
+	html {
+		font-size: 0.70px;
+	}
+}
+@media (max-width:1024px) {
+	html {
+		font-size: 0.60px;
+	}
+}
+@media (max-width:767px) and (min-width:480px) {
+	.program-sub .program-action .btn br {
+		display: none;
+	}
+}
+@media (max-width:767px) {
+	html {
+		font-size: 0.60px;
+	}
+
+	.program-grid {
+		grid-template-columns: minmax(200rem, 1fr);
+	}
+	.program-sub:nth-child(1) .program-action, 
+	.program-sub:nth-child(2) .program-action {
+		gap: 20rem;
+	}
+
+	.program-sub .program-action .btn.xs {
+		min-height: 80rem;
+	}
+	.program-sub .program-action .btn.xm {
+		min-height: 80rem;
+	}
+	.program-sub .program-action .btn.xl {
+		min-height: 80rem;
+	}
+}

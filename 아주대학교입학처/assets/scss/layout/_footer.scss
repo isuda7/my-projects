@@ -1,0 +1,257 @@
+#footer {
+  background-color: $grey-darken-2;
+}
+
+.footer {
+  @include deskMaxWidth;
+
+  &__top {
+    position: relative;
+    padding: 2em 0;
+    border-bottom: 1px solid rgba($white, .1);
+
+    .left {
+      @include clearFloat;
+
+      li {
+        float: left;
+      }
+      li:first-child a {
+        font-weight: 700;
+        color: $white;
+      }
+      li:first-child a::after {
+        position: relative;
+        top: .4rem;
+        display: inline-block;
+        margin-left: .4rem;
+        width: 4px;
+        height: 4px;
+        background-color: $white;
+        border-radius: 50rem;
+        vertical-align: top;
+        content: '';
+      }
+      li a {
+        position: relative;
+        display: block;
+        margin-right: 2em;
+        font-size: 1.6em;
+        font-weight: 400;
+        color: $grey-lighten-1;
+      }
+    }
+  }
+
+  .sns-set {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    font-size: 0;
+    transform: translateY(-50%);
+
+    li {
+      display: inline-block;
+    }
+
+    &__icon {
+      display: inline-block;
+      margin-left: 1.5rem;
+
+      > span {
+        display: inline-block;
+        overflow: hidden;
+        width: 4rem;
+        height: 4rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        line-height: 500px;
+      }
+    }
+
+    &__facebook span {
+      background-image: url('../images/common/ico-facebook.png');
+    }
+
+    &__band span {
+      background-image: url('../images/common/ico-band.png');
+    }
+
+    &__insta span {
+      background-image: url('../images/common/ico-insta.png');
+    }
+  }
+
+  &__address {
+    position: relative;
+    padding: 4em 0 7em;
+
+@include clearFloat;
+
+    .left {
+      float: left;
+      width: calc(100% - 22.4em);
+    }
+
+    .right {
+      float: right;
+      width: 22.4em;
+    }
+
+    address {
+      font-size: 1.5em;
+      font-style: normal;
+      color: $grey-lighten-2;
+
+      span {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    &__tel span:not(:last-child) {
+      padding-right: 2em;
+    }
+
+    .copyright {
+      font-size: 1.5em;
+      color: $grey-base;
+      text-transform: uppercase;
+    }
+  }
+
+  &__banner {
+    display: block;
+    width: 22.4em;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@include mq(deskMax) {
+  .footer {
+    margin: 0 2em;
+  }
+}
+
+@include mq(tablet) {
+  .footer__address {
+    .left {
+      width: calc(100% - 20em);
+    }
+
+    .right {
+      width: 20em;
+    }
+
+    &__address .copyright {
+      font-size: 1.4em;
+    }
+  }
+}
+
+@include mq(mobile) {
+  .footer__top {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+
+    .left li {
+      padding: .4em 1em;
+      width: 50%;
+      border-bottom: 1px solid rgba($white, .1);
+      border-left: 1px solid rgba($white, .1);
+      text-align: center;
+
+      &:nth-child(odd) {
+        border-left: 0;
+      }
+
+      &:last-child {
+        width: 100%;
+      }
+
+      &:first-child a {
+        font-weight: 400;
+      }
+
+      &:first-child a::after {
+        display: none;
+      }
+
+      a {
+        margin-right: 0;
+        padding: .5em;
+        font-size: 1.4em;
+      }
+    }
+
+    .sns-set {
+      top: 100%;
+      right: 2rem;
+      transform: translateY(60%);
+
+      &__icon > span {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+
+    .sns-set__facebook span {
+      background-image: url('../images/common/ico-facebook-mo.png');
+    }
+
+    .sns-set__band span {
+      background-image: url('../images/common/ico-band-mo.png');
+    }
+
+    .sns-set__insta span {
+      background-image: url('../images/common/ico-insta-mo.png');
+    }
+  }
+
+  .footer__address {
+    padding: 2em 0;
+
+    .left,
+    .right {
+      float: none;
+      width: 100%;
+    }
+
+    .right {
+      margin-bottom: 2em;
+    }
+
+    address,
+    .copyright {
+      font-size: 1.3em;
+    }
+
+    .copyright {
+      margin-top: .4em;
+    }
+  }
+
+  .footer__banner {
+    width: 16.8em;
+  }
+
+  .footer__address .copyright {
+    padding-right: 3em;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer .sns-set__icon {
+    margin-left: .6rem;
+  }
+
+  .footer__banner {
+    width: 15em;
+  }
+}

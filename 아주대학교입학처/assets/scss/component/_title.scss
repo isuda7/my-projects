@@ -1,0 +1,16 @@
+.sec-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4em;
+
+  &__title {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: $grey-darken-1;
+  }
+
+  &__etc {
+    // float: right;
+  }
+}

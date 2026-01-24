@@ -1,0 +1,37 @@
+
+@import 'vender/swiper';
+
+@import 'util/variable';
+@import 'util/mixin';
+@import 'util/helper';
+
+@import 'base/typography';
+@import 'base/reset';
+
+@import 'layout/layout';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/breadcrumbs';
+@import 'layout/screenModulate';
+
+@import 'form/button';
+@import 'form/input';
+@import 'form/radio';
+@import 'form/select';
+
+@import 'component/main';
+@import 'component/title';
+@import 'component/tab';
+@import 'component/table';
+@import 'component/board';
+@import 'component/panel';
+@import 'component/list';
+@import 'component/modal';
+@import 'component/faqList';
+@import 'component/pdfView';
+@import 'component/introduceProgram';
+@import 'component/pagination';
+@import 'component/badge';
+@import 'component/fileUpload';
+@import 'component/talent';
+@import 'component/sitemap';
