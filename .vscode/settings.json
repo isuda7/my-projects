@@ -28,7 +28,7 @@
 	"editor.renderWhitespace": "all",
 	"prettier.printWidth": 150,
 	"liveServer.settings.port": 5502,
-	"editor.hover.enabled": false,
+	"editor.hover.enabled": "off",
 	"liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions",
