@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
+    <meta name="description" content="정시 상담카페" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="정시 상담카페" />
+    <meta property="og:url" content="https://go.hanyang.ac.kr/web/apply/application_strategy.do" />
+    <meta property="og:site_name" content="한양대학교입학처" />
+    <meta property="og:description" content="정시 상담카페" />
+    <meta property="og:image" content="https://go.hanyang.ac.kr/resources/web/images/HYU_logo_singlecolor_png.png" />
+    <meta property="og:updated_time" content="2026-05-22 15:21:16" />
+    <meta property="fb:admins" content="" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="정시 상담카페" />
+    <meta name="twitter:description" content="정시 상담카페" />
+    <meta name="twitter:image" content="https://go.hanyang.ac.kr/resources/web/images/HYU_logo_singlecolor_png.png" />
+    <meta name="twitter:creator" content="한양대학교입학처" />
+    <meta name="keywords" content="정시 상담카페" />
+    <title>정시 상담카페 | 한양대학교입학처</title>
+    <link rel="icon" type="image/png" href="https://go.hanyang.ac.kr/resources/web/images/favicon.png" />
+    <link rel="stylesheet" type="text/css"
+        href="https://go.hanyang.ac.kr/resources/web/css/hanyang-entrance.css?ver=20260513">
+
+    <link rel="stylesheet" type="text/css" href="https://go.hanyang.ac.kr/resources/web/css/swiper.css" />
+
+    <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery.ui.latest.js"></script>
+    <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/gsap.min.js"></script>
+
+    <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/easing.js"></script>
+    <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery_ui.min.js"></script>
+    <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery.form.js"></script>
+    <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/common.js?v=20240513"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TV5NLVXDM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4TV5NLVXDM');
+    </script>
+</head>
+
+<!-- 일시 및 장소 지도안내 (style) -->
+<style>
+    /* 컨텐츠 작업범위 외 수정  
+     * 서브메뉴 임의 가로값 들어가있어서 불안정함
+     * 지원전략 설명회 가운데 정렬 및 단어단위 추가 (모바일 대응)
+     * 일시 및 장소 영역 불필요한 여백 제거
+     * 일시 및 장소와 작업범위 간격 넓힘
+     */
+    body#apply .submenu>ul {
+        width: auto !important;
+        justify-content: center;
+    }
+
+    .contents>div>h2>strong {
+        text-align: center;
+        word-break: keep-all;
+    }
+
+    .boardwrite .privacy-rulechk .rulebox>div dl:first-child {
+        margin-top: 0;
+    }
+
+    .boardwrite .privacy-rulechk .rulebox>div dl dt {
+        margin-bottom: 2.0rem;
+    }
+
+    /* 컨텐츠 작업범위 */
+    .map-schedule-container {
+        /* Variables */
+        --map-primary: #004483;
+        --map-border: #eaeaea;
+        --scroll-track: #f1f1f1;
+        --scroll-thumb: #ccc;
+        --scroll-thumb-hover: #999;
+        --card-bg: #F6F6F6;
+        --card-bg-active: var(--map-primary);
+        --card-shadow: rgba(0, 0, 0, 0);
+        --card-text: #000;
+        --card-text-active: #fff;
+        --card-desc: #666;
+        --card-desc-active: #fff;
+        --badge-bg: #A1BDD8;
+        --badge-text: #fff;
+        --badge-bg-active: #fff;
+        --badge-text-active: var(--map-primary);
+        --badge-round-background: #fff;
+        --badge-round-border: #000;
+        --badge-round-text: #000;
+        --badge-round-background-active: var(var(--map-primary));
+        --badge-round-border-active: #fff;
+        --badge-round-text-active: #fff;
+    }
+
+    .map-schedule-container {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: min(4.0rem, 3.2vw);
+        margin-top: 1.0rem;
+        height: 57.0rem;
+        align-items: flex-start;
+    }
+
+    .map-area {
+        flex: 1 1 55%;
+        max-width: 55%;
+        height: 100%;
+        border: 1px solid var(--map-border);
+        border-radius: 1.2rem;
+        padding: 2.0rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .map-area img {
+        width: 36.4rem;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .schedule-list {
+        flex: 1 1 45%;
+        max-width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        max-height: 60.0rem;
+        overflow-y: auto;
+        padding-right: 0.5rem;
+    }
+
+    /* 스크롤바 커스텀 */
+    .schedule-list::-webkit-scrollbar {
+        width: 0.6rem;
+    }
+
+    .schedule-list::-webkit-scrollbar-track {
+        background: var(--scroll-track);
+        border-radius: 0.4rem;
+    }
+
+    .schedule-list::-webkit-scrollbar-thumb {
+        background: var(--scroll-thumb);
+        border-radius: 0.4rem;
+    }
+
+    .schedule-list::-webkit-scrollbar-thumb:hover {
+        background: var(--scroll-thumb-hover);
+    }
+
+    .schedule-card {
+        background: var(--card-bg);
+        border-radius: 1.2rem;
+        padding: 2.0rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+    .schedule-card.active {
+        background: var(--card-bg-active);
+        color: var(--card-text-active);
+        box-shadow: 0 0.4rem 1.0rem var(--card-shadow);
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .badge {
+        background: var(--badge-bg);
+        color: var(--badge-text);
+        padding: 3px 8px;
+        border-radius: 2.0rem;
+        font-size: max(1.5rem, 12px);
+        font-weight: 600;
+        display: inline-block;
+    }
+
+    .schedule-card.active .badge {
+        background: var(--badge-bg-active);
+        color: var(--badge-text-active);
+    }
+
+    .badge-round {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max(3.2rem, 24px);
+        height: max(3.2rem, 24px);
+        border: 1px solid var(--badge-round-border);
+        border-radius: 50%;
+        font-size: max(1.4rem, 11px);
+        font-weight: bold;
+        color: var(--badge-round-text);
+        background-color: var(--badge-round-background);
+    }
+
+    .schedule-card.active .badge-round {
+        border-color: var(--badge-round-border-active);
+        color: var(--badge-round-text-active);
+        background-color: var(--badge-round-background-active);
+    }
+
+    .card-body strong {
+        display: block;
+        font-size: max(14px, 1.9rem);
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+        color: var(--card-text);
+        letter-spacing: -0.05rem;
+    }
+
+    .schedule-card.active .card-body strong {
+        color: var(--card-text-active);
+    }
+
+    .card-body p {
+        font-size: max(12px, 1.5rem);
+        margin: 0;
+        color: var(--card-desc);
+        word-break: keep-all;
+        letter-spacing: -0.05rem;
+    }
+
+    .schedule-card.active .card-body p {
+        color: var(--card-desc-active);
+    }
+
+    @media screen and (max-width: 768px) {
+        .map-schedule-container {
+            flex-direction: column;
+            height: auto;
+            gap: 2.4rem;
+        }
+
+        .map-area,
+        .schedule-list {
+            flex: none;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .map-area {
+            order: 2;
+        }
+
+        .map-area img {
+            min-width: 236px;
+            width: 50%;
+        }
+
+        .schedule-list {
+            order: 1;
+            max-height: none;
+            min-height: 238px;
+            height: 50vw;
+        }
+
+        .card-header {
+            margin-bottom: 1rem;
+        }
+    }
+</style>
+
+<!-- 일시 및 장소 지도안내 (script) -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll('.schedule-card');
+        const mapImage = document.getElementById('map-image');
+        cards.forEach(card => {
+            card.addEventListener('click', function () {
+                cards.forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+
+                const region = this.getAttribute('data-region');
+                mapImage.src = 'images/' + region + '.svg';
+            });
+        });
+    });
+</script>
+
+<body id="apply" class="tour"> <!-- 2024.04.11 tour 클래스 추가 -->
+    <a href="#contents" class="skip">&raquo; 본문 바로가기</a>
+
+    <div id="wrap">
+
+        <!-- S: header -->
+        <div class="header">
+            <div class="logo" onclick="location.href='/gate.do'">
+                <span>한양대학교</span><strong>입학처</strong>
+            </div>
+            <ul class="util">
+                <li><button type="button" class="btn-round"
+                        onclick="window.open('https://portal.hanyang.ac.kr/ipsi/findLoginPage.do', '', '')">지원자
+                        통합서비스</button></li>
+                <li><button type="button" class="btn-round" onclick="location.href='/web/pds/pdsform_list.do';">서류
+                        양식함</button></li>
+                <li><button type="button" class="btn-round"
+                        onclick="window.open('https://youtube.com/playlist?list=PLucI3ovmZYuiUqvrtPF4ONtW3u5mcXJmT&feature=shared', '', '')">입학처
+                        유튜브</button></li>
+                <li><a href="https://www.instagram.com/hanyang_univ/" target="_blank"><img
+                            src="https://go.hanyang.ac.kr/resources/web/images/instagram-logo.png"
+                            id="img-instagram-logo"></a></li>
+                <li><a href="https://www.youtube.com/@HanyangUniv.1939" target="_blank"><img
+                            src="https://go.hanyang.ac.kr/resources/web/images/youtube-logo.png"
+                            id="img-youtube-logo"></a></li>
+                <li><button type="button" class="btn-allmenu" onclick="front.allmenuToggle()" title="전체메뉴 보기"><i
+                            class="icon-E"></i><i class="icon-X"></i></button></li>
+            </ul>
+            <div class="allmenubox">
+                <ul>
+                    <li>
+                        <strong onClick="front.mobileToggle(0)">수시</strong>
+                        <ul>
+                            <li>
+                                <a href="/main.do?m_type=SUSI">HOME</a>
+                            </li>
+                            <li>
+                                <a href="/web/notice/notice_list.do?m_type=SUSI">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="/web/mojib/mojib.do?m_type=SUSI">모집요강</a>
+                            </li>
+                            <li>
+                                <a href="/web/result/result.do?m_type=SUSI">입시결과</a>
+                            </li>
+                            <li>
+                                <a href="/web/rate/rate.do?m_type=SUSI">지원현황</a>
+                            </li>
+                            <li>
+                                <a href="/web/pds/pds_list.do?m_type=SUSI&ct02=ns01">기출문제</a>
+                            </li>
+                            <li>
+                                <a href="/web/pds/pdsform_list.do?m_type=SUSI">서류양식</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong onClick="front.mobileToggle(1)">정시</strong>
+                        <ul>
+                            <li>
+                                <a href="/main.do?m_type=JEONGSI">HOME</a>
+                            </li>
+                            <li>
+                                <a href="/web/notice/notice_list.do?m_type=JEONGSI">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="/web/mojib/mojib.do?m_type=JEONGSI">모집요강</a>
+                            </li>
+                            <li>
+                                <a href="/web/result/result.do?m_type=JEONGSI">입시결과</a>
+                            </li>
+                            <li>
+                                <a href="/web/rate/rate.do?m_type=JEONGSI">지원현황</a>
+                            </li>
+                            <li>
+                                <a href="/web/pds/pdsform_list.do?m_type=JEONGSI">서류양식</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong onClick="front.mobileToggle(2)">재외국민</strong>
+                        <ul>
+                            <li>
+                                <a href="/main.do?m_type=JEOEGUK">HOME</a>
+                            </li>
+                            <li>
+                                <a href="/web/notice/notice_list.do?m_type=JEOEGUK">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="/web/mojib/mojib.do?m_type=JEOEGUK">모집요강</a>
+                            </li>
+                            <li>
+                                <a href="/web/result/result.do?m_type=JEOEGUK">입시결과</a>
+                            </li>
+                            <li>
+                                <a href="/web/rate/rate.do?m_type=JEOEGUK">지원현황</a>
+                            </li>
+                            <li>
+                                <a href="/web/pds/pds_list.do?m_type=JEOEGUK">기출문제</a>
+                            </li>
+                            <li>
+                                <a href="/web/pds/pdsform_list.do?m_type=JEOEGUK">서류양식</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong onClick="front.mobileToggle(3)">편입학</strong>
+                        <ul>
+                            <li>
+                                <a href="/main.do?m_type=PYEONIP">HOME</a>
+                            </li>
+                            <li>
+                                <a href="/web/notice/notice_list.do?m_type=PYEONIP">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="/web/mojib/mojib.do?m_type=PYEONIP">모집요강</a>
+                            </li>
+                            <li>
+                                <a href="/web/result/result.do?m_type=PYEONIP">입시결과</a>
+                            </li>
+                            <li>
+                                <a href="/web/rate/rate.do?m_type=PYEONIP">지원현황</a>
+                            </li>
+                            <li>
+                                <a href="/web/pds/pds_list.do?m_type=PYEONIP">기출문제</a>
+                            </li>
+                            <li>
+                                <a href="/web/pds/pdsform_list.do?m_type=PYEONIP">서류양식</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong onClick="front.mobileToggle(4)">입학탐색</strong>
+                        <ul>
+                            <li>
+                                <a href="/web/fairschedule/fairschedule.do">연간 홍보 일정</a>
+                            </li>
+                            <li>
+                                <a href="/web/youtube/youtube3.do">한양인 스토리</a>
+                            </li>
+                            <li>
+                                <a href="/web/enterhelper/enterinfo.do">책자신청</a>
+                            </li>
+                            <li>
+                                <a href="/web/apply/applytour.do">대학탐방</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong onClick="front.mobileToggle(5)">입학가이드</strong>
+                        <ul>
+                            <li>
+                                <a href="/web/qna/qna_list.do">입학 Q&A</a>
+                            </li>
+                            <li>
+                                <a href="/web/guide/guidebook.do">가이드북</a>
+                            </li>
+                            <li>
+                                <a href="/web/youtube/youtube.do">전형 가이드</a>
+                            </li>
+                            <li>
+                                <a href="/web/youtube/youtube2.do">전공 가이드</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2 class="flx">
+                    <span>THE BEST FOR</span>
+                    <strong>A BETTER WORLD</strong>
+                </h2>
+            </div>
+        </div>
+        <script>
+            function js_setqna() {
+                msg = "전형 기간에는 입학상담 게시판을 운영하지 않습니다.\n각 캠퍼스별 입학처 유선 전화와 입학처 홈페이지 자료 등을 활용하시기 바랍니다."
+                alert(msg);
+                return;
+            }
+        </script>
+
+
+        <!-- //E: header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="subvisual">
+                <h1>
+                    <strong>신청 서비스</strong>
+                    <span>2027학년도 한양대학교 지역거점 수시 지원전략 설명회</span> <!-- 2024.04.16 텍스트 수정 -->
+                </h1>
+                <div class="svgbox">
+                    <svg id="svg" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <mask id="MASK" maskunits="userSpaceOnUse" maskcontentunits="userSpaceOnUse">
+                                <image class="mask"
+                                    xlink:href="https://go.hanyang.ac.kr/resources/web/images/sub_mask.png" width="300"
+                                    height="300">
+                            </mask>
+                        </defs>
+                        <g mask="url(#MASK)"> <!-- 마스크 preserveAspectRatio="" 옵션 변경 -->
+                            <image x="0" y="0" class="space"
+                                href="https://go.hanyang.ac.kr/resources/web/images/img_subvisual_07.jpg" width="300"
+                                height="300" preserveAspectRatio="">
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="submenu">
+                <ul>
+                    <li>
+                        <a href="/web/fairschedule/edufairschedule.do">교육청·지자체 행사</a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    const ul = document.querySelector("body#apply .submenu > ul");
+                    if (!ul) return;
+
+                    const count = ul.querySelectorAll(":scope > li").length;
+                    ul.style.width = (count * 15) + "rem";
+                });
+
+            </script>
+            <div class="contents">
+                <div class="page-tour"> <!-- 페이지별로 변경되는 class -->
+                    <h2><strong>2027학년도 한양대학교 지역거점 수시 지원전략 설명회</strong>
+                        <!-- <span style="color:red;font-size:2.5rem;font-weight:800">7월  11일 (금) 14:00부터 신청 가능합니다.</span>  -->
+                    </h2>
+                    <div class="boardwrite">
+                        <div class="privacy-rulechk">
+                            <!-- <h2>2026학년도 한양대학교 지역거점 전형계획 설명회 (한양인터칼리지 및 신입학 전형 중심)</h2>  -->
+                            <div class="rulebox">
+                                <div class="scrollbox">
+                                    <dl>
+                                        <dt>
+                                            <strong>1. 일시 및 장소<br /></strong>
+                                        </dt>
+                                        <dd>
+                                            <!-- 일시 및 장소 지도안내 html -->
+                                            <div class="map-schedule-container">
+                                                <div class="map-area">
+                                                    <img id="map-image" src="images/기본.svg" alt="지도">
+                                                </div>
+                                                <div class="schedule-list">
+                                                    <div class="schedule-card" data-region="부산">
+                                                        <div class="card-header">
+                                                            <em class="badge">부산</em>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <strong>2026.08.01(토) 14:00</strong>
+                                                            <p>벡스코 3F 그랜드볼룸 301호</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-card" data-region="대구">
+                                                        <div class="card-header">
+                                                            <em class="badge">대구</em>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <strong>2026.08.01(토) 16:00</strong>
+                                                            <p>대구그랜드호텔 2F 다이너스티홀</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-card" data-region="서울">
+                                                        <div class="card-header">
+                                                            <em class="badge">서울</em>
+                                                            <em class="badge-round">1차</em>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <strong>2026.08.08(토) 13:00</strong>
+                                                            <p>코엑스 3F 오디토리움</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-card" data-region="서울">
+                                                        <div class="card-header">
+                                                            <em class="badge">서울</em>
+                                                            <em class="badge-round">2차</em>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <strong>2026.08.08(토) 15:30</strong>
+                                                            <p>코엑스 3F 오디토리움</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-card" data-region="광주">
+                                                        <div class="card-header">
+                                                            <em class="badge">광주</em>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <strong>2026.08.15(토) 14:00</strong>
+                                                            <p>김대중컨벤션센터 4F 컨벤션홀2, 3</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-card" data-region="수원">
+                                                        <div class="card-header">
+                                                            <em class="badge">수원</em>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <strong>2026.08.15(토) 14:00</strong>
+                                                            <p>수원컨벤션센터 3F 컨벤션홀 1, 2</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-card" data-region="대전">
+                                                        <div class="card-header">
+                                                            <em class="badge">대전</em>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <strong>2026.08.22(토) 14:00</strong>
+                                                            <p>롯데시티호텔 대전 1F 크리스탈볼룸</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //일시 및 장소 지도안내 -->
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="btncenter"> <!-- 마크업 변경 (2024.04.16) -->
+                            <!--<button type="button" class="btn-white btn-large">목록</button>-->
+                            <span>
+                                <button type="button" class="btn-navy btn-large"
+                                    onclick="location.href='application_strategy_form.do'"><em
+                                        class="apply">신청하기</em></button>
+                                <!--<button type="button" class="btn-navy btn-large" onclick="javascript:alert('수원/인천 설명회 신청이 마감되었습니다. \n추후 계획 되어있는 설명회 일정을 참고해주시기 바랍니다.')"><em class="apply">신청하기</em></button>-->
+                                <button type="button" class="btn-white btn-large" onclick="js_chk_confirm()"><em
+                                        class="resultsch">신청 확인</em></button>
+                            </span> <!-- 마크업 변경 (2024.04.16) -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- // container -->
+
+        <div class="modalpop">
+            <div class="popupwrap pop-resultsch">
+                <div class="pop-header">
+                    <button type="button" class="btn-popclose" onclick="front.modalHide('pop-resultsch')"
+                        title="팝업 닫기">팝업 닫기</button>
+                    <h1>신청 확인</h1>
+                </div>
+                <div class="pop-contents">
+                    <fieldset>
+                        <ul class="form-group">
+                            <li>
+                                <div>
+                                    <p class="inpbox"><input type="text" name="confirm_name" id="confirm_name"
+                                            autocomplete="off" placeholder="신청자 이름을 입력해주세요."></p>
+                                </div>
+                            </li>
+
+                            <li class="cellphone">
+                                <div class="flx-row">
+                                    <span class="optionbox">
+                                        <select name="confirm_phone_01" id="confirm_phone_01" style="width:100px">
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                    </span>
+                                    <span class="inpbox">
+                                        <input type="text" class="onlynum" name="confirm_phone_02" id="confirm_phone_02"
+                                            maxlength="4" value="" placeholder="">
+                                    </span>
+                                    <span class="inpbox">
+                                        <input type="text" class="onlynum" name="confirm_phone_03" id="confirm_phone_03"
+                                            maxlength="4" value="" placeholder="">
+                                    </span>
+                                    <input type="hidden" id="confirm_phone" name="confirm_phone">
+                                    <input type="hidden" id="app_type" name="app_type" value="2027_STRATEGY">
+                                </div>
+                                <p class="msg">* 신청당시 신청자 이름과 휴대폰 번호를 입력하세요.</p>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p class="btncenter"><button type="button" class="btn-navy btn-large" id="btn_confirm_passwd"
+                            onclick="js_confirm('pop-resultsch')">확인</button></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- S: footer -->
+        <div class="footer">
+            <div class="footer-inner">
+                <ul class="bmenu">
+                    <li><a href="javascript:go_privacy()">개인정보처리방침</a></li>
+                    <li><a href="https://www.hanyang.ac.kr/web/www/map_seoul" target="_blank">찾아오시는 길</a></li>
+                </ul>
+                <div class="info-rights">
+                    <p>(04763) 서울시 성동구 왕십리로 222 한양대학교 신본관 114호 입학처</p>
+                    <p><span>TEL</span><strong>02-2220-2000 </strong></p>
+                    <p>[전화 연결 후 안내에 따라 해당 번호를 눌러주세요]</p>
+                    <p>1번 신입학 / 2번 예체능 / 3번 편입학 / 4번 재외국민</p>
+                    <p><span>FAX</span><strong>02-2220-0717</strong></p>
+                    <!--
+				<p><span>신입학</span><strong>02-2220-3064~3078</strong></p>
+				<p><span>예체능(실기)</span><strong>02-2220-3080</strong></p>
+				<p><span>편입학</span><strong>02-2220-3081</strong></p>
+				<p><span>재외국민</span><strong>02-2220-3082~3085</strong></p>
+				<p><span>FAX</span><strong>02-2220-0717</strong></p>
+				-->
+                    <!--  
+				<p><span>신입학 문의</span><strong>02-2220-3064 ~ 3075</strong></p>
+				<p><span>편입/재외국민 문의</span><strong>02-2220-3080 ~ 3083</strong></p>
+				<p><span>FAX</span><strong>02-2220-0717</strong></p>
+				-->
+                    <p class="copyright">copyright ⓒ 2024 HANYANG UNIVERSITY. All rights reserved.</p>
+                </div>
+                <!-- 2024.04.16 패밀리사이트 마크업 변경 -->
+                <div class="familysite">
+                    <span class="holder"><a href="javascript:front.familySiteToggle()">FAMILY SITE</a></span>
+                    <ul>
+                        <li><a href="https://www.hanyang.ac.kr/" target="_blank">한양대학교</a></li>
+                        <li><a href="http://goerica.hanyang.ac.kr/" target="_blank">한양대학교 에리카 캠퍼스 입학처</a></li>
+                        <li><a href="https://oia.hanyang.ac.kr/" target="_blank">한양대학교 국제처</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn-gotop" title="TOP">TOP</button>
+            </div>
+            <iframe src="about:blank" name="ifr_hidden" frameborder="no" width="0" height="0" marginwidth="0"
+                marginheight="0" border="0" title="hidden_frame"></iframe>
+            <a href="javascript:void(0)" id="open_url" target="_blank" style="color:#2d3138">.</a>
+            <script>
+
+                function go_privacy() {
+                    window.open('/resources/web/html/privacy.html', 'priv', 'width=1050px,height=800px,scrollbars=yes,resizable=yes');
+                    return;
+                }
+
+            </script>
+
+
+        </div>
+        <!-- //E: footer -->
+    </div>
+
+
+    <script src="https://go.hanyang.ac.kr/resources/web/js/front_ui.js"></script>
+    <script>
+
+        //$("body").addClass("noSubvisual");
+
+        $(document).ready(function () {
+
+            $("#confirm_passwd").keyup(function (e) {
+                if (e.keyCode == 13) {
+                    $("#btn_confirm_passwd").trigger("click");
+                }
+            });
+        });
+
+
+        function js_chk_confirm() {
+            front.modalView('pop-resultsch');
+            $("#confirm_name").focus();
+        }
+
+        function js_confirm(obj) {
+
+            if ($("#confirm_name").val().trim() == "") {
+                alert("신청자 이름을 입력해 주세요.");
+                $("#confirm_name").focus();
+                return;
+            } else {
+                $("#confirm_name").val($("#confirm_name").val().trim())
+            }
+
+            if ($("#confirm_phone_02").val() == "") {
+                alert("연락처를 입력해 주세요.");
+                $("#confirm_phone_02").focus();
+                return;
+            }
+
+            if ($("#confirm_phone_03").val() == "") {
+                alert("연락처를 입력해 주세요.");
+                $("#confirm_phone_03").focus();
+                return;
+            }
+
+            $("#confirm_phone").val($("#confirm_phone_01").val() + "-" + $("#confirm_phone_02").val() + "-" + $("#confirm_phone_03").val());
+
+            var mode = "CONFIRM_PASSWORD";
+            var app_type = $("#app_type").val();
+            var confirm_name = $("#confirm_name").val();
+            var confirm_phone = $("#confirm_phone").val();
+
+            var request = $.ajax({
+                url: "/web/apply/application_strategy_confirm.do",
+                type: "POST",
+                data: { mode: mode, app_type: app_type, confirm_name: confirm_name, confirm_phone: confirm_phone },
+                dataType: "json"
+            });
+
+            request.done(function (data) {
+
+                if (data.result == "T") {
+
+                    document.location.href = "application_strategy_read.do";
+
+                } else {
+                    alert(data.msg);
+                    return;
+                }
+            });
+
+            request.fail(function (jqXHR, textStatus) {
+                alert("Request failed : " + textStatus);
+                return false;
+            });
+        }
+
+    </script>
+</body>
+
+</html>

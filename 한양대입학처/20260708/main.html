@@ -1,0 +1,2150 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
+<meta name="description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="" />
+<meta property="og:url" content="https://go.hanyang.ac.kr/gate.do" />
+<meta property="og:site_name" content="한양대학교입학처" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://go.hanyang.ac.kr/resources/web/images/HYU_logo_singlecolor_png.png" />
+<meta property="og:updated_time" content="" />
+<meta property="fb:admins" content="" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="https://go.hanyang.ac.kr/resources/web/images/HYU_logo_singlecolor_png.png" />
+<meta name="twitter:creator" content="한양대학교입학처" />
+<meta name="keywords" content="" />
+
+
+<title> | 한양대학교입학처</title>
+
+<link rel="icon" type="image/png" href="https://go.hanyang.ac.kr/resources/web/images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="./resources/web/css/hanyang-entrance.css?ver=20260513">
+
+
+<link rel="stylesheet" type="text/css" href="https://go.hanyang.ac.kr/resources/web/css/fullpage.v4.css" />
+<link rel="stylesheet" type="text/css" href="https://go.hanyang.ac.kr/resources/web/css/main.css??ver=20260421" />
+
+
+<link rel="stylesheet" type="text/css" href="https://go.hanyang.ac.kr/resources/web/css/swiper.css" />
+
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery.ui.latest.js"></script>
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/gsap.min.js"></script>
+
+
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/scrolloverflow.js"></script>
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/fullpage.v4.js"></script>
+
+
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/easing.js"></script>
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery_ui.min.js"></script>
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery.form.js"></script>
+<script type="text/javascript" src="./resources/web/js/common.js?v=20240513"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4TV5NLVXDM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4TV5NLVXDM');
+</script>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.maincontents .section1 .major-notice ul li > div > em.lb-susi {background:#1181a3}
+.maincontents .section1 .major-notice ul li > div > em.lb-jungsi {background:#f48636}
+.maincontents .section1 .major-notice ul li > div > em.lb-pyunip {background:#5b7bcd}
+.maincontents .section1 .major-notice ul li > div > em.lb-foreign {background:#cd5a60}
+.maincontents .section1 .major-notice ul li > div > em.lb-common {background:#8b8e8f}
+
+.pop-modal{
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:0;top:0;
+	display:none;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;justify-content:center;
+	z-index:9999
+}
+.pop-modal.is-active{
+	display:-webkit-box;
+	display:-ms-flexbox
+	;display:flex
+}
+.pop-modal .dim{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,.6);
+	left:0;
+	top:0;
+	-webkit-animation:.2s ease 0s normal forwards 1 fadein;animation:.2s ease 0s normal forwards 1 fadein
+}
+
+.pop-modal .pop-box{
+	z-index:1;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-animation:.4s ease 0s normal forwards 1 fadein;animation:.4s ease 0s normal forwards 1 fadein;
+	max-width:45rem;
+	-webkit-box-flex:1;
+	-ms-flex:1 1 auto;
+	flex:1 1 auto;
+	background-color:#fff;
+	border-radius:1.2rem
+}
+.pop-modal .pop-box.youtube{
+	position:relative;
+	background-color:transparent;
+	max-width:100rem;
+	height:56.3rem
+}
+.pop-modal .pop-box.youtube .iframe-wrap{
+	width:100%;
+	height:100%;
+	border-radius:1.2rem;
+	overflow:hidden
+}
+.pop-modal .pop-box.youtube .btn-close-pop{
+	position:absolute;
+	z-index:10;
+	top:-2.5rem;
+	left:calc(100% - 2.5rem);
+	border:none;
+	border-radius:0;
+	width:5rem;
+	height:5rem;
+	padding:0;
+	border-radius:50%;
+	border:1px solid rgba(255,255,255,.2);
+	background:url(https://go.hanyang.ac.kr/resources/web/images/icon-close-48-white.svg) no-repeat rgba(255,255,255,.3) center;
+	background-size:3.6rem;
+	-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s
+}
+
+.pop-modal .pop-box.youtube .btn-close-pop:hover{
+	-webkit-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	transform:rotate(180deg)
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+    border: 0;
+}
+
+
+@media screen and (max-width: 1055px) {
+  .pop-modal .pop-box.youtube .btn-close-pop {
+    top: 1rem;                 /* 🔹 모달 내부 상단 */
+    right: 1rem;               /* 🔹 내부 오른쪽 */
+    left: auto;                /* 🔹 기존 left 값 제거 */
+    transform: none;           /* 🔹 hover에서 rotate 초기화 */
+    background-size: 3rem;     /* 버튼 아이콘 크기 조정(선택) */
+  }
+}
+
+</style>
+<!-- 운영시즌일 경우 body에 .season-maintenance class 생기는 사항 없앰(2024.05.07) -->
+
+<!-- 폰트 사이즈  -->
+
+
+
+
+
+<style>
+
+span button {
+    width: 25rem;
+    height: 7.2rem;
+    margin: 0 0.8rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    border-radius: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+}
+.span-top {padding-top:20px}
+
+span button:hover {background:rgba(255,255,255,0.3); border-color:rgba(255,255,255,0.5)}
+
+.maincontents .section.active .ii {text-align:center}
+
+@media only screen and (max-width: 825px) {
+
+	span button {margin-top:15px;width: 25rem;}
+	.span-top {padding-top:0px}
+    .maincontents .section1 h1 strong {
+        font-size: 5rem;
+    }
+}
+
+</style>
+
+<body id="main">
+<a href="#contents" class="skip">&raquo; 본문 바로가기</a>
+  
+<div class="bg_video"><p><video type="video/mp4" id="playBg" src="https://go.hanyang.ac.kr/resources/upload_data/banner/20250311052440831_.mp4" preload autoplay loop muted playsinline controlsList="nodownload"></video></p></div>
+
+<div id="wrap">
+
+	<!-- header -->
+	
+
+
+
+
+
+	<div class="header">
+		<div class="logo" onclick="location.href='https://go.hanyang.ac.kr/gate.do'">
+			<span>한양대학교</span><strong>입학처</strong>
+		</div>
+		
+		<ul class="util">
+			<li><button type="button" class="btn-round" onclick="window.open('https://portal.hanyang.ac.kr/ipsi/findLoginPage.do', '', '')">지원자 통합서비스</button></li>
+			<li><button type="button" class="btn-round" onclick="location.href='https://go.hanyang.ac.kr/web/pds/pdsform_list.do';">서류 양식함</button></li>
+			<li><button type="button" class="btn-round" onclick="window.open('https://youtube.com/playlist?list=PLucI3ovmZYuiUqvrtPF4ONtW3u5mcXJmT&feature=shared', '', '')">입학처 유튜브</button></li>
+			<li><a href="https://www.instagram.com/hanyang_univ/" target="_blank"><img src="https://go.hanyang.ac.kr/resources/web/images/instagram-logo.png" id="img-instagram-logo"></a></li>
+			<li><a href="https://www.youtube.com/@HanyangUniv.1939" target="_blank"><img src="https://go.hanyang.ac.kr/resources/web/images/youtube-logo.png" id="img-youtube-logo"></a></li>
+			<li><button type="button" class="btn-allmenu" onclick="front.allmenuToggle()" title="전체메뉴 보기"><i class="icon-E"></i><i class="icon-X"></i></button></li>
+		</ul>	
+		
+		
+		
+					
+		<div class="allmenubox">
+			<ul>
+				
+					
+					
+               		
+						
+							
+						
+							
+						
+							
+				<li  >
+					
+					<strong onClick="front.mobileToggle(0)">수시</strong>
+					<ul>
+							
+						
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/main.do?m_type=SUSI"   >HOME</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/notice/notice_list.do?m_type=SUSI"   >공지사항</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=SUSI"   >모집요강</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/result/result.do?m_type=SUSI"   >입시결과</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/rate/rate.do?m_type=SUSI"   >지원현황</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/pds/pds_list.do?m_type=SUSI&ct02=ns01"   >기출문제</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/pds/pdsform_list.do?m_type=SUSI"   >서류양식</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+							
+					</ul>
+				</li>
+							
+				<li  >
+					
+					<strong onClick="front.mobileToggle(1)">정시</strong>
+					<ul>
+							
+						
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/main.do?m_type=JEONGSI"   >HOME</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/notice/notice_list.do?m_type=JEONGSI"   >공지사항</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=JEONGSI"   >모집요강</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/result/result.do?m_type=JEONGSI"   >입시결과</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/rate/rate.do?m_type=JEONGSI"   >지원현황</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/pds/pdsform_list.do?m_type=JEONGSI"   >서류양식</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+							
+					</ul>
+				</li>
+							
+				<li  >
+					
+					<strong onClick="front.mobileToggle(2)">재외국민</strong>
+					<ul>
+							
+						
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/main.do?m_type=JEOEGUK"   >HOME</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/notice/notice_list.do?m_type=JEOEGUK"   >공지사항</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=JEOEGUK"   >모집요강</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/result/result.do?m_type=JEOEGUK"   >입시결과</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/rate/rate.do?m_type=JEOEGUK"   >지원현황</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/pds/pds_list.do?m_type=JEOEGUK"   >기출문제</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/pds/pdsform_list.do?m_type=JEOEGUK"   >서류양식</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+							
+					</ul>
+				</li>
+							
+				<li  >
+					
+					<strong onClick="front.mobileToggle(3)">편입학</strong>
+					<ul>
+							
+						
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/main.do?m_type=PYEONIP"   >HOME</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/notice/notice_list.do?m_type=PYEONIP"   >공지사항</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=PYEONIP"   >모집요강</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/result/result.do?m_type=PYEONIP"   >입시결과</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/rate/rate.do?m_type=PYEONIP"   >지원현황</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/pds/pds_list.do?m_type=PYEONIP"   >기출문제</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/pds/pdsform_list.do?m_type=PYEONIP"   >서류양식</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+							
+					</ul>
+				</li>
+							
+				<li  >
+					
+					<strong onClick="front.mobileToggle(4)">입학탐색</strong>
+					<ul>
+							
+						
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/fairschedule/fairschedule.do"   >연간 홍보 일정</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/youtube/youtube3.do"   >한양인 스토리</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/enterhelper/enterinfo.do"   >책자신청</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/apply/applytour.do"   >대학탐방</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+							
+					</ul>
+				</li>
+							
+				<li  >
+					
+					<strong onClick="front.mobileToggle(5)">입학가이드</strong>
+					<ul>
+							
+						
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/qna/qna_list.do"   >입학 Q&A</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/guide/guidebook.do"   >가이드북</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/youtube/youtube.do"   >전형 가이드</a>
+							</li>
+						
+               		
+						
+							
+						
+							
+						
+						
+							<li>
+								<a href="https://go.hanyang.ac.kr/web/youtube/youtube2.do"   >전공 가이드</a>
+							</li>
+						
+               		
+					</ul>
+				</li>
+               	
+			</ul>
+			<h2 class="flx">
+				<span>THE BEST FOR</span>
+				<strong>A BETTER WORLD</strong>
+			</h2>
+		</div>
+	</div>
+	
+		
+	
+
+	<script>
+	function js_setqna(){
+		msg = "전형 기간에는 입학상담 게시판을 운영하지 않습니다.\n각 캠퍼스별 입학처 유선 전화와 입학처 홈페이지 자료 등을 활용하시기 바랍니다."
+		alert(msg);
+		return;
+	}
+	</script>
+
+
+
+	<!-- // header -->
+	
+	<!-- page-menu -->
+	<ul class="page-menu flx">
+		<li data-menuanchor="page1" class="active"><a href="#page1" onClick="js_pageFullPage(1)"><span>홈</span></a></li>
+		<li data-menuanchor="page2"><a href="#page2"><span>공지사항</span></a></li> <!-- 2024.05.07 추가 -->
+		<li data-menuanchor="page3"><a href="#page3"><span>입학정보</span></a></li>
+		<li data-menuanchor="page4"><a href="#page4"><span>신청서비스</span></a></li>
+		<li data-menuanchor="page5"><a href="#page5"><span>안내영상</span></a></li>
+	</ul>
+	<!-- // page-menu -->
+	<p class="scrolldown">SCROLL DOWN</p>
+	
+
+	<!-- maincontents -->
+	<div id="fullpage" class="maincontents">
+		<!-- section1 -->
+		<!-- <div class="section section1 visual-all" data-anchor="page1">  비시즌 -->
+		<div class="section section1 " data-anchor="page1"> <!-- 2024.05.07 anchor 및 section명 변경 --> <!-- 2025.03.11 비시즌 visual1 -->	
+			
+			
+			
+			<!-- 2025.11.10 스와이프 추가 -->
+			
+			<div class="swiper section1-swiper">
+				<div class="swiper-wrapper">
+				
+				
+					<div class="swiper-slide">
+						<h1 class="flx">
+							<strong class="ii">2027학년도 3월입학<br/>재외국민과 외국인 특별전형 <br/><b>원서접수</b></strong>
+					
+					
+					
+							<div class="btn-group">
+							
+        				
+        					
+							
+              					
+                				<button type="button" onclick="js_go_link('https://apply.jinhakapply.com/Notice/1164056/A', 'Y')" style="width:38.5rem;font-size: 2.5rem;">원서접수 페이지(중고교)</button>
+              					
+              					
+            				
+
+            				
+
+            				
+            			
+        					
+							
+              					
+                				<button type="button" onclick="js_go_link('https://apply.jinhakapply.com/Notice/1164057/A', 'Y')" style="width:38.5rem;font-size: 2.5rem;">원서접수 페이지(전과정/새터민)</button>
+              					
+              					
+            				
+
+            				
+              					</div><div class="btn-group full" style="max-width: 782px;">
+            				
+
+            				
+            			
+        					
+							
+              					
+              					
+                				<button type="button" onclick="js_go_link('https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=21084&m_type=JEOEGUK&nPage=1&f=ALL&s=', 'Y')" style="font-size: 2.5rem;">원서접수 안내</button>
+              					
+            				
+
+            				
+
+            				
+            			
+        					
+							
+              					
+              					
+                				<button type="button" onclick="js_go_link('https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=JEOEGUK', 'N')" style="font-size: 2.5rem;">모집요강</button>
+              					
+            				
+
+            				
+
+            				
+            			
+            			</div>
+            	 			
+            			</h1>	
+            		</div>
+				
+					<div class="swiper-slide">
+						<h1 class="flx">
+							<strong class="ii"><b>2027학년도 한양대학교<br/>지역거점 수시 지원전략 설명회</b></strong>
+					
+					
+					
+							<div class="btn-group">
+							
+        				
+        					
+							
+              					
+                				<button type="button" onclick="js_go_link('https://go.hanyang.ac.kr/web/apply/application_strategy.do', 'Y')" style="width:38.5rem;font-size: 2.5rem;">신청하기</button>
+              					
+              					
+            				
+
+            				
+
+            				
+            			
+            			</div>
+            	 			
+            			</h1>	
+            		</div>
+				
+					<div class="swiper-slide">
+						<h1 class="flx">
+							<strong class="ii"><b>2027학년도 연간 홍보 일정</b></strong>
+					
+					
+					
+							<div class="btn-group">
+							
+        				
+        					
+							
+              					
+                				<button type="button" onclick="js_go_link('https://go.hanyang.ac.kr/web/fairschedule/fairschedule.do', 'Y')" style="width:38.5rem;font-size: 2.5rem;">일정 확인</button>
+              					
+              					
+            				
+
+            				
+
+            				
+            			
+            			</div>
+            	 			
+            			</h1>	
+            		</div>
+				
+				</div>
+				<div class="swiper-control">
+					<div class="swiper-play-control">
+						<div class="section1-swiper-pagination"></div>
+						<div class="section1-swiper-arrow section1-swiper-button-prev"></div>
+						<button type="button" class="btn-pause">일시정지</button>
+						<div class="section1-swiper-arrow section1-swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+						
+			<!-- // 2025.11.10 스와이프 추가 -->
+		</div>
+		<!-- // section1 -->
+		
+		<!-- section2 -->
+		<!-- <div class="section section2 visual2" data-anchor="page2"> --> <!-- 2024.05.07 anchor 및 section명 변경, section 새로 추가 --> <!-- 2025.03.11 비시즌 visual2 -->
+		<div class="section section2 " data-anchor="page2">
+			<div>
+				<h1 class="flx">
+					<span class="ii">안녕하세요.</span>
+					<span class="ii">2027학년도 주요공지에 대해</span>
+					<span class="ii">알려드립니다.</span>
+				</h1>
+				<div class="major-notice swiper-container">
+					<p class="btnset">
+						<button type="button" class="swiper-button-prev" title="이전">이전</button>
+						<button type="button" class="swiper-button-next" title="다음">다음</button>
+					</p>
+					<ul class="swiper-wrapper">
+						
+							
+							
+								
+                            	
+                            
+                            
+																		
+
+							
+													
+													    
+								
+								
+								
+								
+								
+								
+									                            		
+						<li class="swiper-slide" onClick="js_go_link('https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=18472&m_type=SUSI&nPage=1&f=ALL&s=','Y')">
+							<div>
+								<strong>1</strong>
+								<em class="lb-susi">수시</em>
+								<p>2027학년도 
+<br />온라인 모의논술 신청 안내</p>
+								<span class="date">2025.06.24</span>
+							</div>
+						</li>
+							
+								
+                            	
+                            
+                            
+																		
+
+							
+													
+													    
+								
+								
+								
+								
+								
+								
+									                            		
+						<li class="swiper-slide" onClick="js_go_link('https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=SUSI','Y')">
+							<div>
+								<strong>2</strong>
+								<em class="lb-susi">수시</em>
+								<p>2027학년도
+<br />신입학 수시모집요강</p>
+								<span class="date">2026.05.30</span>
+							</div>
+						</li>
+							
+								
+                            	
+                            
+                            
+																		
+
+							
+								
+								
+																
+														    
+								
+								
+								
+								
+									                            		
+						<li class="swiper-slide" onClick="js_go_link('https://portal.hanyang.ac.kr/ipsi/findLoginPage.do','Y')">
+							<div>
+								<strong>3</strong>
+								<em class="lb-foreign">재외국민</em>
+								<p>2026학년도 9월 입학
+<br />재외국민과 외국인 특별전형
+<br />최종 합격자 발표 안내</p>
+								<span class="date">2026.06.16</span>
+							</div>
+						</li>
+							
+								
+                            	
+                            
+                            
+																		
+
+							
+								
+								
+																
+														    
+								
+								
+								
+								
+									                            		
+						<li class="swiper-slide" onClick="js_go_link('https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=JEOEGUK','Y')">
+							<div>
+								<strong>4</strong>
+								<em class="lb-foreign">재외국민</em>
+								<p>2027학년도
+<br />재외국민과 외국인 특별전형 모집요강</p>
+								<span class="date">2026.05.29</span>
+							</div>
+						</li>
+							
+								
+                            	
+                            
+                            
+																		
+
+							
+								
+								
+								
+								
+																
+														    
+								
+								
+									                            		
+						<li class="swiper-slide" onClick="js_go_link('https://site.hanyang.ac.kr/documents/11081467/664542580/2028%ED%95%99%EB%85%84%EB%8F%84+%ED%95%9C%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90+%EC%8B%A0%EC%9E%85%ED%95%99+%EC%A0%84%ED%98%95%EA%B3%84%ED%9A%8D%284.30.%29.pdf/76d2915e-2d98-32dd-191f-f61e5d458b3d?t=1777512208890','Y')">
+							<div>
+								<strong>5</strong>
+								<em class="lb-common">공통</em>
+								<p>2028학년도
+<br />신입학 전형계획</p>
+								<span class="date">2026.04.30</span>
+							</div>
+						</li>
+							
+								
+                            	
+                            
+                            
+																		
+
+							
+								
+								
+								
+								
+																
+														    
+								
+								
+									                            		
+						<li class="swiper-slide" onClick="js_go_link('https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=19710&m_type=IPSI&nPage=1&f=ALL&s=','Y')">
+							<div>
+								<strong>6</strong>
+								<em class="lb-common">공통</em>
+								<p>2027학년도
+<br />신입학 전형계획(수정)
+<br />&lt;2026. 5. 30.&gt;</p>
+								<span class="date">2025.04.30</span>
+							</div>
+						</li>
+							
+								
+                            	
+                            
+                            
+																		
+
+							
+								
+								
+								
+								
+																
+														    
+								
+								
+									                            		
+						<li class="swiper-slide" onClick="js_go_link('https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=20598&m_type=COMMON&nPage=1&f=ALL&s=','N')">
+							<div>
+								<strong>7</strong>
+								<em class="lb-common">공통</em>
+								<p>2026학년도 
+<br />선행학습 영향평가 
+<br />자체평가보고서 공개</p>
+								<span class="date">2026.03.31</span>
+							</div>
+						</li>
+							
+						
+						<!--
+						<li class="swiper-slide">
+							<div>
+								<strong>2</strong>
+								<em class="lb-green">고사장</em>
+								<p>논술고사 실시고사장 안내</p>
+								<span class="date">2023.12.05</span>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div>
+								<strong>3</strong>
+								<em class="lb-blue">수시</em>
+								<p>2023학년도 학생부교과위주 지역인재특별전형 의예과 성적분석 안내</p>
+								<span class="date">2023.11.15</span>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div>
+								<strong>4</strong>
+								<em class="lb-blue">수시</em>
+								<p>2023학년도 학생부교과위주 지역인재특별전형 의예과 성적분석 안내</p>
+								<span class="date">2023.11.12</span>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div>
+								<strong>5</strong>
+								<em class="lb-blue">수시</em>
+								<p>2023학년도 학생부교과위주 지역인재특별전형 의예과 성적분석 안내</p>
+								<span class="date">2023.11.15</span>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div>
+								<strong>6</strong>
+								<em class="lb-blue">수시</em>
+								<p>2023학년도 학생부교과위주 지역인재특별전형 의예과 성적분석 안내</p>
+								<span class="date">2023.11.12</span>
+							</div>
+						</li>
+						-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // section2 -->
+
+
+		<!-- section3 -->
+		<!-- <div class="section section3 visual3" data-anchor="page3"> --> <!-- 2024.05.07 anchor 및 section명 변경 --> <!-- 2025.03.11 비시즌 visual3 -->
+		<div class="section section3 " data-anchor="page3">
+			<h2 class="flx">
+				<span class="ii">2027학년도</span>
+				<span class="ii">입학전형 정보에 대해 </span> 
+				<span class="ii">알려드립니다.</span>
+			</h2>
+			<div class="ipsi-type rightPos">
+				<ul class="pc-only">
+					<li class="susi"><a href="javascript: ipsiLayerToggle('susi', 'rightPos')">수시</a></li>
+					<li class="jungsi"><a href="javascript: ipsiLayerToggle('jungsi', 'rightPos')">정시</a></li>
+					<li class="foreign"><a href="javascript: ipsiLayerToggle('foreign', 'rightPos')">재외국민</a></li>
+					<li class="pyeonip"><a href="javascript: ipsiLayerToggle('pyeonip', 'rightPos')">편입학</a></li>
+				</ul>
+				<ul class="mobile-only">
+					<li class="susi"><a href="https://go.hanyang.ac.kr/main.do?m_type=SUSI">수시</a></li>
+					<li class="jungsi"><a href="https://go.hanyang.ac.kr/main.do?m_type=JEONGSI">정시</a></li>
+					<li class="foreign"><a href="https://go.hanyang.ac.kr/main.do?m_type=JEOEGUK">재외국민</a></li>
+					<li class="pyeonip"><a href="https://go.hanyang.ac.kr/main.do?m_type=PYEONIP">편입학</a></li>
+				</ul>
+			</div>
+
+			<div class="ipsi-type leftPos">
+				<ul>
+					<li class="susi"><a href="javascript: ipsiLayerToggle('susi', 'leftPos')">수시</a></li>
+					<li class="jungsi"><a href="javascript: ipsiLayerToggle('jungsi', 'leftPos')">정시</a></li>
+					<li class="foreign"><a href="javascript: ipsiLayerToggle('foreign', 'leftPos')">재외국민</a></li>
+					<li class="pyeonip"><a href="javascript: ipsiLayerToggle('pyeonip', 'leftPos')">편입학</a></li>
+				</ul>
+			</div>
+			
+			<!-- ipsi-layer-contents -->
+			<div class="ipsi-layer-contents susi">
+				<h3><strong>수시모집 입학안내</strong><button type="button" class="btn-gohome" onclick="document.location='https://go.hanyang.ac.kr/main.do?m_type=SUSI'"><em>HOME</em></button></h3>
+				<div class="ipsi-dashboard flx">
+					<div class="swiper-container notice-boardlist">
+						<ul class="swiper-wrapper">
+							
+						    	
+						    			
+                                    
+                                    
+																				
+                            		<li class="swiper-slide">
+                            			<div class="flx" onclick="document.location='https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=18472&m_type=SUSI'">
+  											<strong>공지사항</strong>
+  											<p>2027학년도 온라인 모의논술 신청 안내</p>
+  											<span class="date">2026.07.03</span>
+  										</div>
+                              		</li>                            
+								
+						    			
+                                    
+                                    
+																				
+                            		<li class="swiper-slide">
+                            			<div class="flx" onclick="document.location='https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=21017&m_type=SUSI'">
+  											<strong>공지사항</strong>
+  											<p>2027학년도 한양대학교 수시 예체능 실기고사 안내사항</p>
+  											<span class="date">2026.06.26</span>
+  										</div>
+                              		</li>                            
+								
+														
+						</ul>
+						<p class="btnset flx">
+							<button type="button" class="swiper-button-prev" title="이전">이전</button>
+							<button type="button" class="swiper-button-next" title="다음">다음</button>
+						</p>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="direct-menu flx">
+						<ul class="ipsi-btnset">
+							<li><a href="https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=SUSI" class="flx"><strong>모집요강</strong><span>모집에 대한 정보를 안내드립니다.</span></a></li>
+							<li><a href="https://go.hanyang.ac.kr/web/qna/qna_list.do?m_type=SUSI" class="flx"><strong>Q&A</strong><span>입학 관련 궁금한 점에 대해 답변드립니다.</span></a></li>
+							<li><a href="https://go.hanyang.ac.kr/web/rate/rate.do?m_type=SUSI" class="flx"><strong>경쟁률 확인</strong><span>연도별 모집 경쟁률을 확인하실 수 있습니다.</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="btn-layer-close" onclick="ipsiLayerClose()" title="닫기">×</button>
+			</div>
+
+			<div class="ipsi-layer-contents jungsi">
+				<h3><strong>정시모집 입학안내</strong><button type="button" class="btn-gohome" onclick="document.location='https://go.hanyang.ac.kr/main.do?m_type=JEONGSI'"><em>HOME</em></button></h3>
+				<div class="ipsi-dashboard flx">
+					<div class="swiper-container notice-boardlist">
+						<ul class="swiper-wrapper">
+														
+						</ul>
+						<p class="btnset flx">
+							<button type="button" class="swiper-button-prev" title="이전">이전</button>
+							<button type="button" class="swiper-button-next" title="다음">다음</button>
+						</p>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="direct-menu flx">
+						<ul class="ipsi-btnset">
+							<li><a href="https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=JEONGSI" class="flx"><strong>모집요강</strong><span>모집에 대한 정보를 안내드립니다.</span></a></li>
+							<li><a href="https://go.hanyang.ac.kr/web/qna/qna_list.do?m_type=JEONGSI" class="flx"><strong>Q&A</strong><span>입학 관련 궁금한 점에 대해 답변드립니다.</span></a></li>
+							<li><a href="https://go.hanyang.ac.kr/web/rate/rate.do?m_type=JEONGSI" class="flx"><strong>경쟁률 확인</strong><span>연도별 모집 경쟁률을 확인하실 수 있습니다.</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="btn-layer-close" onclick="ipsiLayerClose()" title="닫기">×</button>
+			</div>
+
+			<div class="ipsi-layer-contents foreign">
+				<h3><strong>재외국민 입학안내</strong><button type="button" class="btn-gohome" onclick="document.location='https://go.hanyang.ac.kr/main.do?m_type=JEOEGUK'"><em>HOME</em></button></h3>
+				<div class="ipsi-dashboard flx">
+					<div class="swiper-container notice-boardlist">
+						<ul class="swiper-wrapper">
+							
+						    	
+						    			
+                                    
+                                    
+																				
+                            		<li class="swiper-slide">
+                            			<div class="flx" onclick="document.location='https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=21084&m_type=JEOEGUK'">
+  											<strong>공지사항</strong>
+  											<p>2027학년도 3월입학 재외국민과 외국인 특별전형 원서접수 안내</p>
+  											<span class="date">2026.07.07</span>
+  										</div>
+                              		</li>                            
+								
+						    			
+                                    
+                                    
+																				
+                            		<li class="swiper-slide">
+                            			<div class="flx" onclick="document.location='https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=21066&m_type=JEOEGUK'">
+  											<strong>공지사항</strong>
+  											<p>2026학년도 9월입학 재외국민과 외국인 특별전형 최종합격자 등록 안내 </p>
+  											<span class="date">2026.07.03</span>
+  										</div>
+                              		</li>                            
+								
+						    			
+                                    
+                                    
+																				
+                            		<li class="swiper-slide">
+                            			<div class="flx" onclick="document.location='https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=20725&m_type=JEOEGUK'">
+  											<strong>공지사항</strong>
+  											<p>2028학년도 한양대학교 입학전형(재외국민과 외국인 특별전형) 시행계획</p>
+  											<span class="date">2026.04.30</span>
+  										</div>
+                              		</li>                            
+								
+						    			
+                                    
+                                    
+																				
+                            		<li class="swiper-slide">
+                            			<div class="flx" onclick="document.location='https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=20556&m_type=JEOEGUK'">
+  											<strong>공지사항</strong>
+  											<p>2026학년도 9월입학 재외국민과 외국인 특별전형 원서접수 안내</p>
+  											<span class="date">2026.03.23</span>
+  										</div>
+                              		</li>                            
+								
+						    			
+                                    
+                                    
+																				
+                            		<li class="swiper-slide">
+                            			<div class="flx" onclick="document.location='https://go.hanyang.ac.kr/web/notice/notice_view.do?bn=18034&m_type=JEOEGUK'">
+  											<strong>공지사항</strong>
+  											<p>2027학년도 한양대학교 입학전형(재외국민과 외국인 특별전형) 시행계획</p>
+  											<span class="date">2025.04.29</span>
+  										</div>
+                              		</li>                            
+								
+																				
+						</ul>
+						<p class="btnset flx">
+							<button type="button" class="swiper-button-prev" title="이전">이전</button>
+							<button type="button" class="swiper-button-next" title="다음">다음</button>
+						</p>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="direct-menu flx">
+						<ul class="ipsi-btnset">
+							<li><a href="https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=JEOEGUK" class="flx"><strong>모집요강</strong><span>모집에 대한 정보를 안내드립니다.</span></a></li>
+							<li><a href="https://go.hanyang.ac.kr/web/result/result.do?m_type=JEOEGUK" class="flx"><strong>입시결과</strong><span>연도별 입시결과을 확인하실 수 있습니다.</span></a></li>
+							<li><a href="https://go.hanyang.ac.kr/web/rate/rate.do?m_type=JEOEGUK" class="flx"><strong>경쟁률 확인</strong><span>연도별 모집 경쟁률을 확인하실 수 있습니다.</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="btn-layer-close" onclick="ipsiLayerClose()" title="닫기">×</button>
+			</div>
+
+			<div class="ipsi-layer-contents pyeonip">
+				<h3><strong>편입학 입학안내</strong><button type="button" class="btn-gohome" onclick="document.location='https://go.hanyang.ac.kr/main.do?m_type=PYEONIP'"><em>HOME</em></button></h3>
+				<div class="ipsi-dashboard flx">
+					<div class="swiper-container notice-boardlist">
+						<ul class="swiper-wrapper">
+													
+						</ul>
+						<p class="btnset flx">
+							<button type="button" class="swiper-button-prev" title="이전">이전</button>
+							<button type="button" class="swiper-button-next" title="다음">다음</button>
+						</p>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="direct-menu flx">
+						<ul class="ipsi-btnset">
+							<li><a href="https://go.hanyang.ac.kr/web/mojib/mojib.do?m_type=PYEONIP" class="flx"><strong>모집요강</strong><span>모집에 대한 정보를 안내드립니다.</span></a></li>
+							<li><a href="https://go.hanyang.ac.kr/web/qna/qna_list.do?m_type=PYEONIP" class="flx"><strong>Q&A</strong><span>입학 관련 궁금한 점에 대해 답변드립니다.</span></a></li>
+							<li><a href="https://go.hanyang.ac.kr/web/rate/rate.do?m_type=PYEONIP" class="flx"><strong>경쟁률 확인</strong><span>연도별 모집 경쟁률을 확인하실 수 있습니다.</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="btn-layer-close" onclick="ipsiLayerClose()" title="닫기">×</button>
+			</div>
+			<!-- // ipsi-layer-contents -->
+		</div>
+		<!-- // section3 -->
+
+
+		<!-- section4 -->
+		<!-- <div class="section section4 visual4" data-anchor="page4"> --> <!-- 2024.05.07 anchor 및 section명 변경 --> <!-- 2025.03.11 비시즌 visual4 -->
+		<div class="section section4 " data-anchor="page4">
+			<div class="apply-service">
+				<ul>
+					
+					
+						
+					<li>
+						<p onclick="js_go_link('/web/qna/qna_list.do','N')"><strong>질의응답</strong><span>Q&A</span></p> <!-- 마크업 변경 p태그 추가(2024.04.15) -->
+						<button type="button" onclick="js_go_link('/web/qna/qna_list.do','N')"><em>바로가기</em></button>
+					</li>
+						
+					<li>
+						<p onclick="js_go_link('/web/enterhelper/enterinfo.do','N')"><strong>책자신청</strong><span>Guide book</span></p> <!-- 마크업 변경 p태그 추가(2024.04.15) -->
+						<button type="button" onclick="js_go_link('/web/enterhelper/enterinfo.do','N')"><em>바로가기</em></button>
+					</li>
+						
+					<li>
+						<p onclick="js_go_link('/web/apply/applytour.do','N')"><strong>대학탐방</strong><span>Campus tour</span></p> <!-- 마크업 변경 p태그 추가(2024.04.15) -->
+						<button type="button" onclick="js_go_link('/web/apply/applytour.do','N')"><em>바로가기</em></button>
+					</li>
+						
+					<li>
+						<p onclick="js_go_link('https://go.hanyang.ac.kr/web/fairschedule/fairschedule.do','N')"><strong>연간 홍보 일정</strong><span>Annual briefing session schedule</span></p> <!-- 마크업 변경 p태그 추가(2024.04.15) -->
+						<button type="button" onclick="js_go_link('https://go.hanyang.ac.kr/web/fairschedule/fairschedule.do','N')"><em>바로가기</em></button>
+					</li>
+						
+					
+				</ul>
+			</div>
+		</div>
+		<!-- // section4 -->
+
+
+		<!-- section5 -->
+		<!-- <div class="section section5 visual5" data-anchor="page5">  --><!-- 2024.05.07 anchor 및 section명 변경 --> <!-- 2025.03.11 비시즌 visual5 -->
+		<div class="section section5 " data-anchor="page5">
+			<div class="guide-vod">
+				<!-- pc-only -->
+				<div class="swiper-container pc-only" id="pr-Slider-PC">
+					<p class="btnset">
+						<button type="button" class="swiper-button-prev" title="이전">이전</button>
+						<button type="button" class="swiper-button-next" title="다음">다음</button>
+					</p>
+					<ul class="swiper-wrapper">
+						
+						
+							
+							
+							
+							
+								
+                            
+                                						
+						<li class="swiper-slide">
+							<div class="vod-txtbox" onclick="js_go_youtube('https://youtu.be/6g7-rwiKPIw?si=DDCb40Hb-UO_mfCw')">
+								<p class="pic">
+								
+									
+									
+										<img src="https://go.hanyang.ac.kr/resources/upload_data/popup/youtube/20251124100827666_.jpg" alt="썸네일 이미지">
+									
+																	
+								</p>
+								<strong>2026학년도 정시 특별전형 (가/나)군 특수교육대상자전형 수어통역본 안내</strong>
+							</div>
+						</li>
+						
+							
+							
+							
+							
+								
+                            
+                                						
+						<li class="swiper-slide">
+							<div class="vod-txtbox" onclick="js_go_youtube('https://www.youtube.com/watch?v=xSQS_NF3vmU&t=33s')">
+								<p class="pic">
+								
+									
+									
+										<img src="https://go.hanyang.ac.kr/resources/upload_data/popup/youtube/20231120024054423_.jpg" alt="썸네일 이미지">
+									
+																	
+								</p>
+								<strong>한양대 학생부종합전형 
+<br />합격노하우</strong>
+							</div>
+						</li>
+						
+							
+							
+							
+							
+								
+                            
+                                						
+						<li class="swiper-slide">
+							<div class="vod-txtbox" onclick="js_go_youtube('https://www.youtube.com/watch?v=NW6rWbHAhnU&t=145s')">
+								<p class="pic">
+								
+									
+									
+										<img src="https://go.hanyang.ac.kr/resources/upload_data/popup/youtube/20231120023954132_.jpg" alt="썸네일 이미지">
+									
+																	
+								</p>
+								<strong>한양대 학생부종합전형 
+<br />합격노하우</strong>
+							</div>
+						</li>
+						
+						
+					</ul>
+				</div>
+				
+				<!-- mobile-only -->
+				<div class="mobile-only">
+					<h1>학교홍보</h1>
+					<ul>
+						
+						
+							
+							
+							
+							
+								
+                                                            						
+						<li>
+							<div class="vod-txtbox" onclick="js_go_youtube('https://youtu.be/6g7-rwiKPIw?si=DDCb40Hb-UO_mfCw')">
+								<p class="pic">
+								
+									
+									
+										<img src="https://go.hanyang.ac.kr/resources/upload_data/popup/youtube/20251124100827666_.jpg" alt="썸네일 이미지">
+									
+																	
+								</p>
+								<strong>2026학년도 정시 특별전형 (가/나)군 특수교육대상자전형 수어통역본 안내</strong>
+							</div>
+						</li>
+						
+							
+							
+							
+							
+								
+                                                            						
+						<li>
+							<div class="vod-txtbox" onclick="js_go_youtube('https://www.youtube.com/watch?v=xSQS_NF3vmU&t=33s')">
+								<p class="pic">
+								
+									
+									
+										<img src="https://go.hanyang.ac.kr/resources/upload_data/popup/youtube/20231120024054423_.jpg" alt="썸네일 이미지">
+									
+																	
+								</p>
+								<strong>한양대 학생부종합전형 
+<br />합격노하우</strong>
+							</div>
+						</li>
+						
+							
+							
+							
+							
+								
+                                                            						
+						<li>
+							<div class="vod-txtbox" onclick="js_go_youtube('https://www.youtube.com/watch?v=NW6rWbHAhnU&t=145s')">
+								<p class="pic">
+								
+									
+									
+										<img src="https://go.hanyang.ac.kr/resources/upload_data/popup/youtube/20231120023954132_.jpg" alt="썸네일 이미지">
+									
+																	
+								</p>
+								<strong>한양대 학생부종합전형 
+<br />합격노하우</strong>
+							</div>
+						</li>
+						
+					
+					</ul>
+					<button type="button" class="btn-allview" onclick="document.location='https://go.hanyang.ac.kr/web/youtube/youtube.do'"><em>전체보기</em></button>
+				</div>
+			</div>
+			<!-- 2024.04.12 mobile 전용 footer를 section4에 하나 더 추가함 -->
+			<div class="footer mobile-only">
+				
+		<div class="footer-inner">
+			<ul class="bmenu">
+				<li><a href="javascript:go_privacy()">개인정보처리방침</a></li>
+				<li><a href="https://www.hanyang.ac.kr/web/www/map_seoul" target="_blank">찾아오시는 길</a></li>
+			</ul>
+			<div class="info-rights">
+				<p>(04763) 서울시 성동구 왕십리로 222 한양대학교 신본관 114호 입학처</p>
+				<p><span>TEL</span><strong>02-2220-2000 </strong></p>
+				<p>[전화 연결 후 안내에 따라 해당 번호를 눌러주세요]</p>
+				<p>1번 신입학 / 2번 예체능 / 3번 편입학 / 4번 재외국민</p>
+				<p><span>FAX</span><strong>02-2220-0717</strong></p>
+				<!--
+				<p><span>신입학</span><strong>02-2220-3064~3078</strong></p>
+				<p><span>예체능(실기)</span><strong>02-2220-3080</strong></p>
+				<p><span>편입학</span><strong>02-2220-3081</strong></p>
+				<p><span>재외국민</span><strong>02-2220-3082~3085</strong></p>
+				<p><span>FAX</span><strong>02-2220-0717</strong></p>
+				-->
+				<!--  
+				<p><span>신입학 문의</span><strong>02-2220-3064 ~ 3075</strong></p>
+				<p><span>편입/재외국민 문의</span><strong>02-2220-3080 ~ 3083</strong></p>
+				<p><span>FAX</span><strong>02-2220-0717</strong></p>
+				-->
+				<p class="copyright">copyright ⓒ 2024 HANYANG UNIVERSITY. All rights reserved.</p>
+			</div>
+			<!-- 2024.04.16 패밀리사이트 마크업 변경 -->
+			<div class="familysite">
+				<span class="holder"><a href="javascript:front.familySiteToggle()">FAMILY SITE</a></span>
+				<ul>
+					<li><a href="https://www.hanyang.ac.kr/" target="_blank">한양대학교</a></li>
+					<li><a href="http://goerica.hanyang.ac.kr/" target="_blank">한양대학교 에리카 캠퍼스 입학처</a></li>
+					<li><a href="https://oia.hanyang.ac.kr/" target="_blank">한양대학교 국제처</a></li>
+				</ul>
+			</div>
+			<button type="button" class="btn-gotop" title="TOP">TOP</button>
+		</div>
+<iframe src="about:blank" name="ifr_hidden" frameborder="no" width="0" height="0" marginwidth="0" marginheight="0" border="0" title="hidden_frame"></iframe>
+<a href="javascript:void(0)" id="open_url" target="_blank" style="color:#2d3138">.</a>
+<script>
+
+	function go_privacy() {
+		window.open('https://go.hanyang.ac.kr/resources/web/html/privacy.html','priv','width=1050px,height=800px,scrollbars=yes,resizable=yes');
+		return;
+	}
+
+</script>
+
+
+
+			</div>
+			<!-- // 2024.04.12 mobile 전용 footer를 section4에 하나 더 추가함 -->
+		</div>
+		<!-- // section5 -->
+
+		<!-- section5 -->
+		<!-- <div class="section section6 pc-only visual6" data-anchor="page6"> --> <!-- 2024.05.07 anchor 및 section명 변경 --> <!-- 2025.03.11 비시즌 visual6 -->
+		<div class="section section6 pc-only " data-anchor="page6">
+			<h2 class="flx ii">
+				<span>THE BEST FOR</span>
+				<strong>A BETTER WORLD</strong>
+			</h2>
+			<div class="footer">
+				
+		<div class="footer-inner">
+			<ul class="bmenu">
+				<li><a href="javascript:go_privacy()">개인정보처리방침</a></li>
+				<li><a href="https://www.hanyang.ac.kr/web/www/map_seoul" target="_blank">찾아오시는 길</a></li>
+			</ul>
+			<div class="info-rights">
+				<p>(04763) 서울시 성동구 왕십리로 222 한양대학교 신본관 114호 입학처</p>
+				<p><span>TEL</span><strong>02-2220-2000 </strong></p>
+				<p>[전화 연결 후 안내에 따라 해당 번호를 눌러주세요]</p>
+				<p>1번 신입학 / 2번 예체능 / 3번 편입학 / 4번 재외국민</p>
+				<p><span>FAX</span><strong>02-2220-0717</strong></p>
+				<!--
+				<p><span>신입학</span><strong>02-2220-3064~3078</strong></p>
+				<p><span>예체능(실기)</span><strong>02-2220-3080</strong></p>
+				<p><span>편입학</span><strong>02-2220-3081</strong></p>
+				<p><span>재외국민</span><strong>02-2220-3082~3085</strong></p>
+				<p><span>FAX</span><strong>02-2220-0717</strong></p>
+				-->
+				<!--  
+				<p><span>신입학 문의</span><strong>02-2220-3064 ~ 3075</strong></p>
+				<p><span>편입/재외국민 문의</span><strong>02-2220-3080 ~ 3083</strong></p>
+				<p><span>FAX</span><strong>02-2220-0717</strong></p>
+				-->
+				<p class="copyright">copyright ⓒ 2024 HANYANG UNIVERSITY. All rights reserved.</p>
+			</div>
+			<!-- 2024.04.16 패밀리사이트 마크업 변경 -->
+			<div class="familysite">
+				<span class="holder"><a href="javascript:front.familySiteToggle()">FAMILY SITE</a></span>
+				<ul>
+					<li><a href="https://www.hanyang.ac.kr/" target="_blank">한양대학교</a></li>
+					<li><a href="http://goerica.hanyang.ac.kr/" target="_blank">한양대학교 에리카 캠퍼스 입학처</a></li>
+					<li><a href="https://oia.hanyang.ac.kr/" target="_blank">한양대학교 국제처</a></li>
+				</ul>
+			</div>
+			<button type="button" class="btn-gotop" title="TOP">TOP</button>
+		</div>
+<iframe src="about:blank" name="ifr_hidden" frameborder="no" width="0" height="0" marginwidth="0" marginheight="0" border="0" title="hidden_frame"></iframe>
+<a href="javascript:void(0)" id="open_url" target="_blank" style="color:#2d3138">.</a>
+<script>
+
+	function go_privacy() {
+		window.open('https://go.hanyang.ac.kr/resources/web/html/privacy.html','priv','width=1050px,height=800px,scrollbars=yes,resizable=yes');
+		return;
+	}
+
+</script>
+
+
+
+			</div>
+		</div>
+		<!-- // section6 -->
+	</div>
+	<!-- // maincontents -->
+</div>
+
+<!-- s: modal -->
+<div class="pop-modal" id="movie_area">
+	<h2 class="sr-only">영상 팝업</h2>
+	<div class="pop-box youtube">
+		<div class="iframe-wrap" id="youtube_area">
+			<iframe frameborder="0" src="https://www.youtube.com/embed/vLdIKI3ye_Y" style="width: 100%; height: 100%;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+		<button type="button" class="btn-close-pop" title="팝업 닫기" id="youtube_close_btn">
+			<span class="sr-only">닫기</span>
+		</button>
+	</div>
+	<div class="dim"></div>
+</div>
+<!-- e: modal -->
+
+
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/front_ui.js"></script>
+<script type="text/javascript">
+
+function ipsiLayerToggle(layerType, directionType){
+	const ipsiEl = $(".ipsi-type > ul > ");
+	
+	if (!ipsiEl.find("li."+layerType).is(".active")){
+		$("#wrap").addClass("section3-layer-show");
+		$(".ipsi-layer-contents").removeClass("active rightType leftType");
+		ipsiEl.find("li").removeClass("active");
+		$(".ipsi-type.leftPos > ul > li").removeClass("active");
+
+		if (directionType === "leftPos"){
+			$(".ipsi-layer-contents."+layerType).addClass("active leftType");
+		}else{
+			$(".ipsi-layer-contents."+layerType).addClass("active rightType");
+		}
+		ipsiEl.find("li."+layerType).addClass("active");
+		$(".ipsi-type.leftPos > ul > li."+layerType).addClass("active");
+		ipsiNoticeSlider();
+		directionType === '';
+	}
+}
+
+function ipsiLayerClose(){
+	$(".ipsi-layer-contents").removeClass("leftType");
+	$(".ipsi-layer-contents").removeClass("active");
+	$(".ipsi-type > ul").find("li").removeClass("active");
+	setTimeout(function(){
+		$("#wrap").removeClass("section3-layer-show");
+	}, 100);
+}
+
+/* 2024.05.07 함수 수정 */
+const mainFullpage = new fullpage("#fullpage", {
+	licenseKey: 'D3M48-T12LK-9K41I-4KJ8J-SWVWQ', 
+	anchors: ['page1', 'page3', 'page2', 'page3', 'page4'],
+	menu: 'ul.page-menu',
+	css3: true,
+	lazyLoad: true,
+	onLeave: function(origin, fullIdx, direction){
+		//console.log('status fullscreen Ind : '+fullIdx.index);
+
+		if ((fullIdx.index) >= 5) {
+			$(".scrolldown").fadeOut();
+			$("ul.page-menu").addClass("footerUp");
+		}else if ((fullIdx.index) == 4) {
+			$(".scrolldown").fadeOut();
+			$("ul.page-menu").removeClass("footerUp");
+			mainNewsSlider();
+		}else if ((fullIdx.index) == 3) {
+			$(".scrolldown").fadeOut();
+			$("ul.page-menu").removeClass("footerUp");	
+		}else if ((fullIdx.index) == 2) {
+			$(".scrolldown").fadeOut();
+			$("ul.page-menu").removeClass("footerUp");				
+		}else if ((fullIdx.index) == 1) {
+			$(".scrolldown").fadeIn(500);
+			$("ul.page-menu").removeClass("footerUp");				
+		}else if ((fullIdx.index) == 0) {
+			$(".scrolldown").fadeIn(500);
+			$("ul.page-menu").removeClass("footerUp");				
+		}
+	},
+	afterLoad: function(origin, destination, direction, trigger){
+		var origin = this;
+		if(origin.index == 2){
+			if($(".ipsi-layer-contents.active").length > 0){
+				var activeClass = $(".ipsi-layer-contents.active").attr("class").split(" ")[1];
+				$(".ipsi-layer-contents").removeClass("leftType");
+				$(".ipsi-layer-contents").removeClass("active");
+				$(".ipsi-type.leftPos > ul").find("li").removeClass("active");
+				setTimeout(function(){
+					$("#wrap").removeClass("section3-layer-show");
+				}, 100);
+			}
+		}
+	},
+	afterResize: function(width, height){
+		console.log(width)
+		console.log(height)
+	}
+});
+
+
+function mainNewsSlider() {
+	// 기존 인스턴스 제거
+	if (window.prSlider instanceof Swiper) {
+		try { window.prSlider.destroy(true, true); } catch (e) {}
+	  	window.prSlider = null;
+	}
+
+	const $container = $("#pr-Slider-PC");
+	const slideCount = $container.find(".swiper-slide").length || 0;
+	const enableLoop = slideCount > 3;
+	const loopedSlides = enableLoop ? Math.min(slideCount, 5) : 0;
+
+	window.prSlider = new Swiper("#pr-Slider-PC", {
+		speed: 800,
+	    slidesPerView: "auto",
+	    centeredSlides: true,
+	    centerInsufficientSlides: true, // ✅ 슬라이드 부족 시 중앙정렬 보정
+	    spaceBetween: 200,
+	    observer: true,
+	    observeParents: true,
+	    loop: enableLoop,
+	    rewind: !enableLoop,
+	    loopedSlides: loopedSlides,
+	    loopAdditionalSlides: loopedSlides,
+	    initialSlide: enableLoop ? Math.floor(slideCount / 2) : 0,
+	    navigation: {
+	      nextEl: "#pr-Slider-PC .btnset .swiper-button-next",
+	      prevEl: "#pr-Slider-PC .btnset .swiper-button-prev",
+	    },
+	    on: {
+	      slideChangeTransitionStart() {
+	        $("#pr-Slider-PC .btnset").addClass("hidden");
+	      },
+	      slideChangeTransitionEnd() {
+	        $("#pr-Slider-PC .btnset").removeClass("hidden");
+	      },
+	      afterInit(swiper) {
+	        if (slideCount <= 3) {
+	          // 첫 로드시 살짝 오른쪽으로 이동 (왼쪽 여백 효과)
+	          swiper.setTranslate(-swiper.width / 4);
+	        }
+	      },
+		},
+	});
+}
+	
+function ipsiNoticeSlider(){
+	const swiper = new Swiper(".ipsi-layer-contents.active .notice-boardlist", {
+		speed:500,
+		slidesPerView:"3",
+		initialSlide:0,
+		observer:true,
+		observeParents:true,
+		spaceBetween:30,
+		navigation: {
+			nextEl: ".notice-boardlist .btnset .swiper-button-next",
+			prevEl: ".notice-boardlist .btnset .swiper-button-prev",
+		},
+		scrollbar: {
+			el: '.swiper-scrollbar',
+			draggable: true,
+			dragSize: 'auto',
+			snapOnRelease:true
+		}
+	});
+}
+
+/* 2024.05.07 함수 수정 */
+var mainArr= Array("page1","page2", "page3", "page4", "page5");
+
+$(function (){
+	
+	$("ul.page-menu > li").each(function(index){
+		$(this).attr("data-menuanchor", mainArr[index]);
+		$(this).find(" > a").attr("href", "#"+mainArr[index]);
+	});
+
+	$("body").on("click", "ul.page-menu > li > a", function(){
+		
+		var idx = $("ul.page-menu > li > a").index($(this));
+	
+		$("ul.page-menu > li").removeClass("active");
+		//mainFull.moveTo((idx+1))
+		$("ul.page-menu > li").eq(idx).addClass("active");
+	});
+	
+	//if (getCookie("layerTodayClose20250910") != "Y") { 
+	//	 openMainPopup(); 
+	//}
+	
+	
+
+});
+
+class ModalController {
+    constructor() {
+        this.body = document.body;
+        this.init();
+    }
+
+    init() {
+        this.bindCloseButtons();
+    }
+
+    // 모달 열기
+    modalShow(id) {
+        const modal = document.getElementById(id);
+        if (modal) {
+            modal.classList.add("is-active");
+            this.body.classList.add("is-fixed");
+        }
+    }
+
+    // 모달 닫기
+    modalHide(el) {
+        const modal = el.closest(".pop-modal");
+        if (modal) {
+            modal.classList.remove("is-active");
+            this.body.classList.remove("is-fixed");
+        }
+    }
+
+    // 닫기 버튼 바인딩
+    bindCloseButtons() {
+        document.addEventListener("click", (e) => {
+            if (e.target.matches(".pop-modal .btn-close-pop")) {
+                this.modalHide(e.target);
+            }
+        });
+    }
+}
+
+// 전역 사용 가능하도록
+window.modal = new ModalController();
+
+$(document).on("click", "#youtube_close_btn", function() {
+	$("#youtube_area").html("");
+	modal.modalHide(this);
+	$("#youtube_close_btn").trigger("click");
+});
+
+
+function mtcSeason(){
+	const swiper = new Swiper(".major-notice", {
+		slidesPerView:"2",
+		initialSlide:0,
+		//observer:true,
+		//observeParents:true,
+		spaceBetween:20,
+		
+		loop:true,
+		loopAdditionalSlides:1,
+		navigation: {
+			nextEl: ".major-notice .btnset .swiper-button-next",
+			prevEl: ".major-notice .btnset .swiper-button-prev",
+		},		
+		//freeMode:true,
+		breakpoints: {
+		  1280: {
+			slidesPerView: 4,
+			spaceBetween: 30
+		  }
+		}
+	});
+}
+mtcSeason();
+
+function js_pageFullPage(idx) {
+	fullpage_api.moveTo(idx);
+}
+
+function js_go_youtube(url) {
+	var ret = window.open(url, '', '', '');
+}
+
+function js_go_link(url, target) {
+	if (target == "Y") {
+		var ret = window.open(url, '', '', '');
+	} else {
+		document.location= url;
+	}
+	
+}
+
+/*
+function openMainPopup() {
+		
+    var width = 320;
+    var height = 928;
+    var left = (window.screen.width - width) / 2;
+    var top = (window.screen.height - height) / 2;
+
+    var win = window.open("popup.do", "layerTodayClose20250910", "width="+width+",height="+height+",top="+top+",left="+left+" ");
+}
+*/
+
+let popupWindow = null;
+
+function openMainPopup() {
+	
+	
+    	
+    	
+   	const popupWidth = 630;
+   	const popupHeight = 490;
+    	
+    
+
+    // 현재 브라우저 창의 크기
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // 현재 브라우저 창의 위치 (멀티모니터 환경 고려)
+    const windowLeft = window.screenX || window.screenLeft;
+    const windowTop = window.screenY || window.screenTop;
+
+    // 브라우저 창 기준 중앙 좌표 계산
+    const left = windowLeft + (viewportWidth - popupWidth) / 2;
+    const top = windowTop + (viewportHeight - popupHeight) / 2;
+    
+    popupWindow = window.open(
+        "popup.do",
+        "layerTodayClose20250910",
+        "width="+popupWidth+",height="+popupHeight+",top="+top+",left="+left
+    );
+    
+    // Ensure popup stays focused after parent refresh
+    window.addEventListener('unload', function() {
+        if (popupWindow && !popupWindow.closed) {
+            popupWindow.focus();
+        }
+    });
+}
+
+
+
+function getCookie(name) {
+	var nameOfCookie = name + "=";
+	var x = 0;
+	while ( x <= document.cookie.length ) {
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+				endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+		}
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 )
+			break;
+	}
+	return "";
+}
+
+//s: 2025.11.10 section1 스와이프 적용
+const section1_swiper = new Swiper(".section1-swiper", {
+	speed : 1000,
+	centeredSlides: true,
+	loop:true,
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: '.section1-swiper .section1-swiper-pagination',
+		clickable: true,
+		type: 'fraction',
+	},
+	navigation: {
+		nextEl: '.section1-swiper .section1-swiper-button-next',
+		prevEl: '.section1-swiper .section1-swiper-button-prev',
+	},
+});
+
+function section1SwiperPause() {
+	//console.log(swiper);
+	if ($(".btn-pause").hasClass('pause')) {
+		document.querySelector('.btn-pause').classList.remove('pause');
+		document.querySelector('.btn-pause').innerHTML = '일시정지';
+		section1_swiper.autoplay.start();
+		//return section1_swiper.autoplay.resume();
+	} else {
+		document.querySelector('.btn-pause').classList.add('pause');
+		document.querySelector('.btn-pause').innerHTML = '재생';
+		section1_swiper.autoplay.stop();
+	}
+	//section1_swiper.autoplay.pause();
+}
+
+$(document).on("click", ".section1-swiper .btn-pause", function() {
+	section1SwiperPause();
+});
+//s: 2025.11.10 section1 스와이프 적용
+
+//console.log($(window).width()+', '+$(window).height())
+</script>
+
+</body>
+</html>
