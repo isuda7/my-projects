@@ -111,6 +111,15 @@ body.noSubvisual .header.menuOpen .btn-allmenu .icon-X {background-color:#fff}
 body.noSubvisual .header.menuOpen .btn-allmenu .icon-X:before {background-color:#fff}
 body.noSubvisual .header.menuOpen .btn-allmenu .icon-X:after {background-color:#fff}
 
+body.noSubvisual .header.searchOpen .logo span {background:url('../images/logo.png') no-repeat 0 0; background-size:100% auto}
+body.noSubvisual .header.searchOpen .logo strong {color:#fff}
+body.noSubvisual .header.searchOpen .btn-allmenu .icon-E {background-color:#fff}
+body.noSubvisual .header.searchOpen .btn-allmenu .icon-E:before {background-color:#fff}
+body.noSubvisual .header.searchOpen .btn-allmenu .icon-E:after {background-color:#fff}
+body.noSubvisual .header.searchOpen .btn-allmenu .icon-X {background-color:#fff}
+body.noSubvisual .header.searchOpen .btn-allmenu .icon-X:before {background-color:#fff}
+body.noSubvisual .header.searchOpen .btn-allmenu .icon-X:after {background-color:#fff}
+
 body.noSubvisual .container {padding-top:12.8rem}
 body.noSubvisual .subvisual {display:none}
 
