@@ -45,7 +45,7 @@ body#apply .boardview dl.attachmenft-box {background:#fff; border:1px solid #eae
 body#apply .boardview .replybox dl.attachmenft-box  {background:#ebf2f6; border:0}
 body#apply .paging span strong {color:#004483}
 body#vod .paging span strong {color:#004483}
-body#srch .paging span strong {color:#004483}
+body#apply .paging span strong {color:#004483}
 
 .layer-selectbox {position:relative; z-index:20; width:100%; height:6.8rem}
 .layer-selectbox.on .holder > a::after {transform:rotate(-180deg); -webkit-transform:rotate(-180deg)}

@@ -71,7 +71,7 @@
 <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery_ui.min.js"></script>
 <script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/jquery.form.js"></script>
-<script type="text/javascript" src="./resources/web/js/common.js?v=20240513"></script>
+<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/common.js?v=20240513"></script>
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -278,8 +278,14 @@ span button:hover {background:rgba(255,255,255,0.3); border-color:rgba(255,255,2
 			<li><button type="button" class="btn-round" onclick="window.open('https://portal.hanyang.ac.kr/ipsi/findLoginPage.do', '', '')">지원자 통합서비스</button></li>
 			<li><button type="button" class="btn-round" onclick="location.href='https://go.hanyang.ac.kr/web/pds/pdsform_list.do';">서류 양식함</button></li>
 			<li><button type="button" class="btn-round" onclick="window.open('https://youtube.com/playlist?list=PLucI3ovmZYuiUqvrtPF4ONtW3u5mcXJmT&feature=shared', '', '')">입학처 유튜브</button></li>
-			<li><a href="https://www.instagram.com/hanyang_univ/" target="_blank"><img src="https://go.hanyang.ac.kr/resources/web/images/instagram-logo.png" id="img-instagram-logo"></a></li>
-			<li><a href="https://www.youtube.com/@HanyangUniv.1939" target="_blank"><img src="https://go.hanyang.ac.kr/resources/web/images/youtube-logo.png" id="img-youtube-logo"></a></li>
+                <li><a href="https://www.instagram.com/hanyang_univ/" target="_blank"><img
+                            src="./resources/web/images/instagram-logo.png"
+                            id="img-instagram-logo"></a></li>
+                <li><a href="https://www.youtube.com/@HanyangUniv.1939" target="_blank"><img
+                            src="./resources/web/images/youtube-logo.png"
+                            id="img-youtube-logo"></a></li>
+			<!-- 2026-07-09 검색추가건: 검색버튼 추가 -->
+			<li><a href="javascript:void(0)" id="gnbSrch"><img src="./resources/web/images/srch-gnb.png" id="img-youtube-logo"></a></li>
 			<li><button type="button" class="btn-allmenu" onclick="front.allmenuToggle()" title="전체메뉴 보기"><i class="icon-E"></i><i class="icon-X"></i></button></li>
 		</ul>	
 		
@@ -785,6 +791,24 @@ span button:hover {background:rgba(255,255,255,0.3); border-color:rgba(255,255,2
 				<strong>A BETTER WORLD</strong>
 			</h2>
 		</div>
+		
+		<!-- 2026-07-09 검색 레이어 추가 -->
+		<div class="search-layer">
+			<div class="search-layer-inner">
+				<h1><strong>자료 검색</strong></h1>
+				<div class="search-layer-form">
+					<fieldset>
+						<legend>통합검색</legend>
+						<div class="inp-area">
+							<input type="text" placeholder="검색어를 입력하세요" id="layerSearchKeyword">
+							<button type="button" class="btn-layer-search" title="검색">검색</button>
+						</div>
+					</fieldset>
+					<p class="search-layer-desc">ⓘ 검색어를 입력 하시면 입학처 자료를 한번에 검색할 수 있습니다.</p>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	
 		
@@ -1765,7 +1789,7 @@ span button:hover {background:rgba(255,255,255,0.3); border-color:rgba(255,255,2
 <!-- e: modal -->
 
 
-<script type="text/javascript" src="https://go.hanyang.ac.kr/resources/web/js/front_ui.js"></script>
+<script type="text/javascript" src="./resources/web/js/front_ui.js"></script>
 <script type="text/javascript">
 
 function ipsiLayerToggle(layerType, directionType){

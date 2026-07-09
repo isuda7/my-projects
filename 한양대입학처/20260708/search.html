@@ -50,7 +50,7 @@
     </script>
 </head>
 
-<body id="srch"> <!-- main/수시(susi)/정시(jungsi)/재외국민(foreign)/편입학(pyeonip) 타입 별로 body id 변경됨 -->
+<body id="apply"> <!-- main/수시(susi)/정시(jungsi)/재외국민(foreign)/편입학(pyeonip) 타입 별로 body id 변경됨 -->
     <div id="wrap">
         <!-- S: header -->
         <div class="header">
@@ -68,10 +68,14 @@
                         onclick="window.open('https://youtube.com/playlist?list=PLucI3ovmZYuiUqvrtPF4ONtW3u5mcXJmT&feature=shared', '', '')">입학처
                         유튜브</button></li>
                 <li><a href="https://www.instagram.com/hanyang_univ/" target="_blank"><img
-                            src="https://go.hanyang.ac.kr/resources/web/images/instagram-logo.png"
+                            src="./resources/web/images/instagram-logo.png"
                             id="img-instagram-logo"></a></li>
                 <li><a href="https://www.youtube.com/@HanyangUniv.1939" target="_blank"><img
-                            src="https://go.hanyang.ac.kr/resources/web/images/youtube-logo.png"
+                            src="./resources/web/images/youtube-logo.png"
+                            id="img-youtube-logo"></a></li>
+                <!-- 2026-07-09 검색추가건: 검색버튼 추가 -->
+                <li><a href="javascript:void(0)" id="gnbSrch"><img
+                            src="./resources/web/images/srch-gnb.png"
                             id="img-youtube-logo"></a></li>
                 <li><button type="button" class="btn-allmenu" onclick="front.allmenuToggle()" title="전체메뉴 보기"><i
                             class="icon-E"></i><i class="icon-X"></i></button></li>
@@ -220,6 +224,24 @@
                     <strong>A BETTER WORLD</strong>
                 </h2>
             </div>
+            
+            <!-- 2026-07-08 검색추가건: 검색 레이어 추가 -->
+            <div class="search-layer">
+                <div class="search-layer-inner">
+                    <h1><strong>자료 검색</strong></h1>
+                    <div class="search-layer-form">
+                        <fieldset>
+                            <legend>통합검색</legend>
+                            <div class="inp-area">
+                                <input type="text" placeholder="검색어를 입력하세요" id="layerSearchKeyword">
+                                <button type="button" class="btn-layer-search" title="검색">검색</button>
+                            </div>
+                        </fieldset>
+                        <p class="search-layer-desc">ⓘ 검색어를 입력 하시면 입학처 자료를 한번에 검색할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <script>
             function js_setqna() {
@@ -234,19 +256,19 @@
 
         <!-- S: container -->
         <div class="container">
-            <!-- 2026-07-08 검색추가건: subvisual -->
-            <div class="subvisual type-search">
+            <!-- 2026-07-09 검색추가건: subvisual -->
+            <div class="subvisual">
                 <h1><strong>자료 검색</strong><span>입학처 자료를 한번에 검색할 수 있습니다.</span></h1>
                 <div class="svgbox">
-                    <defs>
-						<mask id="MASK" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-							<image class="mask" xlink:href="./resources/web/images/sub_mask.png" width="1920" height="400" data-svg-origin="150 150" transform="matrix(0.8377,0,0,0.8377,24.345,24.345)" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px;">
-						</image></mask>
-					</defs>
-                    <svg id="svg" viewBox="0 0 1920 400" preserveAspectRatio="xMidYMid slice">
+                    <svg id="svg" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <mask id="MASK" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+                                <image class="mask" xlink:href="./resources/web/images/sub_mask.png" width="300" height="300" data-svg-origin="150 150" transform="matrix(1,0,0,1,0,0)" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px;">
+                            </image></mask>
+                        </defs>
                         <g mask="url(#MASK)"> <!-- 마스크 preserveAspectRatio="" 옵션 변경 -->
-                            <image x="0" y="0" class="space" href="./resources/web/images/img_subvisual_search.jpg"
-                                width="1920" height="400" preserveAspectRatio="">
+                            <image x="0" y="0" class="space" href="./resources/web/images/img_subvisual_search.png"
+                                width="300" height="300" preserveAspectRatio="">
                                 <!-- 수시(img_subvisual_susi.jpg), 정시(img_subvisual_jungsi.jpg), 재외국민(img_subvisual_foreign.jpg), 편입학(img_subvisual_pyeonip.jpg)  -->
                         </g>
                     </svg>
@@ -254,7 +276,7 @@
             </div>
 
             <div class="contents">
-                <!-- 2026-07-08 검색추가건: page-search -->
+                <!-- 2026-07-09 검색추가건: page-search -->
                 <div class="page-search"> <!-- 페이지별로 변경되는 class -->
                     <!-- totalcnt-schbox2 -->
                     <div class="totalcnt-schbox2">
@@ -276,7 +298,7 @@
 
                     <!-- 검색목록 -->
                     <div class="tab-hiddencontents on">
-                        <!-- 2026-07-08 검색추가건: hover-outlined 케이스추가 -->
+                        <!-- 2026-07-09 검색추가건: hover-outlined 케이스추가 -->
                         <div class="board-listgroup">
                             <ul>
                                 <li onclick="js_encode_view('notice_view.do?bn=18472&amp;m_type=SUSI&amp;nPage=1');">

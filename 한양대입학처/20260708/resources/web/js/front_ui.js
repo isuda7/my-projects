@@ -37,6 +37,11 @@ var frontUI = function() {
 		}
 	});
 
+	$("#gnbSrch").click(function(e){
+		e.preventDefault();
+		me.searchToggle();
+	});
+
 	$(".footer-inner .btn-gotop").click(function(){			
 		if ($("body").attr("id") === "main"){
 			fullpage_api.moveTo('page1', 0);			
@@ -120,7 +125,8 @@ frontUI.prototype = {
 
 			if ($("body").is(".noSubvisual") === true){ /* page not in subvisual */
 				//console.log('noSubvisual')
-				if (!$(".header").is(".menuOpen")){
+				// 2026-07-09 검색추가건: searchOpen 조건추가
+				if (!$(".header").is(".menuOpen") && !$(".header").is(".searchOpen")){
 					if(window.pageYOffset > headerHeight/2){
 							$(".header").addClass("toFixed");
 					}else {
@@ -130,7 +136,8 @@ frontUI.prototype = {
 			}
 			
 			if ($("body").is(".noSubvisual") === false){ /* page in subvisual  */
-				if (!$(".header").is(".menuOpen")){
+				// 2026-07-09 검색추가건: searchOpen 조건추가
+				if (!$(".header").is(".menuOpen") && !$(".header").is(".searchOpen")){
 				if(window.pageYOffset > headerHeight/2){
 						$(".header").addClass("toFixed");
 					}else{
@@ -221,12 +228,41 @@ frontUI.prototype = {
 	},
 
 	allmenuToggle: function(){
+		// 2026-07-09 검색추가건: searchOpen 조건문 추가
+		if ($(".header").is(".searchOpen")) {
+			this.searchToggle();
+			return;
+		}
 		if (!$(".header").is(".menuOpen")){
 			$(".header").addClass("menuOpen");
 			$(".btn-allmenu").addClass("open");
 		}else{
 			$(".header").removeClass("menuOpen");
 			$(".btn-allmenu").removeClass("open");
+		}
+	},
+
+	// 2026-07-09 검색추가건: 검색레이어 기능추가
+	searchToggle: function(){
+		if (!$(".header").is(".searchOpen")){
+			$(".header").addClass("searchOpen");
+			$(".btn-allmenu").addClass("open");
+			if($("body > .pop-transparents-layer.search-dim").length == 0) {
+				$("body").append("<div class='pop-transparents-layer search-dim'></div>");
+				setTimeout(function(){
+					$("body > .pop-transparents-layer.search-dim").addClass("active");
+				}, 10);
+			}
+			$("body > .pop-transparents-layer.search-dim").off("click").on("click", function(){
+				front.searchToggle();
+			});
+		}else{
+			$(".header").removeClass("searchOpen");
+			$(".btn-allmenu").removeClass("open");
+			$("body > .pop-transparents-layer.search-dim").removeClass("active");
+			setTimeout(function(){
+				$("body > .pop-transparents-layer.search-dim").remove();
+			}, 800);
 		}
 	},
 
