@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바이브코딩 (Vibe Coding) | 미래를 여는 코딩 커리큘럼</title>
+    <meta name="description" content="최신 AI와 트렌드를 반영한 바이브코딩 커리큘럼으로 코딩의 새로운 패러다임을 경험하세요.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">VibeCoding.</div>
+                <ul class="nav-links">
+                    <li><a href="#about">개요</a></li>
+                    <li><a href="#editor">에디터</a></li>
+                    <li><a href="#process">프로세스</a></li>
+                    <li><a href="#practical">실무단계</a></li>
+                </ul>
+                <a href="#editor" class="cta-button">에디터 알아보기</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="container">
+            <h1>실무자를 위한<br>바이브코딩 가이드</h1>
+            <p>AI 페어 프로그래밍을 활용하여 실제 프로덕트를 기획하고 개발하는 실무적인 접근 방식과 단계별 워크플로우를 안내합니다.</p>
+            <div class="hero-buttons">
+                <a href="#editor" class="cta-button">에디터 알아보기</a>
+                <a href="#process" class="secondary-button">프로세스 보기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editor Section -->
+    <section class="target" id="editor" style="background: var(--bg-color); padding-top: 50px;">
+        <div class="container">
+            <h2 class="section-title">에디터 비교 및 선택</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 60px;">어떤 도구를 선택하느냐에 따라 바이브코딩의 생산성이 크게 달라집니다.</p>
+            <div class="curriculum-grid">
+                <div class="curriculum-card">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">💻</div>
+                    <h3>VS Code (w/ Copilot)</h3>
+                    <p>가장 대중적인 에디터에 AI 플러그인을 더한 형태입니다. 기존 확장 프로그램 생태계를 유지할 수 있으나, 프로젝트 전체 문맥에 대한 딥한 이해와 통합성 측면에서는 다소 제한적입니다.</p>
+                </div>
+                <div class="curriculum-card">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">⚡️</div>
+                    <h3>Cursor (커서)</h3>
+                    <p>AI 페어 프로그래밍에 특화된 에디터로 실무에서 가장 널리 쓰입니다. 코드베이스 전체 파악이 뛰어나고, <code>Cmd+K</code>를 통한 인라인 생성 및 수정 경험이 압도적으로 우수합니다.</p>
+                </div>
+                <div class="curriculum-card">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">🚀</div>
+                    <h3>Antigravity (안티그래비티)</h3>
+                    <p>최상위 수준의 자율성을 가진 에이전트(Agentic) 코딩 어시스턴트입니다. 개발자의 단순 지시를 넘어, 개발 환경을 분석하고 능동적으로 문제를 해결하며 복잡한 태스크를 스스로 수행합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="curriculum" id="process">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 20px;">바이브코딩 프로세스</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 60px;">성공적인 바이브코딩을 위한 준비와 실무, 그리고 세부 진행 단계를 안내합니다.</p>
+            
+            <!-- 준비 vs 실무 -->
+            <div class="curriculum-grid" style="margin-bottom: 60px;">
+                <div class="curriculum-card">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">⚙️</div>
+                    <h3>준비 작업 (Preparation)</h3>
+                    <p>코드를 짜기 전, AI에게 완벽한 컨텍스트를 주입하는 단계입니다. <strong>프로젝트 스펙(언어/프레임워크), 파일 구조, 역할(Role)</strong> 등을 정의하는 초기 시스템 프롬프트를 작성하여 AI가 딴 길로 새지 않도록 뼈대를 잡습니다.</p>
+                </div>
+                <div class="curriculum-card">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">🛠️</div>
+                    <h3>실무 작업 (Execution)</h3>
+                    <p>준비된 환경 위에서 AI와 지속적으로 핑퐁(Ping-pong)하는 단계입니다. 거대한 요구사항이 아닌 <strong>작은 기능 단위(Chunk)</strong>로 지시를 내리고, 즉각적인 리뷰와 피드백을 통해 결과물을 점진적으로 완성해 나갑니다.</p>
+                </div>
+            </div>
+
+            <!-- 세부 단계 -->
+            <div class="target-content" style="padding: 40px; background: rgba(0,0,0,0.2);">
+                <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 40px; color: #fff;">세부 진행 단계 (Workflow)</h3>
+                <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="feature-card">
+                        <div class="feature-icon">1️⃣</div>
+                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 10px;">요구사항 구체화</h4>
+                        <p style="font-size: 0.95rem;">어떤 기능을 만들지 명확한 입력(Input)과 기대 출력(Output)을 정의합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">2️⃣</div>
+                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 10px;">뼈대(Skeleton) 구축</h4>
+                        <p style="font-size: 0.95rem;">세부 로직을 작성하기 전 라우팅, 폴더 구조, 데이터 모델 등 아키텍처를 우선 세팅합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">3️⃣</div>
+                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 10px;">마이크로 태스크 진행</h4>
+                        <p style="font-size: 0.95rem;">UI 마크업, API 연동 등 하나의 작업만 독립적으로 AI에게 지시하고 검증합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">4️⃣</div>
+                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 10px;">에러 복붙 디버깅</h4>
+                        <p style="font-size: 0.95rem;">오류 발생 시 에러 로그 전문과 상황을 그대로 복사해 AI에게 해결책을 묻습니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">5️⃣</div>
+                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 10px;">코드 리뷰 및 리팩토링</h4>
+                        <p style="font-size: 0.95rem;">코드가 작동하더라도 "더 나은 패턴이나 취약점은 없는지" 되물어 코드를 다듬습니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">6️⃣</div>
+                        <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 10px;">컨텍스트 업데이트</h4>
+                        <p style="font-size: 0.95rem;">새로운 라이브러리 추가나 요구사항 변경 시, AI의 메모리(Context)를 다시 갱신해줍니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Stages Section -->
+    <section class="target" id="practical" style="padding-top: 50px; padding-bottom: 100px;">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 20px;">실무 단계 가이드 및 작성 기법</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 60px;">명확한 기획이 있을 때와 없을 때의 접근법, 그리고 필수 바이브코딩 작성 기법입니다.</p>
+            
+            <div class="curriculum-grid" style="margin-bottom: 40px;">
+                <div class="curriculum-card">
+                    <span class="week-badge">상황 A</span>
+                    <h3>프롬프트가 있는 경우 (명확한 기획)</h3>
+                    <p>기획안이 확고하다면 <strong>'구체적 지시와 제한'</strong>이 핵심입니다. 기대하는 출력값(Output)을 명시하고, 사용할 프레임워크나 라이브러리를 엄격히 고정하여 AI가 딴 길로 새지 않도록 통제합니다.</p>
+                </div>
+                <div class="curriculum-card">
+                    <span class="week-badge">상황 B</span>
+                    <h3>프롬프트가 없는 경우 (아이디어 단계)</h3>
+                    <p>스펙이 불명확하다면 <strong>'탐색적 대화'</strong>로 시작합니다. "이런 서비스를 만들 건데 어떤 아키텍처가 좋을까?"라고 AI의 제안을 먼저 이끌어낸 뒤, 초안을 바탕으로 점차 요구사항을 구체화(Refining)합니다.</p>
+                </div>
+            </div>
+
+            <div class="target-content" style="padding: 40px;">
+                <h3 style="margin-bottom: 25px; font-size: 1.5rem; color: #fff;">💡 바이브코딩 작성기법 기본 가이드</h3>
+                <ul style="display: flex; flex-direction: column; gap: 15px;">
+                    <li><span class="check">✓</span> <strong>'How'보다 'What':</strong> 로직을 어떻게 짤지 장황하게 지시하기보다, 달성할 최종 목표와 결과물 형태를 명확히 지시하세요.</li>
+                    <li><span class="check">✓</span> <strong>에러 로그의 활용:</strong> 오류 발생 시 당황하지 말고 터미널의 에러 로그 전문과 발생 상황을 복사해서 그대로 붙여넣어 원인을 분석시키세요.</li>
+                    <li><span class="check">✓</span> <strong>마이크로 태스크 분할:</strong> 한 번에 거대한 기능 구현을 요구하면 환각(Hallucination)이 발생합니다. 최소 단위로 쪼개어 하나씩 해결하세요.</li>
+                    <li><span class="check">✓</span> <strong>비판적 코드 리뷰:</strong> AI가 작성한 코드를 무비판적으로 수용하지 말고 "잠재적인 버그나 성능 이슈, 보안 취약점은 없는지 검토해줘"라고 재요청하세요.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">VibeCoding.</div>
+                <p>&copy; 2026 VibeCoding Curriculum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
