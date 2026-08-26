@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>2027학년도 아주대학교 수시모집</title>
+
+    <!-- ==================== [Global Resources] ==================== -->
+    <!-- ---------------- [Fonts] ---------------- -->
+    <link rel="stylesheet" href="https://wzine.kr/ajou_presentation/_css/default.css">
+
+    <!-- ---------------- [Libraries] ---------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        /* ==================== [CSS Initialization & Variables] ==================== */
+        /* ---------------- [CSS Reset] ---------------- */
+        html {
+            font-size: 1px;
+            touch-action: pan-y;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        @media (max-width: 1920px) {
+            html {
+                font-size: calc(100vw / 1920);
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 16rem;
+            font-family: 'Pretendard', sans-serif;
+            background: #dcedfa url('./images/bg_body.png') no-repeat center top / cover;
+            -webkit-tap-highlight-color: transparent;
+            overflow-x: hidden;
+            word-break: keep-all;
+        }
+
+        *,
+        strong,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            font-family: inherit;
+            line-height: inherit;
+            color: inherit;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            border: none;
+            background: none;
+            padding: 0;
+            margin: 0;
+            font: inherit;
+            -webkit-appearance: none;
+            appearance: none;
+            outline: none;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        /* ---------------- [CSS Variables] ---------------- */
+        :root {
+            --color-primary: #004b87;
+            --color-secondary: #002159;
+            --color-blue-light: #88B2DF;
+            --color-blue-bg: #e6f1f8;
+            --color-white: #ffffff;
+            --color-black: #111111;
+            --color-text-main: #333333;
+            --color-text-sub: #666666;
+
+            --font-ajou: 'Ajou', 'Pretendard', sans-serif;
+            --shadow-card: 0 8rem 16rem rgba(0, 0, 0, 0.12);
+            --shadow-botton: 0 4rem 8rem rgba(0, 0, 0, 0.04);
+            --radius-card: 20rem;
+        }
+
+        /* ==================== [Layout & Typography] ==================== */
+        /* ---------------- [Layout Containers] ---------------- */
+        .wrap {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 배경 마스코트 */
+        .bg-mascot-bottom {
+            position: absolute;
+            top: 746rem;
+            left: 724rem;
+            width: 260rem;
+            aspect-ratio: 130 / 107;
+            background: url('./images/img_ajou_02.png') no-repeat center bottom / contain;
+            pointer-events: none;
+            z-index: 100;
+            animation: floatMascot 3s ease-in-out infinite;
+
+        }
+
+        @keyframes floatMascot {
+
+            0%,
+            100% {
+                transform: translateY(0) translateX(0) rotate(-1deg);
+            }
+
+            50% {
+                transform: translateY(-12rem) translateX(2rem) rotate(1deg);
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1920rem;
+            margin: 0 auto;
+            padding: 40rem 80rem 60rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* ==================== [Components] ==================== */
+        /* ---------------- [Header] ---------------- */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40rem;
+        }
+
+        .header-logo img {
+            height: 48rem;
+        }
+
+        .header-links {
+            display: flex;
+            gap: 15rem;
+        }
+
+        .header-links .btn-pill span {
+            font-weight: 400;
+        }
+
+        .btn-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 48rem;
+            padding: 0 30rem;
+            border-radius: 100rem;
+            font-size: 16rem;
+            font-weight: 700;
+            gap: 10rem;
+            transition: all 0.3s;
+            color: var(--color-white);
+        }
+
+        .btn-pill:hover {
+            color: var(--color-white);
+        }
+
+        .btn-pill.dark {
+            background-color: var(--color-secondary);
+        }
+
+        .btn-pill.light {
+            background-color: var(--color-blue-light);
+        }
+
+        .btn-pill:hover {
+            box-shadow: 0 5rem 15rem rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-pill svg {
+            width: 16rem;
+            height: 16rem;
+        }
+
+        /* ---------------- [Main Grid Layout] ---------------- */
+        .main-content {
+            display: flex;
+            gap: 40rem;
+            align-items: stretch;
+        }
+
+        /* ---------------- [Left: Boarding Pass] ---------------- */
+        .section-boarding-pass {
+            flex: 1 1 auto;
+            width: 604rem;
+            border-radius: 40rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: visible;
+            z-index: 20;
+        }
+
+        .pass-mascot {
+            position: absolute;
+            bottom: -20rem;
+            right: -95rem;
+            width: 270rem;
+            height: auto;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .pass-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            border-top-left-radius: 40rem;
+            border-top-right-radius: 40rem;
+            padding-right: 16rem;
+            height: 128rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .img-checkin {
+            height: 60rem;
+            display: block;
+        }
+
+        .pass-body {
+            padding: 40rem;
+            position: relative;
+            z-index: 10;
+            background: url('./images/bg_sec1_body.png') no-repeat center bottom / cover;
+        }
+
+        .pass-title {
+            font-size: 36rem;
+            font-weight: 800;
+            font-family: var(--font-ajou);
+            color: #102F65;
+            line-height: 1.3;
+            margin-bottom: 28rem;
+            letter-spacing: -1rem;
+        }
+
+        .pass-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16rem;
+            margin-bottom: 24rem;
+        }
+
+        .btn-pass {
+            background: #83A3DA;
+            color: var(--color-white);
+            height: 100rem;
+            padding: 10rem;
+            border-radius: 15rem;
+            font-size: 20rem;
+            line-height: 1.4;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s;
+            border: none;
+            box-shadow: 0 5rem 15rem rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-pass:hover {
+            background: #578CE8;
+            transform: translateY(-3rem);
+            box-shadow: 0 10rem 20rem rgba(0, 0, 0, 0.15);
+        }
+
+        .pass-info-list li {
+            font-size: 16rem;
+            color: #000;
+            margin-bottom: 10rem;
+            padding-left: 14rem;
+            position: relative;
+            letter-spacing: -0.5rem;
+            line-height: 1.4;
+        }
+
+        .pass-info-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #6A7D9C;
+        }
+
+        /* 티켓 하단 */
+        .pass-footer {
+            background: url('./images/bg_sec1_ticket.png') no-repeat center bottom / 100% 100%;
+            width: 100%;
+            aspect-ratio: 604 / 108;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: auto;
+            padding-top: 24rem;
+        }
+
+        .pass-footer-title {
+            font-size: 18rem;
+            font-weight: 800;
+            font-family: var(--font-ajou);
+            display: flex;
+            align-items: center;
+            gap: 10rem;
+            color: #333333;
+        }
+
+        .pass-footer-title svg {
+            width: 24rem;
+            height: 24rem;
+        }
+
+        /* ---------------- [Center: Quick Links] ---------------- */
+        .section-center-links {
+            flex: 1 1 auto;
+            width: 260rem;
+            display: flex;
+            flex-direction: column;
+            gap: 15rem;
+            z-index: 10;
+        }
+
+        .card-sm {
+            background: var(--color-white);
+            border-radius: var(--radius-card);
+            padding: 24rem;
+            height: 120rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            transition: all 0.3s;
+            position: relative;
+            border: 2px solid transparent;
+            color: var(--color-black);
+        }
+
+        .card-sm .text {
+            font-size: 18rem;
+            font-weight: 700;
+            color: inherit;
+            line-height: 28rem;
+            letter-spacing: -0.5rem;
+        }
+
+        .card-sm .text .badge {
+            display: inline-block;
+            background: #FFF4E9;
+            color: #F79433;
+            font-size: 12rem;
+            line-height: 16rem;
+            padding: 2rem 10rem;
+            border-radius: 16rem;
+            font-weight: 500;
+        }
+
+        .card-sm .text-sub {
+            font-size: 14rem;
+            line-height: 20rem;
+            color: inherit;
+            font-weight: 400;
+            display: block;
+        }
+
+        .card-sm .text-large {
+            color: inherit;
+            font-size: 18rem;
+            line-height: 28rem;
+            font-weight: 700;
+            font-family: var(--font-ajou);
+        }
+
+        .card-sm svg {
+            position: absolute;
+            top: 12rem;
+            right: 12rem;
+            width: 16rem;
+            height: 16rem;
+            color: #999;
+        }
+
+        .card-sm:hover {
+            border-color: #005BAC;
+            color: var(--color-primary);
+            box-shadow: var(--shadow-card);
+        }
+
+        .card-sm:hover svg {
+            color: inherit;
+        }
+
+        /* ---------------- [Right: Board & Banners] ---------------- */
+        .section-right {
+            flex: 1 1 auto;
+            width: 810rem;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20rem;
+            z-index: 10;
+        }
+
+        /* 슬라이드 배너 영역 (Swiper) */
+        .board-restructure {
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            aspect-ratio: 816/328;
+        }
+
+        .board-restructure .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .board-restructure .swiper-slide {
+            position: relative;
+            width: 100% !important;
+            height: 100%;
+        }
+
+        .board-restructure .swiper-slide .btn-pill {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 14rem 18rem;
+            font-size: 14rem;
+            font-weight: 400;
+            gap: 4rem;
+        }
+
+        .board-restructure .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Swiper Controls Customization */
+        .swiper-custom-controls {
+            position: absolute;
+            bottom: 30rem;
+            left: 40rem;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 15rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 8rem 12rem;
+            border-radius: 30rem;
+            backdrop-filter: blur(4px);
+        }
+
+        .swiper-custom-controls button {
+            color: var(--color-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s;
+        }
+
+        .swiper-custom-controls button:hover {
+            opacity: 0.7;
+        }
+
+        .swiper-custom-controls button.btn-prev svg,
+        .swiper-custom-controls button.btn-next svg {
+            width: 24rem;
+            height: 24rem;
+        }
+
+        .swiper-custom-controls button.btn-playpause svg {
+            width: 12rem;
+            height: 12rem;
+        }
+
+        .swiper-pagination {
+            position: static !important;
+            display: flex;
+            align-items: center;
+            gap: 16rem;
+            width: auto !important;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10rem;
+            height: 10rem;
+            background: rgba(255, 255, 255, 0.4);
+            opacity: 1;
+            margin: 0 !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: var(--color-white);
+        }
+
+        /* Swiper SVG Icons */
+        .icon-play,
+        .icon-pause {
+            display: none;
+        }
+
+        .btn-playpause.is-playing .icon-pause {
+            display: block;
+        }
+
+        .btn-playpause:not(.is-playing) .icon-play {
+            display: block;
+        }
+
+        .board-links-grid {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid #fff;
+            border-radius: var(--radius-card);
+            padding: 28rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20rem;
+        }
+
+        .link-item {
+            position: relative;
+            background: transparent;
+            padding: 0;
+            border: none;
+            transition: all 0.3s;
+            aspect-ratio: 240 / 110;
+            font-weight: 500;
+            color: #000;
+        }
+
+        .link-item-inner {
+            background: url('./images/bg_folder.png') no-repeat center / 100% 100%;
+            padding: 38rem 20rem 16rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .link-item-shadow {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 25rem);
+            /* 투명영역 높이 제외 */
+            border-radius: 0 16rem 16rem 16rem;
+            transition: all 0.3s;
+            z-index: 1;
+        }
+
+        .link-item:hover {
+            transform: translateY(-5rem);
+            font-weight: 700;
+        }
+
+        .link-item:hover .link-item-shadow {
+            box-shadow: var(--shadow-botton);
+        }
+
+        .link-item span {
+            font-size: 18rem;
+            line-height: 28rem;
+            font-weight: inherit;
+            letter-spacing: -0.5rem;
+            color: #005EA6;
+        }
+
+        .link-item svg {
+            width: 24rem;
+            height: 24rem;
+            margin-bottom: 24rem;
+        }
+
+        .bottom-banners {
+            display: flex;
+            gap: 20rem;
+        }
+
+        .banner {
+            flex: 1;
+            border-radius: var(--radius-card);
+            height: 108rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            display: block;
+        }
+
+        .banner:hover {
+            color: #fff;
+            box-shadow: var(--shadow-botton);
+        }
+
+        .banner-inner {
+            padding: 20rem 30rem;
+            height: 100%;
+            line-height: 1.4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: calc(var(--radius-card) - 2rem);
+            color: var(--color-white);
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-blue .banner-inner {
+            background: url('./images/bg_btn_ai.png') no-repeat right bottom / cover;
+            background-color: var(--color-primary);
+            border-radius: var(--radius-card);
+        }
+
+        .banner-orange {
+            padding: 2rem;
+            z-index: 1;
+        }
+
+        .banner-orange::before {
+            --size: 500rem;
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 500rem;
+            height: 500rem;
+            margin-left: calc(var(--size) / -2);
+            margin-top: calc(var(--size) / -2);
+            background: linear-gradient(180deg, #00D3C8, #FFD900, #0900FF);
+            animation: rotateGradient 5s linear infinite;
+            z-index: -1;
+        }
+
+        .banner-orange .banner-inner {
+            background: url('./images/bg_btn_test.png') no-repeat right bottom / cover;
+            background-color: #d97736;
+        }
+
+        @keyframes rotateGradient {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .banner-title {
+            font-size: 22rem;
+            font-weight: 700;
+            font-family: var(--font-ajou);
+        }
+
+        .banner-btn {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            width: 62rem;
+            height: 62rem;
+            font-size: 12rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--color-white);
+            flex-shrink: 0;
+        }
+
+        /* ==================== [Responsive Design] ==================== */
+        @media (max-width: 1280px) {
+            html {
+                font-size: calc(120vw / 1280);
+                /* font-size: 1px; */
+            }
+            body {
+                background-color: #CFE6F5;
+            }
+            .container {
+                padding-left: 60rem;
+                padding-right: 60rem;
+            }
+            .main-content {
+                flex-wrap: wrap;
+                gap: 80rem 40rem;
+            }
+            
+            .pass-mascot {
+                right: -30rem;
+                width: 220rem;
+            }
+            .section-right {
+                flex: 1 1 100%;
+            }
+
+            .bg-mascot-bottom {
+                top: 770rem;
+                left: 740rem;
+                width: 220rem;
+            }
+
+            .board-restructure .swiper-slide .btn-pill {
+                padding: 10rem 17rem;
+                font-size: 18rem;
+                height: 60rem;
+            }
+        }
+        @media (max-width: 1024px) {
+            html {
+                font-size: calc(100vw / 1024);
+            }
+        }
+
+        /* 전체 레이아웃 모바일 구조 */
+        @media (max-width: 767px) {
+            html {
+                font-size: calc(100vw / 767);
+            }
+            .container {
+                padding-left: 40rem;
+                padding-right: 40rem;
+            }
+            .main-content {
+                gap: 60rem;
+            }
+
+            .header-links {
+                gap: 8rem;
+            }
+            .header-links .btn-pill {
+                height: 40rem;
+                padding-left: 16rem;
+                padding-right: 16rem;
+            }
+
+            .header-links .btn-pill span {
+                display: none;
+            }
+
+            .bg-mascot-bottom {
+                top: 1230rem;
+                left: 423rem;
+                width: 210rem;
+            }
+            .section-center-links {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .board-links-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .bottom-banners {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: calc(90vw / 480);
+            }
+            .bg-mascot-bottom {
+                top: 1170rem;
+                left: 275rem;
+                width: 200rem;
+            }
+            .header-logo img {
+                height: 40rem;
+            }
+            .header-links .btn-pill svg {
+                display: none;
+            }
+            .pass-header {
+                height: 80rem;
+                border-top-left-radius: 20rem;
+                border-top-right-radius: 20rem;
+            }
+            .pass-body {
+                border-bottom-left-radius: 20rem;
+                border-bottom-right-radius: 20rem;
+            }
+            .pass-footer {
+                display: none;
+            }
+            .pass-mascot {
+                right: 8rem;
+                width: 142rem;
+            }
+            .pass-buttons {
+                grid-template-columns: 1fr;
+            }
+            .img-checkin {
+                height: 40rem;
+            }
+            .btn-pass {
+                height: 60rem;
+            }
+
+            .board-links-grid {
+                padding: 0;
+                border: 0;
+                background: none;
+            }
+
+            .board-restructure {
+                aspect-ratio: auto;
+            }
+            .board-restructure .swiper-wrapper {
+                height: auto;
+            }
+            .board-restructure .swiper-slide img {
+                height: auto;
+            }
+            .board-restructure .swiper-slide .btn-pill {
+                justify-content: flex-end;
+                position: static;
+                width: 100%;
+                border-radius: 0 0 20rem 20rem;
+                height: 45rem;
+                padding: 10rem 27rem;
+                font-size: 16rem;
+                margin-top: -6rem;
+            }
+            .swiper-custom-controls {
+                bottom: 0;
+                left: 0;
+                justify-content: flex-start;
+                background: var(--color-secondary);
+                height: 45rem;
+            }
+            .section-right {
+                gap: 60rem;
+            }
+            .link-item span {
+                font-size: 16rem;
+                line-height: 24rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ==================== [Main Layout] ==================== -->
+    <!-- ---------------- [Wrapper] ---------------- -->
+    <div class="wrap">
+
+        <!-- 하단 마스코트 -->
+        <div class="bg-mascot-bottom"></div>
+
+        <!-- ---------------- [Container] ---------------- -->
+        <div class="container">
+
+            <!-- ---------------- [Header] ---------------- -->
+            <header class="header">
+                <div class="header-logo">
+                    <img src="./images/img_ajou_logo.png" alt="아주대학교">
+                </div>
+                <div class="header-links">
+                    <a href="#" class="btn-pill dark">
+                        <strong>아주대학교</strong> <span>바로가기</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.66663 8H13.3333M9.33329 12L13.3333 8L9.33329 4" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="btn-pill light">
+                        <strong>아주대학교 입학처</strong> <span>바로가기</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.66663 8H13.3333M9.33329 12L13.3333 8L9.33329 4" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </header>
+
+            <!-- ---------------- [Main Content] ---------------- -->
+            <main class="main-content">
+
+                <!-- ---------------- [Left Area : Boarding Pass] ---------------- -->
+                <section class="section-boarding-pass">
+                    <div class="pass-header">
+                        <img src="./images/img_ajou_checkin.png" alt="CHECK-IN AJOU" class="img-checkin">
+                        <img src="./images/img_ajou_01.gif" alt="마스코트" class="pass-mascot">
+                    </div>
+                    <div class="pass-body">
+                        <div class="pass-title">
+                            2027학년도<br>아주대학교 수시모집
+                        </div>
+                        <div class="pass-buttons">
+                            <button class="btn-pass">원서접수</button>
+                            <button class="btn-pass">원서 기재사항 수정요청</button>
+                            <button class="btn-pass">지원현황</button>
+                            <button class="btn-pass">수시 모집요강</button>
+                        </div>
+                        <ul class="pass-info-list">
+                            <li>원서접수기간: 2026.09.07.(월) 09:00~09.11.(금) 18:00</li>
+                            <li>서류제출: 2026.09.15.(화)까지 [마감일 우체국 소인분까지 인정(등기우편, 택배)]</li>
+                            <li>학교장추천 대상자 입력: 2026.09.14.(월) 09:00~09.18.(금) 18:00</li>
+                        </ul>
+                    </div>
+
+                    <div class="pass-footer">
+                        <div class="pass-footer-title">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 20H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M3.82496 12.1661C3.54996 11.9661 3.29996 11.7161 2.99998 10.8411C2.91861 10.6241 2.61108 9.53619 2.34998 8.54109C2.12972 7.7017 1.93347 6.93555 2.02497 6.74109C2.09998 6.54109 2.19997 6.39109 2.52497 6.19109C2.72496 6.06802 3.74996 5.81609 3.94996 5.76609C4.14996 5.71609 4.42496 5.69109 4.64996 5.76609C5.07496 5.84109 5.94996 7.11609 6.17496 7.26609C6.27495 7.36609 6.59996 7.657 6.97496 7.69109C7.24997 7.71609 7.52496 7.64109 7.82497 7.51609C8.09996 7.40151 13.525 4.76609 14.025 4.54109C18.1 2.84109 21.06 5.63609 21.51 6.23609C21.975 6.81609 22.075 6.99109 21.95 7.49109C21.7884 8.01609 21.35 8.11609 21.1 8.19109C20.8499 8.26609 17.4 9.19109 16.05 9.56609C15.7551 9.6621 15.6111 9.85492 15.575 9.89109C15.4 10.1411 14.605 11.8411 14.38 12.2161C14.225 12.6161 13.8 13.1161 13.25 13.3161C12.675 13.5161 11.675 13.7411 11.45 13.8161C11.225 13.8911 10.7 14.0411 10.525 13.9911C10.3 13.9411 10.085 13.7161 10.185 13.3661C10.285 13.0161 10.475 12.0411 10.5 11.8911C10.525 11.7411 10.775 11.1161 10.5 11.0911C10.45 11.0161 9.92496 11.2411 9.14996 11.4161C8.57419 11.5782 7.9712 11.7386 7.54996 11.8411C5.92496 12.3161 5.0449 12.4411 4.84996 12.4411C4.47496 12.4411 4.19996 12.3911 3.82496 12.1661Z"
+                                    stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                            AJOU ADMISSION TICKET
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ---------------- [Center Area : Quick Links] ---------------- -->
+                <section class="section-center-links">
+                    <button class="card-sm">
+                        <span class="text">학교장추천 대상자<br>입력안내</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="card-sm">
+                        <span class="text">
+                            <span class="badge">09.28.(월) 오픈</span><br>
+                            서류도착확인
+                        </span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="card-sm">
+                        <span class="text">
+                            <span class="text-sub">2024~2026학년도</span>
+                            <span class="text-large">입시결과안내</span>
+                        </span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="card-sm">
+                        <span class="text">2027학년도 아주대학교<br>학생부 환산점수 계산기</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="card-sm">
+                        <span class="text">입학상담솔루션</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </section>
+
+                <!-- ---------------- [Right Area : Board & Banners] ---------------- -->
+                <section class="section-right">
+
+                    <!-- Board Swiper Slider -->
+                    <div class="board-restructure">
+                        <div class="swiper board-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- 슬라이드 이미지 -->
+                                <div class="swiper-slide">
+                                    <img src="./images/img_banner_01.png" alt="2027학년도 모집단위 개편 및 신설 슬라이드 1">
+                                    <a href="#" class="btn-pill dark">
+                                        세부사항 확인(CLICK!)
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.66663 8H13.3333M9.33329 12L13.3333 8L9.33329 4"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/img_banner_02.png" alt="2027학년도 모집단위 개편 및 신설 슬라이드 2">
+                                    <a href="#" class="btn-pill dark">
+                                        세부사항 확인(CLICK!)
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.66663 8H13.3333M9.33329 12L13.3333 8L9.33329 4"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Custom Controls -->
+                            <div class="swiper-custom-controls">
+                                <button class="btn-prev">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <div class="swiper-pagination"></div>
+                                <button class="btn-playpause is-playing">
+                                    <svg class="icon-play" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.53 1.95625L9.6432 5.152C10.2699 5.54367 10.2699 6.45633 9.6432 6.848L4.53 10.0438C3.86395 10.46 3 9.98119 3 9.19575V2.80425C3 2.01881 3.86395 1.53997 4.53 1.95625Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                    <svg class="icon-pause" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2" y="1" width="2" height="10" rx="1" fill="currentColor" />
+                                        <rect x="8" y="1" width="2" height="10" rx="1" fill="currentColor" />
+                                    </svg>
+
+
+                                </button>
+                                <button class="btn-next">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Links Grid -->
+                    <div class="board-links-grid">
+                        <button class="link-item">
+                            <div class="link-item-shadow"></div>
+                            <div class="link-item-inner">
+                                <span>2027학년도 수시모집<br>전형 안내</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 13.229C10.1416 13.4609 10.3097 13.6804 10.5042 13.8828C11.7117 15.1395 13.5522 15.336 14.9576 14.4722C15.218 14.3121 15.4634 14.1157 15.6872 13.8828L18.9266 10.5114C20.3578 9.02184 20.3578 6.60676 18.9266 5.11718C17.4953 3.6276 15.1748 3.62761 13.7435 5.11718L13.03 5.85978"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                    <path
+                                        d="M10.9703 18.14L10.2565 18.8828C8.82526 20.3724 6.50471 20.3724 5.07345 18.8828C3.64218 17.3932 3.64218 14.9782 5.07345 13.4886L8.31287 10.1172C9.74413 8.62761 12.0647 8.6276 13.4959 10.1172C13.6904 10.3195 13.8584 10.539 14 10.7708"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </button>
+                        <button class="link-item">
+                            <div class="link-item-shadow"></div>
+                            <div class="link-item-inner">
+                                <span>아주대학교<br>첨단학과 안내</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 13.229C10.1416 13.4609 10.3097 13.6804 10.5042 13.8828C11.7117 15.1395 13.5522 15.336 14.9576 14.4722C15.218 14.3121 15.4634 14.1157 15.6872 13.8828L18.9266 10.5114C20.3578 9.02184 20.3578 6.60676 18.9266 5.11718C17.4953 3.6276 15.1748 3.62761 13.7435 5.11718L13.03 5.85978"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                    <path
+                                        d="M10.9703 18.14L10.2565 18.8828C8.82526 20.3724 6.50471 20.3724 5.07345 18.8828C3.64218 17.3932 3.64218 14.9782 5.07345 13.4886L8.31287 10.1172C9.74413 8.62761 12.0647 8.6276 13.4959 10.1172C13.6904 10.3195 13.8584 10.539 14 10.7708"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </button>
+                        <button class="link-item">
+                            <div class="link-item-shadow"></div>
+                            <div class="link-item-inner">
+                                <span>아주대학교<br>학과별 홈페이지</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 13.229C10.1416 13.4609 10.3097 13.6804 10.5042 13.8828C11.7117 15.1395 13.5522 15.336 14.9576 14.4722C15.218 14.3121 15.4634 14.1157 15.6872 13.8828L18.9266 10.5114C20.3578 9.02184 20.3578 6.60676 18.9266 5.11718C17.4953 3.6276 15.1748 3.62761 13.7435 5.11718L13.03 5.85978"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                    <path
+                                        d="M10.9703 18.14L10.2565 18.8828C8.82526 20.3724 6.50471 20.3724 5.07345 18.8828C3.64218 17.3932 3.64218 14.9782 5.07345 13.4886L8.31287 10.1172C9.74413 8.62761 12.0647 8.6276 13.4959 10.1172C13.6904 10.3195 13.8584 10.539 14 10.7708"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </button>
+                        <button class="link-item">
+                            <div class="link-item-shadow"></div>
+                            <div class="link-item-inner">
+                                <span>2027학년도<br>논술자료집</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 10.5V13.5C5.5 17.2712 5.5 19.1569 6.67157 20.3284C7.84315 21.5 9.72876 21.5 13.5 21.5C17.2712 21.5 19.1569 21.5 20.3284 20.3284C21.5 19.1569 21.5 17.2712 21.5 13.5V10.5C21.5 6.72876 21.5 4.84315 20.3284 3.67157C19.1569 2.5 17.2712 2.5 13.5 2.5C9.72876 2.5 7.84315 2.5 6.67157 3.67158C5.5 4.84315 5.5 6.72877 5.5 10.5Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5.5 10.5L4 10.5C3.17157 10.5 2.5 9.82843 2.5 9C2.5 8.17157 3.17157 7.5 4 7.5L7.5 7.5"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5.5 17.5L4 17.5C3.17157 17.5 2.5 16.8284 2.5 16C2.5 15.1716 3.17157 14.5 4 14.5L7.5 14.5"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11 10.5H15M11 6.5H17.5" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </button>
+                        <button class="link-item">
+                            <div class="link-item-shadow"></div>
+                            <div class="link-item-inner">
+                                <span>2027학년도<br>모의논술 해설영상 (자연)</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                        </button>
+                        <button class="link-item">
+                            <div class="link-item-shadow"></div>
+                            <div class="link-item-inner">
+                                <span>2027학년도<br>모의논술 해설영상 (인문)</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Bottom Banners -->
+                    <div class="bottom-banners">
+                        <a href="#" class="banner banner-blue">
+                            <div class="banner-inner">
+                                <span class="banner-title">아주대학교<br>AI 대학어디가</span>
+                                <span class="banner-btn">바로가기</span>
+                            </div>
+                        </a>
+                        <a href="#" class="banner banner-orange">
+                            <div class="banner-inner">
+                                <span class="banner-title">아주대학교<br>모의논술</span>
+                                <span class="banner-btn">바로가기</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+    </div>
+
+    <!-- ==================== [Scripts] ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        /* ==================== [JavaScript Logic] ==================== */
+        /* ---------------- [Event Listeners] ---------------- */
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Ajou University Intro Page Loaded.');
+
+            // Swiper Slider Initialization
+            const boardSwiper = new Swiper('.board-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.btn-next',
+                    prevEl: '.btn-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+
+            // Swiper Play/Pause Control
+            const playPauseBtn = document.querySelector('.btn-playpause');
+            if (playPauseBtn) {
+                playPauseBtn.addEventListener('click', () => {
+                    if (playPauseBtn.classList.contains('is-playing')) {
+                        boardSwiper.autoplay.stop();
+                        playPauseBtn.classList.remove('is-playing');
+                    } else {
+                        boardSwiper.autoplay.start();
+                        playPauseBtn.classList.add('is-playing');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
