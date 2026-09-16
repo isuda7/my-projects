@@ -114,9 +114,9 @@
         /* 배경 마스코트 */
         .bg-mascot-bottom {
             position: absolute;
-            top: 746rem;
-            left: 724rem;
-            width: 260rem;
+            top: 770rem;
+            left: 725rem;
+            width: 230rem;
             aspect-ratio: 130 / 107;
             background: url('./images/img_ajou_02.png') no-repeat center bottom / contain;
             pointer-events: none;
@@ -314,6 +314,7 @@
 
         /* 티켓 하단 */
         .pass-footer {
+            position: relative;
             background: url('./images/bg_sec1_ticket.png') no-repeat center bottom / 100% 100%;
             width: 100%;
             aspect-ratio: 604 / 108;
@@ -322,6 +323,16 @@
             justify-content: center;
             margin-top: auto;
             padding-top: 24rem;
+        }
+
+        .pass-footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 24rem;
+            width: calc(100% - 48rem);
+            height: 20rem;
+            background: url('./images/bg_ticket_line.png') no-repeat center top / 100% auto;
         }
 
         .pass-footer-title {
@@ -441,6 +452,7 @@
         .board-restructure .swiper {
             width: 100%;
             height: 100%;
+            overflow: visible;
         }
 
         .board-restructure .swiper-slide {
@@ -614,17 +626,13 @@
         .banner {
             flex: 1;
             border-radius: var(--radius-card);
-            height: 108rem;
+            aspect-ratio: 398 / 108;
             text-decoration: none;
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
             display: block;
-        }
-
-        .banner:hover {
-            color: #fff;
-            box-shadow: var(--shadow-botton);
+            color: var(--color-white);
         }
 
         .banner-inner {
@@ -635,30 +643,30 @@
             justify-content: space-between;
             align-items: center;
             border-radius: calc(var(--radius-card) - 2rem);
-            color: var(--color-white);
+            color: inherit;
             position: relative;
             z-index: 2;
         }
 
         .banner-blue .banner-inner {
-            background: url('./images/bg_btn_ai.png') no-repeat right bottom / cover;
+            background: url('./images/bg_btn_ai.png') no-repeat center center / 105%;
             background-color: var(--color-primary);
             border-radius: var(--radius-card);
         }
 
         .banner-orange {
-            padding: 2rem;
+            padding: 3rem;
             z-index: 1;
         }
 
         .banner-orange::before {
-            --size: 500rem;
+            --size: 800rem;
             content: '';
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 500rem;
-            height: 500rem;
+            width: var(--size);
+            height: var(--size);
             margin-left: calc(var(--size) / -2);
             margin-top: calc(var(--size) / -2);
             background: linear-gradient(180deg, #00D3C8, #FFD900, #0900FF);
@@ -667,7 +675,7 @@
         }
 
         .banner-orange .banner-inner {
-            background: url('./images/bg_btn_test.png') no-repeat right bottom / cover;
+            background: url('./images/bg_btn_test.png') no-repeat center center / 105%;
             background-color: #d97736;
         }
 
@@ -685,6 +693,8 @@
             font-size: 22rem;
             font-weight: 700;
             font-family: var(--font-ajou);
+            color: var(--color-white);
+            
         }
 
         .banner-btn {
@@ -698,8 +708,25 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: var(--color-white);
+            color: inherit;
             flex-shrink: 0;
+            transition: all .3s ease;
+        }
+
+        .banner:hover {
+            color: #ffff00;
+            box-shadow: var(--shadow-botton);
+        }
+        .banner:hover .banner-btn {
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        .only-pc {
+            display: block !important;
+        }
+
+        .only-mo {
+            display: none !important;
         }
 
         /* ==================== [Responsive Design] ==================== */
@@ -735,25 +762,27 @@
             }
 
             .board-restructure .swiper-slide .btn-pill {
-                padding: 10rem 17rem;
-                font-size: 18rem;
-                height: 60rem;
-            }
-        }
-        @media (max-width: 1024px) {
-            html {
-                font-size: calc(100vw / 1024);
+                padding: 10rem 23rem;
+                font-size: 16rem;
+                height: 58rem;
             }
         }
 
+
         /* 전체 레이아웃 모바일 구조 */
         @media (max-width: 767px) {
+            .only-pc {
+                display: none !important;
+            }
+            .only-mo {
+                display: block !important;
+            }
+
             html {
                 font-size: calc(100vw / 767);
             }
             .container {
-                padding-left: 40rem;
-                padding-right: 40rem;
+                padding: 30rem 40rem 50rem;
             }
             .main-content {
                 gap: 60rem;
@@ -789,11 +818,57 @@
             .bottom-banners {
                 flex-direction: column;
             }
+            .board-restructure {
+                aspect-ratio: auto;
+            }
+            .board-restructure .swiper-wrapper {
+                height: auto;
+            }
+            .board-restructure .swiper-slide img {
+                height: auto;
+            }
+            .board-restructure .swiper-slide .btn-pill {
+                justify-content: flex-end;
+                position: static;
+                width: 100%;
+                border-radius: 0 0 20rem 20rem;
+                height: 45rem;
+                padding: 10rem 27rem;
+                font-size: 16rem;
+                margin-top: -30rem;
+            }
+            .swiper-custom-controls {
+                bottom: 0;
+                left: 2rem;
+                justify-content: flex-start;
+                background: transparent;
+                backdrop-filter: none;
+                height: 45rem;
+            }
+            .section-right {
+                gap: 60rem;
+            }
+            .board-links-grid {
+                padding: 0;
+                border: 0;
+                background: none;
+            }
+            .banner-title {
+                font-size: 24rem;
+            }
+            .banner-btn {
+                width: 90rem;
+                height: 90rem;
+                font-size: 16rem;
+            }
         }
 
         @media (max-width: 480px) {
             html {
                 font-size: calc(90vw / 480);
+            }
+            .container {
+                padding: 20rem 20rem 40rem;
             }
             .bg-mascot-bottom {
                 top: 1170rem;
@@ -831,45 +906,17 @@
             .btn-pass {
                 height: 60rem;
             }
-
-            .board-links-grid {
-                padding: 0;
-                border: 0;
-                background: none;
-            }
-
-            .board-restructure {
-                aspect-ratio: auto;
-            }
-            .board-restructure .swiper-wrapper {
-                height: auto;
-            }
-            .board-restructure .swiper-slide img {
-                height: auto;
-            }
-            .board-restructure .swiper-slide .btn-pill {
-                justify-content: flex-end;
-                position: static;
-                width: 100%;
-                border-radius: 0 0 20rem 20rem;
-                height: 45rem;
-                padding: 10rem 27rem;
-                font-size: 16rem;
-                margin-top: -6rem;
-            }
-            .swiper-custom-controls {
-                bottom: 0;
-                left: 0;
-                justify-content: flex-start;
-                background: var(--color-secondary);
-                height: 45rem;
-            }
-            .section-right {
-                gap: 60rem;
-            }
             .link-item span {
                 font-size: 16rem;
                 line-height: 24rem;
+            }
+            .banner-title {
+                font-size: 20rem;
+            }
+            .banner-btn {
+                width: 62rem;
+                height: 62rem;
+                font-size: 12rem;
             }
         }
     </style>
@@ -1004,7 +1051,8 @@
                             <div class="swiper-wrapper">
                                 <!-- 슬라이드 이미지 -->
                                 <div class="swiper-slide">
-                                    <img src="./images/img_banner_01.png" alt="2027학년도 모집단위 개편 및 신설 슬라이드 1">
+                                    <img src="./images/img_banner_01.png" alt="2027학년도 모집단위 개편 및 신설 슬라이드 1" class="only-pc">
+                                    <img src="./images/img_banner_01_mo.png" alt="2027학년도 모집단위 개편 및 신설 슬라이드 1" class="only-mo">
                                     <a href="#" class="btn-pill dark">
                                         세부사항 확인(CLICK!)
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -1016,7 +1064,8 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./images/img_banner_02.png" alt="2027학년도 모집단위 개편 및 신설 슬라이드 2">
+                                    <img src="./images/img_banner_02.png" alt="2027학년도 모집단위 개편 및 신설 슬라이드 2" class="only-pc">
+                                    <img src="./images/img_banner_02_mo.png" alt="2027학년도 모집단위 개편 및 신설 슬라이드 2" class="only-mo">
                                     <a href="#" class="btn-pill dark">
                                         세부사항 확인(CLICK!)
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -1197,6 +1246,10 @@
 
             // Swiper Slider Initialization
             const boardSwiper = new Swiper('.board-swiper', {
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
                 loop: true,
                 autoplay: {
                     delay: 4000,

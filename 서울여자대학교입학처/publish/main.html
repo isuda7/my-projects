@@ -1,0 +1,1398 @@
+
+
+	<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>서울여자대학교 입학처</title>
+<link rel="stylesheet" href="https://admission.swu.ac.kr/theme/swu/css/fonts.css?ver=260831">
+<link rel="stylesheet" href="https://admission.swu.ac.kr/js/font-awesome/css/font-awesome.min.css?ver=260831">
+<link rel="stylesheet" href="https://admission.swu.ac.kr/theme/swu/skin/latest/notice/style.css?ver=260831">
+<link rel="stylesheet" href="https://admission.swu.ac.kr/theme/swu/css/default.css?ver=260831">
+<link rel="stylesheet" href="https://admission.swu.ac.kr/theme/swu/css/slider.css?ver=260831">
+<link rel="stylesheet" href="https://admission.swu.ac.kr/theme/swu/css/layout.css?ver=260831">
+<link rel="stylesheet" href="https://admission.swu.ac.kr/theme/swu/css/bbs.css?ver=260831">
+<link rel="stylesheet" href="https://admission.swu.ac.kr/theme/swu/css/sub.css?ver=260831">
+<link rel="stylesheet" href="https://admission.swu.ac.kr/js/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://admission.swu.ac.kr/theme/swu/css/responsive.css?ver=260831">
+<link rel="apple-touch-icon" sizes="180x180" href="https://admission.swu.ac.kr/theme/swu/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://admission.swu.ac.kr/theme/swu/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://admission.swu.ac.kr/theme/swu/img/favicon/favicon-16x16.png">
+
+<!--[if lte IE 8]>
+<script src="https://admission.swu.ac.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://admission.swu.ac.kr";
+var g5_bbs_url   = "https://admission.swu.ac.kr/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="https://admission.swu.ac.kr/js/jquery-1.12.4.min.js"></script>
+<script src="https://admission.swu.ac.kr/theme/swu/js/slider.js"></script>
+<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+<script src="https://admission.swu.ac.kr/js/jquery-migrate-1.4.1.min.js?ver=260831"></script>
+<script src="https://admission.swu.ac.kr/js/jquery.menu.js?ver=260831"></script>
+<script src="https://admission.swu.ac.kr/js/common.js?ver=260831"></script>
+<script src="https://admission.swu.ac.kr/js/wrest.js?ver=260831"></script>
+<script src="https://admission.swu.ac.kr/js/placeholders.min.js?ver=260831"></script>
+<script src="https://admission.swu.ac.kr/js/jquery.bxslider.js?ver=260831"></script>
+</head>
+<body>
+<section id="wrap">
+<dl class="accessibilityWrap">
+    <dt class="hide"><strong>바로가기 메뉴</strong></dt>
+    <dd><a href="#cont">본문 바로가기</a></dd>
+    <dd><a href="#top_nav">주메뉴 바로가기</a></dd>
+</dl>
+<!-- 상단 시작 { -->
+<header id="header" class="on">
+
+    
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 -->    <div class="inner clearfix">
+        <h1 id="logo"><a href="https://admission.swu.ac.kr/"><img src="https://admission.swu.ac.kr/theme/swu/img/common/logo.png" alt="서울여자대학교 입학처"></a></h1>
+
+        <nav id="top_nav" tabindex="0">
+            <ul id="lnb" class="clearfix">
+                <!-- <li class="gnb_1dli gnb_mnal"><button type="button" class="gnb_menu_btn" title="전체메뉴"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only">전체메뉴열기</span></button></li> -->
+                                        <li class="gnb_al_li_plus">
+                            <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=수시&sub_ck=1" target="_self">수시모집</a>
+                        </li>
+                                                <li class="gnb_al_li_plus">
+                            <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=정시&sub_ck=1" target="_self">정시모집</a>
+                        </li>
+                                                <li class="gnb_al_li_plus">
+                            <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=재외국민외국인&sub_ck=1" target="_self">재외국민/외국인</a>
+                        </li>
+                                                <li class="gnb_al_li_plus">
+                            <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=편입학&sub_ck=1" target="_self">편입학모집</a>
+                        </li>
+                                                <li class="gnb_al_li_plus">
+                            <a href="https://admission.swu.ac.kr/bbs/content.php?co_id=student_point" target="_self">입학도우미</a>
+                        </li>
+                                                <li class="gnb_al_li_plus">
+                            <a href="https://admission.swu.ac.kr/bbs/content.php?co_id=enrolld_student" target="_self">고교연계 프로그램</a>
+                        </li>
+                                                <li class="gnb_al_li_plus">
+                            <a href="https://www.swu.ac.kr/sites/swu/index.do" target="_blank">대학 소개</a>
+                        </li>
+                                    </ul>
+
+            <button type="button" id="btn-menu">메뉴</button>
+            <div class="menu_m">
+    <!-- <button class="close_btn"><i class="fa fa-times" aria-hidden="true"></i></button> -->
+  <ul class="top_nav_m">
+        <li class="">
+        <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=수시&sub_ck=1" target="_self" class="">수시모집</a>
+        <ul class="depth">
+            <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=수시&sub_ck=1" target="_self" class="">공지사항</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=수시&sub_ck=1" target="_self" class="">모집요강</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=qa&sca=수시" target="_self" class="">입학상담(Q&A)</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=수시&sub_ck=1&wr_9=mojip" target="_self" class="">자료실</a></li>
+        </ul>
+    </li>
+        <li class="">
+        <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=정시&sub_ck=1" target="_self" class="">정시모집</a>
+        <ul class="depth">
+            <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=정시&sub_ck=1" target="_self" class="">공지사항</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=정시" target="_self" class="">모집요강</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=qa&sca=정시" target="_self" class="">입학상담(Q&A)</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=정시&sub_ck=1&wr_9=mojip" target="_self" class="">자료실</a></li>
+        </ul>
+    </li>
+        <li class="">
+        <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=재외국민외국인&sub_ck=1" target="_self" class="">재외국민/외국인</a>
+        <ul class="depth">
+            <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=재외국민외국인&sub_ck=1" target="_self" class="">공지사항</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=재외국민&sub_ck=1" target="_self" class="">모집요강</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=qa&sca=재외국민외국인" target="_self" class="">입학상담(Q&A)</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=재외국민외국인&sub_ck=1&wr_9=mojip" target="_self" class="">자료실</a></li>
+        </ul>
+    </li>
+        <li class="">
+        <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=편입학&sub_ck=1" target="_self" class="">편입학모집</a>
+        <ul class="depth">
+            <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=편입학&sub_ck=1" target="_self" class="">공지사항</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=편입학&sub_ck=1" target="_self" class="">모집요강</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=qa&sca=편입학" target="_self" class="">입학상담(Q&A)</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=편입학&sub_ck=1&wr_9=mojip" target="_self" class="">자료실</a></li>
+        </ul>
+    </li>
+        <li class="">
+        <a href="https://admission.swu.ac.kr/bbs/content.php?co_id=student_point" target="_self" class="">입학도우미</a>
+        <ul class="depth">
+						<li class=""><a href="javascript:alert('상담 준비 중입니다.(7월 오픈 예정)')" class="">온라인상담프로그램</a></li>
+				            <li class=""><a href="https://admission.swu.ac.kr/bbs/content.php?co_id=student_point" target="_blank" class="">입시점수산출서비스</a></li>
+                    <li class=""><a href="https://www.swu.ac.kr/swu/3056/subview.do" target="_blank" class="">온라인브로셔</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=enterinfo" target="_blank" class="">입시자료</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=inform_movie" target="_self" class="">입시 안내 영상</a></li>
+                    <li class=""><a href="https://www.swu.ac.kr/swu/633/subview.do" target="_blank" class="">캠퍼스투어신청</a></li>
+        </ul>
+    </li>
+        <li class="">
+        <a href="https://admission.swu.ac.kr/bbs/content.php?co_id=enrolld_student" target="_self" class="">고교연계 프로그램</a>
+        <ul class="depth">
+            <li class=""><a href="https://admission.swu.ac.kr/bbs/content.php?co_id=enrolld_student" target="_self" class="">재학생 입학멘토</a></li>
+                    <li class=""><a href="https://swis.swu.ac.kr:8443/swudocs/result_index_new.jsp" target="_blank" class="">고교지원서비스</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/write.php?bo_table=application" target="_self" class="">입학자료신청</a></li>
+                    <li class=""><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=program_notice" target="_self" class="">고교연계 소식</a></li>
+        </ul>
+    </li>
+        <li class="">
+        <a href="https://www.swu.ac.kr/sites/swu/index.do" target="_blank" class="">대학 소개</a>
+        <ul class="depth">
+            <li class=""><a href="https://www.swu.ac.kr/sites/swu/index.do" target="_blank" class="">학교소개</a></li>
+                    <li class=""><a href="https://www.swu.ac.kr/swu/553/subview.do" target="_blank" class="">학과/전공</a></li>
+                    <li class=""><a href="https://www.swu.ac.kr/swu/690/subview.do" target="_blank" class="">학사안내</a></li>
+                    <li class=""><a href="https://www.swu.ac.kr/swu/711/subview.do" target="_blank" class="">장학안내</a></li>
+                    <li class=""><a href="https://www.swu.ac.kr/swu/572/subview.do" target="_blank" class="">국제교류프로그램</a></li>
+                    <li class=""><a href="http://sweet.swu.ac.kr/" target="_blank" class="">교직과정</a></li>
+                    <li class=""><a href="https://dorm.swu.ac.kr/" target="_blank" class="">기숙사안내</a></li>
+                    <li class=""><a href="https://www.youtube.com/channel/UCSjs5xI4njhMmIN3eNP9j3Q" target="_blank" class="">학교홍보동영상</a></li>
+                    <li class=""><a href="https://www.swu.ac.kr/swu/632/subview.do" target="_blank" class="">캠퍼스맵</a></li>
+                    <li class=""><a href="https://www.swu.ac.kr/swu/546/subview.do" target="_blank" class="">찾아오시는길</a></li>
+        </ul>
+    </li>
+      </ul>
+</div>
+<div class="allmenu_bg"></div>
+<script>
+//올메뉴
+var wrapH = $("#wrap").height();
+var menuH= $(".menu_m").height();
+$( "#btn-menu").click(function() {
+    if ($(this).hasClass("on")){
+        $(this).removeClass("on")
+        $( ".menu_m" ).slideUp(200)
+        $( ".allmenu_bg" ).fadeOut(200)
+    }else{
+        $(this).addClass("on")
+        $( ".menu_m" ).slideDown(200)
+        //$( ".allmenu").css("height",$("#wrap").height());
+        $( ".allmenu_bg" ).css({"display":"block","height":$("#wrap").height(),"z-index":150});
+    }
+    $(".allmenu_bg,.close_btn").off('click').click(function(){
+    $( ".menu_m" ).slideUp(200)
+        $("#btn-menu").removeClass("on")
+        $( ".allmenu_bg" ).fadeOut(200)
+
+        //검색
+        // $(".allmenu_bg").hide();
+    });
+});
+
+$(".top_nav_m > li > a").click(function(){
+   $(".menu_m .depth").slideUp();
+    $(".top_nav_m > li").removeClass("opend");
+   if(!$(this).next().is(":visible"))
+   {
+       $(this).next().slideDown();
+       $(this).parent().toggleClass("opend");
+   }
+   if(!$(this).is(":visible"))
+   {
+   }
+   return false;
+});
+</script>
+        </nav>
+
+        <!-- S: 2023.08.21 util 추가 -->
+        <div class="util">
+            <button type="button" class="btn-search-layer" title="검색">검색</button>
+            <button type="button" class="btn-hotissue on" title="HOT ISSUE">HOT ISSUE</button>
+        </div>
+        <!-- //E: 2023.08.21 util 추가 -->
+
+    </div>
+    <div class="allmenu">
+  <div class="inner">
+<ul class="clearfix nav">
+    <!-- <li class="gnb_1dli gnb_mnal"><button type="button" class="gnb_menu_btn" title="전체메뉴"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only">전체메뉴열기</span></button></li> -->
+        <li class="gnb_al_li_plus">
+        <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=수시&sub_ck=1" target="_self">수시모집</a>
+        <ul class="depth">
+            <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=수시&sub_ck=1" target="_self">공지사항</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=수시&sub_ck=1" target="_self">모집요강</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=qa&sca=수시" target="_self">입학상담(Q&A)</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=수시&sub_ck=1&wr_9=mojip" target="_self">자료실</a></li>
+        </ul>
+    </li>
+        <li class="gnb_al_li_plus">
+        <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=정시&sub_ck=1" target="_self">정시모집</a>
+        <ul class="depth">
+            <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=정시&sub_ck=1" target="_self">공지사항</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=정시" target="_self">모집요강</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=qa&sca=정시" target="_self">입학상담(Q&A)</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=정시&sub_ck=1&wr_9=mojip" target="_self">자료실</a></li>
+        </ul>
+    </li>
+        <li class="gnb_al_li_plus">
+        <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=재외국민외국인&sub_ck=1" target="_self">재외국민/외국인</a>
+        <ul class="depth">
+            <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=재외국민외국인&sub_ck=1" target="_self">공지사항</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=재외국민&sub_ck=1" target="_self">모집요강</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=qa&sca=재외국민외국인" target="_self">입학상담(Q&A)</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=재외국민외국인&sub_ck=1&wr_9=mojip" target="_self">자료실</a></li>
+        </ul>
+    </li>
+        <li class="gnb_al_li_plus">
+        <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=편입학&sub_ck=1" target="_self">편입학모집</a>
+        <ul class="depth">
+            <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&sca=편입학&sub_ck=1" target="_self">공지사항</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=편입학&sub_ck=1" target="_self">모집요강</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=qa&sca=편입학" target="_self">입학상담(Q&A)</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=편입학&sub_ck=1&wr_9=mojip" target="_self">자료실</a></li>
+        </ul>
+    </li>
+        <li class="gnb_al_li_plus">
+        <a href="https://admission.swu.ac.kr/bbs/content.php?co_id=student_point" target="_self">입학도우미</a>
+        <ul class="depth">
+            <li><a href="https://cs.u-is.co.kr/swu/" target="_blank">온라인상담프로그램</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/content.php?co_id=student_point" target="_blank">입시점수산출서비스</a></li>
+                    <li><a href="https://www.swu.ac.kr/swu/3056/subview.do" target="_blank">온라인브로셔</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=enterinfo" target="_blank">입시자료</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=inform_movie" target="_self">입시 안내 영상</a></li>
+                    <li><a href="https://www.swu.ac.kr/swu/633/subview.do" target="_blank">캠퍼스투어신청</a></li>
+        </ul>
+    </li>
+        <li class="gnb_al_li_plus">
+        <a href="https://admission.swu.ac.kr/bbs/content.php?co_id=enrolld_student" target="_self">고교연계 프로그램</a>
+        <ul class="depth">
+            <li><a href="https://admission.swu.ac.kr/bbs/content.php?co_id=enrolld_student" target="_self">재학생 입학멘토</a></li>
+                    <li><a href="https://swis.swu.ac.kr:8443/swudocs/result_index_new.jsp" target="_blank">고교지원서비스</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/write.php?bo_table=application" target="_self">입학자료신청</a></li>
+                    <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=program_notice" target="_self">고교연계 소식</a></li>
+        </ul>
+    </li>
+        <li class="gnb_al_li_plus">
+        <a href="https://www.swu.ac.kr/sites/swu/index.do" target="_blank">대학 소개</a>
+        <ul class="depth">
+            <li><a href="https://www.swu.ac.kr/sites/swu/index.do" target="_blank">학교소개</a></li>
+                    <li><a href="https://www.swu.ac.kr/swu/553/subview.do" target="_blank">학과/전공</a></li>
+                    <li><a href="https://www.swu.ac.kr/swu/690/subview.do" target="_blank">학사안내</a></li>
+                    <li><a href="https://www.swu.ac.kr/swu/711/subview.do" target="_blank">장학안내</a></li>
+                    <li><a href="https://www.swu.ac.kr/swu/572/subview.do" target="_blank">국제교류프로그램</a></li>
+                    <li><a href="http://sweet.swu.ac.kr/" target="_blank">교직과정</a></li>
+                    <li><a href="https://dorm.swu.ac.kr/" target="_blank">기숙사안내</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCSjs5xI4njhMmIN3eNP9j3Q" target="_blank">학교홍보동영상</a></li>
+                    <li><a href="https://www.swu.ac.kr/swu/632/subview.do" target="_blank">캠퍼스맵</a></li>
+                    <li><a href="https://www.swu.ac.kr/swu/546/subview.do" target="_blank">찾아오시는길</a></li>
+        </ul>
+    </li>
+    </ul>
+</div>
+</div>
+</header>
+<!-- } 상단 끝 -->
+
+<!-- S: 2023.08.23 검색레이어 추가 -->
+<section class="search-layer">
+    <div class="inner">
+        <h2 class="search-layer__title">서울여자대학교 입학처 <strong>통합검색</strong></h2>
+        <p class="search-layer__txt">검색어를 입력 후, <strong>Enter 또는 돋보기 아이콘</strong>을 누르시면 전체 게시판의 내용을 한 번에 검색하실 수 있습니다.</p>
+        <div class="search-layer__input">
+            <input type="text" placeholder="검색어를 입력해주세요." id="schword"/>
+            <button type="button" class="btn-search" id="schbtn">
+                <div>
+                </div>
+</section>
+<script>
+    // 검색 레이어 show/hide 스크립트
+    $(".btn-search-layer").click(function(){
+
+				$(this).blur();
+
+        if($(this).hasClass("on")) {
+            $(this).removeClass("on");
+            $("#header").removeClass("on");
+            $(".allmenu").stop(false,false).slideUp(150)
+            $(".search-layer").slideUp(150);
+
+            return;
+        }
+        $(this).addClass("on");
+        $("#header").addClass("on");
+        $("#wrap").css("height", "auto");
+        $(".allmenu").stop(false,false).slideUp(150);
+        $("#btn-menu").removeClass("on");
+        $( ".menu_m" ).slideUp(200).removeClass("on");
+        $( ".allmenu_bg" ).fadeOut(200).removeClass("on");
+        $(".hotissue-layer").fadeOut(150).removeClass("on");
+        $(".btn-hotissue").removeClass("on");
+        $(".search-layer").slideDown(150).css("display","flex");
+        document.querySelector("#schword").focus();
+    })
+</script>
+<!-- S: 2023.08.23 검색레이어 추가 -->
+
+<!-- S: 2023.08.23 hot issue 레이어 추가 -->
+<section class="hotissue-layer on" style="display:block;">
+    <div class="inner">
+        <h2 class="hotissue-layer__title"><span>SEOUL WOMEN’S UNIVERSITY</span><strong>HOT ISSUE</strong></h2>
+        <div class="hotissue-slide">
+            <div class="hotissue-indicator">
+                <div class="custom-paging">
+                    <button type="button" class="slide-prev" onClick="blur();"><!--이전--></button>
+                    <button type="button" class="slide-next" onClick="blur();"><!--다음--></button>
+                </div>
+            </div>
+            <div class="hotissue-list">
+                                <div class="hotissue-list__group">
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                </div>
+                                <div class="hotissue-list__group">
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                    <div class="hotissue-list__item">
+                        <a href="#">
+                            <span class="item__badge" style="display: none;"></span>
+                            <strong class="item__title"></strong>
+                        </a>
+                    </div>
+                </div>
+                            </div>
+        </div>
+        <a href="javascript:document.querySelector('.btn-hotissue').click();" class="btn-go">입학 홈페이지 바로가기</a>
+    </div>
+</section>
+<script>
+    // hot issue 레이어 show/hide 스크립트
+
+    $(".btn-hotissue").click(function(){
+
+				$(this).blur();
+
+        if($(this).hasClass("on")) {
+            $(this).removeClass("on");
+            $("#header").removeClass("on");
+            $("#wrap").css("height", "auto");
+            $(".hotissue-layer").fadeOut(150).removeClass("on");
+            return;
+        }
+        $(this).addClass("on");
+        $("#header").addClass("on");
+        $("#wrap").css("height", "100vh");
+        $(".allmenu").stop(false,false).slideUp(150);
+        $("#btn-menu").removeClass("on");
+        $(".menu_m" ).slideUp(200).removeClass("on");
+        $(".allmenu_bg" ).fadeOut(200).removeClass("on");
+        $(".btn-search-layer").removeClass("on");
+        $(".hotissue-layer").fadeIn(150).addClass("on");
+
+				
+    })
+
+		function openHotissue() {
+
+        $("#wrap").css("height", "100vh");
+        $(".allmenu").stop(false,false).slideUp(150);
+        $("#btn-menu").removeClass("on");
+        $(".menu_m" ).slideUp(200).removeClass("on");
+        $(".allmenu_bg" ).fadeOut(200).removeClass("on");
+        $(".btn-search-layer").removeClass("on");
+        $(".hotissue-layer").fadeIn(150).addClass("on");
+        $(".hotissue-layer .hotissue-list").slick({
+            prevArrow: ".slide-prev",
+            nextArrow: ".slide-next",
+            dots: true,
+            dotsClass:"slide-dots",
+            appendDots: $('.custom-paging'),
+            customPaging: function (slider, i) {
+                                // return  "<strong>0" + (i + 1) + "</strong> / " + "0"+ slider.slideCount;
+                return  "<strong>0" + (i + 1) + "</strong> / " + "0"+ 2;
+            },
+            mobileFirst:true
+        });
+
+		}
+
+
+    function searchurl(word) {
+        return `https://admission.swu.ac.kr/bbs/board.php?bo_table=search&sfl=wr_subject%7C%7Cwr_content&stx=${word}`
+    }
+
+    const schword = document.querySelector("#schword");
+    schword.addEventListener('keydown', (event) => {
+        if( event.keyCode == 13 ) {
+            searchword = event.target.value;
+            location.href = document.location.href = searchurl(searchword);
+            event.currentTarget.value = "";
+        }
+    });
+
+    const schbtn = document.querySelector("#schbtn");
+    schbtn.addEventListener('click', (event) => {
+        searchword = schword.value;
+        location.href = document.location.href = searchurl(searchword);
+        schword.value = "";
+    });
+
+    document.addEventListener('DOMContentLoaded', function(){
+				
+        formData = new FormData();
+        formData.append('mode','loadboard')
+        fetch('https://admission.swu.ac.kr/hotissue_bbs.php', {
+            method:'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+
+								if (data.length > 16) {
+									row_cnt = 16;
+								} else {
+									row_cnt = data.length;
+								}
+
+                for( i = 0 ; i < row_cnt ; i++ ) {
+                    row = data[i];
+                    document.querySelectorAll(".hotissue-list__group a")[i].setAttribute("href", row.url);
+                    document.querySelectorAll(".hotissue-list__group a")[i].setAttribute("target", row.newwin);
+                    document.querySelectorAll(".hotissue-list__group a")[i].setAttribute('onclick',`loadChkClk(${row.id})` );
+                    document.querySelectorAll(".hotissue-list__item")[i].classList.add(row.color);
+                    if( row.badge ) {
+                        document.querySelectorAll(".item__badge")[i].style.display = '';
+                        document.querySelectorAll(".item__badge")[i].innerHTML = row.badge;
+                    }
+                    document.querySelectorAll(".item__title")[i].innerHTML = row.title;
+                }
+
+                              openHotissue();
+               
+            })
+            .catch(error => console.dir(error))
+    });
+    function loadChkClk(id) {
+        fetch('https://admission.swu.ac.kr/hitup_banner.php?bn_id='+id+'&mode=hitup', {})
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+                //document.querySelector(".btn-hotissue").click();
+            });
+
+</script>
+<!-- //E: 2023.08.23 hot issue 레이어 추가 -->
+
+<script>
+    $("#lnb > li > a").mouseenter(function(){
+        $(".allmenu").stop(false,false).slideDown(150)
+        $("#header").addClass("on")
+    })
+    $(".allmenu").mouseleave(function(){
+        $(this).stop(false,false).slideUp(150)
+        // 2023.08.23 수정
+        if(!$(".btn-search-layer").hasClass("on")) {
+            $("#header").removeClass("on")
+        }
+    })
+</script>
+
+<hr>
+
+<!-- 콘텐츠 시작 { -->
+
+<!-- TControl -->
+<script type="text/javascript" src="https://univ2.uway.com/tcontrol/js/tcontrolx.js?v=20260916205302" charset="utf-8"></script>
+<script src="https://admission.swu.ac.kr/js/jquery.rwdImageMaps.min.js"></script>
+
+<!-- TControl -->
+<link rel="stylesheet" href="theme/swu/css/main.css?v=20260713">
+<div id="cont" tabindex="0">
+<section id="main">
+  <aside id="quick">
+    <ul class="info">
+      <li><a href="https://www.swu.ac.kr/www/encoua.html">장학안내</a></li>
+      <li><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&helfer=Y">등록금안내</a></li>
+      <li><a href="http://www.swu.ac.kr/www/organiz_61.html">기숙사안내</a></li>
+    </ul>
+    <div class="fs">
+      <a href="http://www.swu.ac.kr/www/common/sitemap.html"><img src="https://admission.swu.ac.kr/theme/swu/img/main/fs.png" alt="Family site"></a>
+    </div>
+    <ul class="quick_menu">
+	    </ul>
+  </aside>
+	
+
+	<!-- S: 2023.09.06 main_visual 영역 변경 -->
+    <section id="main_visual">
+      <div class="s_w">
+        <ul class="s">
+          <!-- <li class="item"><div class="bg" style="background-image:url('https://admission.swu.ac.kr/theme/swu/img/main/visual1.jpg')"></div></li> -->
+
+					
+					<li class="item" style="position:relative;">
+						<img class="pc-only" src="https://admission.swu.ac.kr/theme/swu/img/main/20260608_01P.jpg" alt="">
+						<a class="map-link pc-only" href="https://www.swu.ac.kr/swu/3130/subview.do" target="_blank" title="인공지능전공바로가기" style="left:42.66%; top:66.35%; width:14.84%; height:15.0%;"></a>
+
+						<img class="mobile" src="https://admission.swu.ac.kr/theme/swu/img/main/20260608_01M.jpg" alt="">
+						<a class="map-link mobile" href="https://www.swu.ac.kr/swu/3130/subview.do" target="_blank" title="인공지능전공바로가기" style="left:21.84%; top:62.61%; width:56.55%; height:7.8%;"></a>
+					</li>
+
+					<li class="item" style="position:relative;">
+						<img class="pc-only" src="https://admission.swu.ac.kr/theme/swu/img/main/20260608_02P.jpg" alt="">
+						<a class="map-link pc-only" href="https://www.swu.ac.kr/swu/3134/subview.do" target="_blank" title="AI실감콘텐츠전공바로가기" style="left:20.42%; top:64.38%; width:16.88%; height:10.73%;"></a>
+						<a class="map-link pc-only" href="https://www.swu.ac.kr/swu/3135/subview.do" target="_blank" title="뉴미디어디자인전공바로가기" style="left:41.46%; top:64.38%; width:17.03%; height:10.73%;"></a>
+						<a class="map-link pc-only" href="https://www.swu.ac.kr/swu/3136/subview.do" target="_blank" title="기업경영전공바로가기" style="left:62.71%; top:64.38%; width:16.98%; height:10.73%;"></a>
+
+						<img class="mobile" src="https://admission.swu.ac.kr/theme/swu/img/main/20260608_02M.jpg" alt="">
+						<a class="map-link mobile" href="https://www.swu.ac.kr/swu/3134/subview.do" target="_blank" title="AI실감콘텐츠전공바로가기" style="left:18.69%; top:43.34%; width:62.86%; height:10.93%;"></a>
+						<a class="map-link mobile" href="https://www.swu.ac.kr/swu/3135/subview.do" target="_blank" title="뉴미디어디자인전공바로가기" style="left:18.69%; top:55.53%; width:62.86%; height:10.93%;"></a>
+						<a class="map-link mobile" href="https://www.swu.ac.kr/swu/3136/subview.do" target="_blank" title="기업경영전공바로가기" style="left:18.69%; top:67.71%; width:62.86%; height:10.93%;"></a>
+					</li>
+
+					<li class="item person"><img class="pc-only" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2026_02.jpg" alt=""><img class="mobile" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2026_02_m.jpg" alt=""></li>
+					<li class="item person"><img class="pc-only" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2026_03.jpg" alt=""><img class="mobile" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2026_03_m.jpg" alt=""></li>
+					<!--
+					<li class="item person"><img class="pc-only" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2025_12.jpg" alt=""><img class="mobile" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2025_01_m.jpg" alt=""></li>
+					<li class="item person"><img class="pc-only" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2025_02.jpg" alt=""><img class="mobile" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2025_02_m.jpg" alt=""></li>
+					-->
+					<!--<li class="item"><img class="pc-only" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2025_03.jpg" alt=""><img class="mobile" src="https://admission.swu.ac.kr/theme/swu/img/main/Main_Banner_2025_03_m.jpg" alt=""></li>-->
+					
+				</ul>
+		
+				<div class="slide-navigation">
+			<div class="slide-dots"></div>
+			<button type="button" class="btn-pause">일시정지</button>
+			<button type="button" class="btn-play">재생</button>
+		</div> 
+		      </div>
+	  <div class="scroll-down">
+		<span>Scroll down</span>
+		<i></i>
+	  </div>
+
+		<style>
+
+		#main_visual .item {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.map-link {
+			position: absolute;
+			display: block;
+			z-index: 10;
+			/* 디버깅용 — 확인 후 제거 */
+			/*background: rgba(255,0,0,0.2); border: 2px solid red; */
+		}
+
+		@media (max-width: 640px) {
+			.map-link.pc-only { display: none !important; }
+			.map-link.mobile  { display: block !important; }
+		}
+		@media (min-width: 641px) {
+			.map-link.pc-only { display: block !important; }
+			.map-link.mobile  { display: none !important; }
+		}
+
+		</style>
+
+
+
+
+
+	  <!-- //E: 2023.09.06 main_visual 영역 변경 -->	
+		<script>
+	  // S: 2023.09.06 main_visual 스크립트 변경
+
+
+		$('#main_visual .s').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows:false,
+			autoplay: true,
+			speed:1500,
+			autoplaySpeed: 4000,
+			dots:true,
+			pauseOnHover:false,
+			appendDots: $(".slide-navigation .slide-dots"),
+			infinite: true,
+			fade:true
+		});
+		
+		$('#main_visual .btn-pause').click(function(){
+			$('#main_visual .s').slick("slickPause");
+		})
+	  
+		$('#main_visual .btn-play').click(function(){
+			$('#main_visual .s').slick("slickPlay");
+		})
+
+		function resizeSwiper() {
+
+			var windowWidth = $(window).width();
+			var mainVisualHeight = $(window).height();
+
+
+			// 이미지를 찾기 쉽게 변수로 지정
+			var $pcImg = $("#main_visual .item img.pc-only");
+			var $moImg = $("#main_visual .item img.mobile");
+			var $allContainers = $("#main_visual, #main_visual .item, #main_visual .s_w");
+
+			if (windowWidth > 640) {
+				// [PC/태블릿 구간 공통] PC 이미지 보이고, 모바일 이미지 숨김
+				$pcImg.show().css('display', 'block');
+				$moImg.hide().css('display', 'none');
+
+				if (windowWidth > 1600) {
+					// [1] 3600px 초과
+					$pcImg.css({
+						'width': '100%',
+						'height': '100%',
+						'position': 'absolute',
+						'left': '50%',
+						'top': '0',
+						'transform': 'translateX(-50%)',
+						'object-fit': 'cover',
+						'object-position': 'center center'
+					});
+					
+					$allContainers.css('height', mainVisualHeight + 'px');
+
+				} else {
+					// [2] 3600px ~ 641px (비율 축소 구간)
+					$pcImg.css({
+						'width': windowWidth + 'px',
+						'height': 'auto',
+						'position': 'relative',
+						'left': '0',
+						'top': '0',
+						'transform': 'none'
+					});
+
+					var realImgHeight = $pcImg.filter(':visible').first().height();
+					if (realImgHeight > 0) {
+						$allContainers.css('height', realImgHeight + 'px');
+					}
+				}
+
+			} else {
+				// [3] 640px 이하 모바일 구간
+				// 모바일 이미지 보이고, PC 이미지 숨김
+				//$moImg.show().css('display', 'block');
+				//$pcImg.hide().css('display', 'none');
+
+				$allContainers.css('height', mainVisualHeight + 'px');
+
+
+				$moImg.each(function() {
+					var $thisImg = $(this);
+					var isPersonSlide = $thisImg.closest('.item').hasClass('person');
+
+					$thisImg.css({
+						'width': '100%',
+						'height': '100%',
+						'position': 'absolute',
+						'top': '0',
+						'left': '0',
+						'transform': 'none',
+						'object-fit': 'cover',
+						// person 클래스가 있으면 top center, 없으면 center center
+						'object-position': isPersonSlide ? 'top center' : 'center center'
+					});
+				});
+			}
+
+			// 슬라이더 위치 재배치
+			if($('.s').hasClass('slick-initialized')){
+				$('.s').slick('setPosition');
+			}
+
+		}
+
+		$(window).resize(function () {
+			//alert("s");
+			resizeSwiper();
+		});
+
+		resizeSwiper();
+
+		</script>
+			
+      <div class="inner">
+				<!--
+        <div class="txt">
+            <img src="https://admission.swu.ac.kr/theme/swu/img/main/txt.png" alt="">
+        </div>
+				-->
+        <ul class="clearfix bbs">
+	        </ul>
+      </div>
+    </section>
+
+    <section id="m_board">
+      <div class="inner">
+	<style>
+		ul.s:has(>li) {
+			display: flex;
+		}
+		#m1 .slick-track { display: flex }
+	</style>
+	<script>
+  		$(function(){
+
+			$('#m_board #m1 .s').slick({
+				slide: 'li',		//슬라이드 되어야 할 태그 ex) div, li
+				infinite : true, 	//무한 반복 옵션
+				slidesToShow : 4,		// 한 화면에 보여질 컨텐츠 개수
+				slidesToScroll : 4,		//스크롤 한번에 움직일 컨텐츠 개수
+				speed : 900,	 // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+				arrows : false, 		// 옆으로 이동하는 화살표 표시 여부
+//				appendDots: '#m_board #m1 .append',
+				dots : true, 		// 스크롤바 아래 점으로 페이지네이션 여부
+				autoplay : true,			// 자동 스크롤 사용 여부
+				autoplaySpeed : 4000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+				pauseOnHover : true,		// 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+				vertical : false,		// 세로 방향 슬라이드 옵션
+				dotsClass : "slick-dots", 	//아래 나오는 페이지네이션(점) css class 지정
+				draggable : true, 	//드래그 가능 여부
+				responsive: [ // 반응형 웹 구현 옵션
+					{
+						breakpoint: 960, //화면 사이즈 960px
+						settings: {
+							//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+							slidesToShow : 3,
+							slidesToScroll : 1		//스크롤 한번에 움직일 컨텐츠 개수
+						}
+					},
+					{
+						breakpoint: 768, //화면 사이즈 768px
+						settings: {
+							//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+							slidesToShow : 2,
+							slidesToScroll : 1		//스크롤 한번에 움직일 컨텐츠 개수
+						}
+					},
+					{
+						breakpoint: 500, //화면 사이즈 768px
+						settings: {
+							//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+							slidesToShow : 1,
+							slidesToScroll : 1		//스크롤 한번에 움직일 컨텐츠 개수
+						}
+					}
+				]
+			});
+  		})
+	</script>
+        <article id="m2">
+          <ul class="clearfix clearfix">
+            <li class="m2_1">
+				            </li>
+
+            <li class="m2_2">
+			  						<a href="https://cs.u-is.co.kr/swu/intro.htm"  target="_blank " >
+							<img src="https://admission.swu.ac.kr/data_new/banner/30" class="off" alt="온라인 상담 프로그램">
+							<img src="https://admission.swu.ac.kr/data_new/banner/on/30" class="on" alt="온라인 상담 프로그램">
+							온라인 상담 프로그램						</a>
+												<a href="https://admission.swu.ac.kr/bbs/content.php?co_id=student_point"  target="_blank " >
+							<img src="https://admission.swu.ac.kr/data_new/banner/29" class="off" alt="학생부 점수 산출 서비스">
+							<img src="https://admission.swu.ac.kr/data_new/banner/on/29" class="on" alt="학생부 점수 산출 서비스">
+							학생부 점수 산출 서비스						</a>
+												<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=%EC%88%98%EC%8B%9C&sub_ck=1"  target="_blank " >
+							<img src="https://admission.swu.ac.kr/data_new/banner/31" class="off" alt="수시모 모집요강">
+							<img src="https://admission.swu.ac.kr/data_new/banner/on/31" class="on" alt="수시모 모집요강">
+							수시모집 모집요강						</a>
+												<a href="https://blog.naver.com/seoul_womens/223283270407"  target="_blank " >
+							<img src="https://admission.swu.ac.kr/data_new/banner/30" class="off" alt="서울여자대학교 공식블로그">
+							<img src="https://admission.swu.ac.kr/data_new/banner/on/30" class="on" alt="서울여자대학교 공식블로그">
+							서울여자대학교 공식블로그						</a>
+						            </li>
+
+            <li class="m2_4">
+              <h2 class="tit-main">대학소개</h2>
+              <ul class="m2_4_left_wrap">
+							<li><a href="http://www.swu.ac.kr/www/goala.html"  target="_blank " >학교소개</a></li>
+						<li><a href="http://www.swu.ac.kr/www/swuniversity.html"  target="_blank " >학과/전공</a></li>
+						<li><a href="http://www.swu.ac.kr/www/bacha_1.html"  target="_blank " >학사안내</a></li>
+						<li><a href="http://www.swu.ac.kr/www/encoua.html"  target="_blank " >등록금/장학안내</a></li>
+						<li><a href="http://www.swu.ac.kr/irindex.do"  target="_blank " >국제교류프로그램</a></li>
+						</ul>
+				<ul>
+								<li><a href="http://sweet.swu.ac.kr/"  target="_blank " >교직과정</a></li>
+						<li><a href="https://dorm.swu.ac.kr/"  target="_blank " >기숙사 안내</a></li>
+						<li><a href="https://www.youtube.com/channel/UCSjs5xI4njhMmIN3eNP9j3Q"  target="_blank " >학교홍보동영상</a></li>
+						<li><a href="https://www.swu.ac.kr/www/cama.html"  target="_blank " >캠퍼스맵</a></li>
+						<li><a href="http://www.swu.ac.kr/www/contact_1.html"  target="_blank " >찾아오시는 길</a></li>
+						</ul>
+            </li>
+          </ul>
+        </article>
+
+    	<article id="m7">
+          <header class="tit">
+            <div class="vertical">
+              <span class="color-red">SWU</span><br />
+              입시 자료실
+            </div>
+          </header>
+
+          <div class="s_w">
+			  <ul>
+				  <li class="s_w_cell">
+					  <div class="s_w_cell_wrap">
+					  	<div class="title">전년도 모집요강</div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=수시&sub_ck=1&wr_9=mojip" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=정시&sub_ck=1&wr_9=mojip">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=편입학&sub_ck=1&wr_9=mojip" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=재외국민외국인&sub_ck=1&wr_9=mojip">· 재외국민/외국인</a>
+					  </div>
+					  <a href="#" class="title_tag">전년도 모집요강 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></a>
+				  </li>
+				  <li class="s_w_cell">
+					  <div class="s_w_cell_wrap">
+					  	<div class="title">입시결과</div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=result&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=result&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=result&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=result&sca=재외국민외국인">· 재외국민/외국인</a>
+					  </div>
+					  <a href="#" class="title_tag">입시결과 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></a>
+				  </li>
+				  <li class="s_w_cell">
+					  <div class="s_w_cell_wrap">
+					  	<div class="title">기출문제</div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=재외국민외국인">· 재외국민/외국인</a>
+					  </div>
+					  <a href="#" class="title_tag">기출문제 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></a>
+				  </li>
+				  <li class="s_w_cell">
+					  <div class="s_w_cell_wrap">
+					  	<div class="title">경쟁률</div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=rate&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=rate&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=rate&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=rate&sca=재외국민외국인">· 재외국민/외국인</a>
+						</div>
+					  <a href="#" class="title_tag">경쟁률 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></a>
+				  </li>
+				  <li class="s_w_cell">
+					  <div class="s_w_cell_wrap">
+					  	<div class="title">제출서류양식</div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=doc&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=doc&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=doc&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=doc&sca=재외국민외국인">· 재외국민/외국인</a>
+					  </div>
+					  <a href="#" class="title_tag">제출서류양식 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></a>
+				  </li>
+				  <li class="s_w_cell">
+					  <div class="s_w_cell_wrap">
+					  	<div class="title">기타</div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=etc&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=etc&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=etc&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=etc&sca=재외국민외국인">· 재외국민/외국인</a>
+					  </div>
+					  <a href="#" class="title_tag">기타 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></a>
+				  </li>
+			  </ul>
+          </div>
+			<script type="text/javascript">
+				$('.s_w_cell').hover(
+					function() {
+						$(this).children('.title_tag').hide();
+						$('.s_w_cell').stop().css({'width':'15.444444%'},0);
+						$(this).stop().css({'width':'23%'},0);
+						$(this).children('.s_w_cell_wrap').stop().css({'display':'block'},0);
+					},
+					function() {
+						$(this).children('.title_tag').show();
+						$(this).stop().css({'width':'16.6666667%'},0);
+						$(this).children('.s_w_cell_wrap').stop().css({'display':'none'},0);
+					}
+				);
+			</script>
+			<!-- 모바일용.시작 -->
+			<div class="s_w_mobile">
+				<ul>
+					<li class="s_w_cell_mobile">
+					  	<div class="title_mobile">전년도 모집요강 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=수시&sub_ck=1&wr_9=mojip" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=정시&sub_ck=1&wr_9=mojip">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=편입학&sub_ck=1&wr_9=mojip" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=재외국민외국인&sub_ck=1&wr_9=mojip" class="txt2">· 재외국민/외국인</a>
+					</li>
+					<li class="s_w_cell_mobile">
+					  	<div class="title_mobile">입시결과 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=result&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=result&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=result&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=result&sca=재외국민외국인" class="txt2">· 재외국민/외국인</a>
+					</li>
+					<li class="s_w_cell_mobile">
+					  	<div class="title_mobile">기출문제 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=재외국민외국인" class="txt2">· 재외국민/외국인</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="s_w_cell_mobile">
+					  	<div class="title_mobile">경쟁률 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=rate&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=rate&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=rate&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=rate&sca=재외국민외국인" class="txt2">· 재외국민/외국인</a>
+					</li>
+					<li class="s_w_cell_mobile">
+					  	<div class="title_mobile">제출서류양식 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=doc&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=doc&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=doc&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=doc&sca=재외국민외국인" class="txt2">· 재외국민/외국인</a>
+					</li>
+					<li class="s_w_cell_mobile">
+					  	<div class="title_mobile">기타 <img src="https://admission.swu.ac.kr/theme/swu/img/main/arrow_blur_black_13px.png" alt="메뉴 바로가기" /></div>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=etc&sca=수시" class="txt">· 수시</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=etc&sca=정시">· 정시</a><br>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=etc&sca=편입학" class="txt">· 편입학</a>
+							<a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=etc&sca=재외국민외국인" class="txt2">· 재외국민/외국인</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 모바일용.끝 -->
+
+
+        </article>
+
+        <!-- //입시캘린더 (업체요청 숨김 // 2021-03-03 이용태)
+		<article id="m3">
+          <header class="tit">
+            <div class="vertical">
+              <span class="color-green">SWU</span><br />
+              입시 캘린더
+            </div>
+          </header>
+		            <div class="s_w">
+            <div class="date_t bg-green table">
+				<strong>2026.<span>9</span></strong>
+            </div>
+
+            <div class="s clearfix">
+				<div class="slider_wrap">
+				
+									<div>
+						<a href="#" class="in">
+							<strong class="date"></strong>
+							<span class="txt">등록된 일정이 없습니다.</span>
+						</a>
+					</div>
+				
+				</div>
+				<div class="more prev">
+					<a href="#" data-slider="prev">더보기</a>
+				</div>
+				<div class="more">
+					<a href="#" data-slider="next">더보기</a>
+				</div>
+          </div>
+        </article>
+		//입시캘린더 -->
+
+
+        <article id="m4">
+          <h2 class="hide">퀵메뉴</h2>
+          <div class="s_w">
+            <button class="prev">이전</button>
+            <ul class="s">
+			
+            </ul>
+            <button class="next">다음</button>
+          </div>
+        </article>
+
+			<article id="m6" class="main-banner">					<div class="main-banner__img">
+						<a href="https://www.youtube.com/watch?v=Vqp-9R3AtVA"  target="_blank "  class="link">
+							<img src="https://admission.swu.ac.kr/data_new/banner/23" alt="새내기 슈니를 위한, 서울여대 캠퍼SWU 탐방">
+						</a>
+					</div>
+
+				</article>
+      <//div>
+    </section>
+
+	<section id="m8">
+		<h2>
+			<strong>SEOUL WOMEN’S <br class="mobile-only">UNIVERSITY</strong>
+			<span>서울여자대학교 입학처의 <br class="mobile-only">YouTube 영상을 만나보세요.</span>
+		</h2>
+
+		<div class="youtube-contents">
+			<dl class="youtube-mainvod">
+				<dt>
+					<!-- 2023-04-24 youtube top 추가 start -->
+										<span class="pic"><img id="youtube_main_img" src="https://admission.swu.ac.kr/data_new/file/youtube/3530441867_la2oWmGe_b32869ad4407a97759f1b98c13c69f09ef19b201.png" alt="YouTube"></span>
+					<button type="button" class="btn-youtube-play btn-youtube-pop" data-movie-id="_7eD-Ut3wJs?si=p3RbHADCmRTETBwh" id="entrance_movie0" title="재생" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=43">재생</button>
+
+				</dt>
+				<dd><a href="javascript:void(0)"  data-movie-id="_7eD-Ut3wJs?si=p3RbHADCmRTETBwh" id="entrance_movie01" class="btn-youtube-pop" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=43">2027학년도 학생부종합전형 준비 TIP(자연)</a></dd>
+			</dl>
+			<div class="tslide movie-list">
+				<ul>
+					<!-- 2023-04-21 youtube 추가 start -->
+										<li>
+						<span class="pic"><a class="btn-youtube-pop" href="javascript:void(0)" data-movie-id="IXMvBxL7N7g?si=8nBcAcf1kGfLlBE3" id="entrance_movie1" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=42"><img src="https://admission.swu.ac.kr/data_new/file/youtube/3530441867_JhSXo8pN_f6032a7b597b308c618bf6ced303d762117f52a5.png" alt="YouTube"></a></span>
+						<strong><a class="btn-youtube-pop" href="javascript:void(0)" data-movie-id="IXMvBxL7N7g?si=8nBcAcf1kGfLlBE3" id="entrance_movie11" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=42">2027학년도 학생부종합전형 준비 TIP(인문사회)</a></strong>
+					</li>
+										<li>
+						<span class="pic"><a class="btn-youtube-pop" href="javascript:void(0)" data-movie-id="OgoTPTMy7yQ?si=9TghR01bB6ah9Qko" id="entrance_movie2" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=41"><img src="https://admission.swu.ac.kr/data_new/file/youtube/3530441867_dy2XeIqM_61a97c9544087964b9968719c9fe37d4334ef814.png" alt="YouTube"></a></span>
+						<strong><a class="btn-youtube-pop" href="javascript:void(0)" data-movie-id="OgoTPTMy7yQ?si=9TghR01bB6ah9Qko" id="entrance_movie22" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=41">서울여대 실제 면접 엿보기(원예생명조경학과)</a></strong>
+					</li>
+										<li>
+						<span class="pic"><a class="btn-youtube-pop" href="javascript:void(0)" data-movie-id="iWx4CN2P0S4?si=yrbK59Jguv90sRg4" id="entrance_movie3" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=40"><img src="https://admission.swu.ac.kr/data_new/file/youtube/3530441867_UrRgySaQ_f9597579ac170553769c628db12ca4946a471b18.png" alt="YouTube"></a></span>
+						<strong><a class="btn-youtube-pop" href="javascript:void(0)" data-movie-id="iWx4CN2P0S4?si=yrbK59Jguv90sRg4" id="entrance_movie33" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=40">서울여대 실제 면접 엿보기(영어영문학과)</a></strong>
+					</li>
+										<li>
+						<span class="pic"><a class="btn-youtube-pop" href="javascript:void(0)" data-movie-id="Gu53N7of5Pg?si=RylgMq8cv0jP2Ikp" id="entrance_movie4" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=39"><img src="https://admission.swu.ac.kr/data_new/file/youtube/3530441867_wvxnKbdq_3f9bb924ed98297e990e72b2240c5459ad6bf0f1.png" alt="YouTube"></a></span>
+						<strong><a class="btn-youtube-pop" href="javascript:void(0)" data-movie-id="Gu53N7of5Pg?si=RylgMq8cv0jP2Ikp" id="entrance_movie44" data-board-url="https://admission.swu.ac.kr/bbs/board.php?bo_table=youtube&wr_id=39">2027학년도 서울여자대학교 수시모집 온라인 입학설명회</a></strong>
+					</li>
+										<!-- 2023-04-21 youtube 추가 end -->
+
+				</ul>
+			</div>
+		</div>
+		<div class="btncenter">
+			<button type="button" class="btn-youtube-channel" onclick="window.open('https://www.youtube.com/@SWU_admissions')"><em>공식 유튜브 채널 바로가기</em></button>
+		</div>
+	</section>
+</section>
+
+</div>
+
+<!-- 유튜브 영상 팝업 -->
+<div class="modalpop">
+    <div class="popupwrap pop-youtube">
+        <div class="popcontents">
+            <div id="youtube_player">
+                <iframe
+                        id="entrance_inner_movie"
+                        allowfullscreen=""
+                        frameborder="0"
+                        width="100%"
+                        height="400px"
+                        src="">
+                </iframe>
+            </div>
+            <button type="button" class="btn-close-youtube" title="유튜브 팝업 닫기">닫기</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- //유튜브 영상 팝업 -->
+<script>
+
+/*
+    const openYouTubeAll = document.querySelectorAll(".btn-youtube-pop");
+    const closePopYoutube = document.querySelector(".btn-close-youtube");
+    const popYoutube = document.querySelector(".modalpop");
+
+    var enter = false;
+    openYouTubeAll.forEach((element) => {
+        element.addEventListener('click', (event) => {
+            movieid = event.currentTarget.dataset.movieId;
+            document.querySelector("#entrance_inner_movie").setAttribute("src",`https://www.youtube.com/embed/${movieid}`);
+
+            popYoutube.classList.add('active');
+        });
+    });
+
+    closePopYoutube.addEventListener('click', function() {
+        document.querySelector("#entrance_inner_movie").setAttribute("src",`about:blank`);
+        popYoutube.classList.remove('active');
+    });
+*/
+/*	
+		$(document).on("click", ".btn-youtube-pop" , function(event){
+			$.ajax({
+				type: "get",
+				url: $(this).attr("data-board-url"),
+				success: function (res) {
+					//console.log(res);
+				},
+				error: function (xhr) {
+					console.log(xhr.status + " : " + xhr.statusText);
+				},
+			});
+		});
+*/
+
+
+$(function () {
+	// 유튜브 썸네일 / 제목 클릭
+	$(document).on("click", ".btn-youtube-pop", function (e) {
+		e.preventDefault();
+
+		var movieId = $(this).data("movie-id");
+
+		if (!movieId) {
+			return;
+		}
+
+		// 유튜브 embed URL 생성 (자동재생)
+		var youtubeUrl = "https://www.youtube.com/embed/" + movieId + "?autoplay=1&rel=0";
+
+		// iframe src 설정
+		$("#entrance_inner_movie").attr("src", youtubeUrl);
+
+		// 팝업 열기
+		$(".modalpop").fadeIn(200);
+	});
+
+	// 닫기 버튼 클릭
+	$(document).on("click", ".btn-close-youtube", function () {
+		closeYoutubePopup();
+	});
+
+	// 팝업 외부 클릭 시 닫기 (선택)
+	$(document).on("click", ".modalpop", function (e) {
+		if ($(e.target).hasClass("modalpop")) {
+			closeYoutubePopup();
+		}
+	});
+
+	function closeYoutubePopup() {
+		// 영상 정지 (src 제거)
+		$("#entrance_inner_movie").attr("src", "");
+		$(".modalpop").fadeOut(200);
+	}
+
+});
+
+</script>
+
+
+<script src="https://admission.swu.ac.kr/theme/swu/js/main.js"></script>
+<!-- } 콘텐츠 끝 -->
+<hr>
+<!-- 하단 시작 { -->
+<div id="footer">
+  <div class="top">
+    <div class="inner clearfix">
+      <ul class="l clearfix f14">
+        <li><a href="http://www.swu.ac.kr/" target="_blank"><strong>서울여자대학교</strong></a></li>
+        <li><a href="https://www.swu.ac.kr/swu/1700/subview.do" target="_blank">개인정보처리방침</a></li>
+        <li><a href="https://www.swu.ac.kr/swu/632/subview.do" target="_blank">캠퍼스맵</a></li>
+        <li><a href="https://www.swu.ac.kr/swu/546/subview.do" target="_blank">찾아오시는길</a></li>
+      </ul>
+      <ul class="r clearfix">
+        <li><a href="https://www.adiga.kr/man/inf/mainView.do?menuId=PCMANINF1000" target="_blank"><img src="https://admission.swu.ac.kr/theme/swu/img/common/adiga.jpg" alt=""></a></li>
+        <!--<li><a href="https://www.facebook.com/seoulwomensuniv" target="_blank"><img src="https://admission.swu.ac.kr/theme/swu/img/common/sns_f.png" alt="페이스북"></a></li>-->
+        <li><a href="https://www.instagram.com/swu.official/" target="_blank"><img src="https://admission.swu.ac.kr/theme/swu/img/common/sns_i.png" alt="인스타그램"></a></li>
+        <!-- <li><a href="https://www.youtube.com/user/seoulwomensuniv" target="_blank"><img src="https://admission.swu.ac.kr/theme/swu/img/common/sns_t.png" alt="트위터"></a></li> -->
+        <li><a href="https://blog.naver.com/seoul_womens" target="_blank"><img src="https://admission.swu.ac.kr/theme/swu/img/common/sns_b.png" alt="블로그"></a></li>
+        <li><a href="https://www.youtube.com/user/seoulwomensuniv" target="_blank"><img src="https://admission.swu.ac.kr/theme/swu/img/common/sns_u.png" alt="유튜브"></a></li>
+      </ul>
+      </div>
+  </div>
+  <div class="add">
+      <div class="inner">
+      <address class="txt">
+        01797 서울특별시 노원구 화랑로 621 서울여자대학교 <br/>입학사정관실 &nbsp TEL &nbsp 02-970-5003~9,&nbsp 5861~4 &nbsp FAX &nbsp 02-970-5951 &nbsp&nbsp <span> / &nbsp 입학팀 &nbsp TEL &nbsp 02-970-5051~4 &nbsp FAX &nbsp 02-3399-2844 &nbsp; 이메일 &nbsp; swuap@swu.ac.kr</span>
+      </address>
+      <div class="copy">COPYRIGHT(C) SEOUL WOMEN’S UNIVERSITY. ALL RIGHTS RESERVED.</div>
+      </div>
+    </div>
+        <!-- 
+<div class="notice ft_cnt">
+    <h2><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice">공지사항</a></h2>
+    <ul>
+            <li>
+            <span class="new_icon">N<span class="sound_only">새글</span></span><a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=29290&amp;sca=%EC%88%98%EC%8B%9C&amp;sst=wr_datetime&amp;sod=desc&amp;sop=and&amp;spt=-11022&amp;page=2091"><strong>2027학년도 수시 실기…</strong></a>        </li>
+            <li>
+            <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=29289&amp;sca=%EC%88%98%EC%8B%9C&amp;sst=wr_datetime&amp;sod=desc&amp;sop=and&amp;spt=-11022&amp;page=2091">2027학년도 수시 원서…</a>        </li>
+            <li>
+            <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=29288&amp;sca=%EC%88%98%EC%8B%9C&amp;sst=wr_datetime&amp;sod=desc&amp;sop=and&amp;spt=-11022&amp;page=2091"><strong>2027학년도 입학원서 …</strong></a>        </li>
+            <li>
+            <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=29287&amp;sca=%EC%88%98%EC%8B%9C&amp;sst=wr_datetime&amp;sod=desc&amp;sop=and&amp;spt=-11022&amp;page=2091"><strong>2027학년도 수시모집 …</strong></a>        </li>
+            </ul>
+</div>
+ -->
+
+    <button type="button" id="top_btn">
+      TOP
+    </button>
+    <script>
+  $(window).scroll(function () { if ($(this).scrollTop() > 100) { $('#top_btn').fadeIn(); } else { $('#top_btn').fadeOut(); } });
+
+    $(function() {
+        $("#top_btn").on("click", function() {
+            $("html, body").animate({scrollTop:0}, '500');
+            return false;
+        });
+    });
+    </script>
+</div>
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+<script src="https://admission.swu.ac.kr/theme/swu/js/common.js"></script>
+</section><!-- #wrap -->
+
+<script>
+	(function () {var w = window;if (w.ClassumConnect) {return;}var classumPlaceholder = function () {classumPlaceholder.commandQueue?.(arguments);};classumPlaceholder.processQueue = [];classumPlaceholder.commandQueue = function (args) {classumPlaceholder.processQueue.push(args);};w.ClassumConnect = classumPlaceholder;function load() {if (w.ClassumConnectInitialized) {return;}w.ClassumConnectInitialized = true;var scriptElement = document.createElement('script');scriptElement.type = 'text/javascript';scriptElement.async = true;scriptElement.src = 'https://cdn.classumconnect.com/sdk/core-loader.js';var firstScriptTag = document.getElementsByTagName('script')[0];if (firstScriptTag.parentNode) {firstScriptTag.parentNode.insertBefore(scriptElement, firstScriptTag);}}if (document.readyState === 'complete') {load();} else {w.addEventListener('DOMContentLoaded', load);w.addEventListener('load', load);}})();
+</script>
+
+<script>
+
+ClassumConnect('boot',{
+		projectKey:"yIDWm5vbBH67K2HOkc38O3cbouaNdvIua2vgbOlt",
+	},
+	function(error) {
+		console.log(error);
+	}
+);
+
+</script>
+
+</body>
+</html>
