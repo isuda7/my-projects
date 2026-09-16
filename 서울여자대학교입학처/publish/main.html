@@ -358,7 +358,7 @@ $(".top_nav_m > li > a").click(function(){
 <!-- S: 2023.08.23 검색레이어 추가 -->
 
 <!-- S: 2023.08.23 hot issue 레이어 추가 -->
-<section class="hotissue-layer on" style="display:block;">
+<section class="hotissue-layer">
     <div class="inner">
         <h2 class="hotissue-layer__title"><span>SEOUL WOMEN’S UNIVERSITY</span><strong>HOT ISSUE</strong></h2>
         <div class="hotissue-slide">
@@ -615,7 +615,9 @@ $(".top_nav_m > li > a").click(function(){
 <script src="https://admission.swu.ac.kr/js/jquery.rwdImageMaps.min.js"></script>
 
 <!-- TControl -->
-<link rel="stylesheet" href="theme/swu/css/main.css?v=20260713">
+<!-- Swiper CSS (2026 m_board renewal) -->
+<link rel="stylesheet" href="theme/swu/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="theme/swu/css/main.css?v=20260916_v5">
 <div id="cont" tabindex="0">
 <section id="main">
   <aside id="quick">
@@ -840,6 +842,370 @@ $(".top_nav_m > li > a").click(function(){
     </section>
 
     <section id="m_board">
+    <!-- =================== S: 2026 m_board renewal =================== -->
+    <div class="m_board_renewal">
+      <div class="m_board_inner">
+        
+        <!-- 좌측/모바일 상단: 입학 카테고리 탭 -->
+        <div class="m_board_tabs">
+          <ul class="tab_list">
+            <li class="tab_item active" data-category="common">
+              <button type="button" class="tab_btn"><span class="ico_dia">◆</span> 입학공통</button>
+            </li>
+            <li class="tab_item" data-category="susi">
+              <button type="button" class="tab_btn"><span class="ico_dia">◆</span> 수시</button>
+            </li>
+            <li class="tab_item" data-category="jeongsi">
+              <button type="button" class="tab_btn"><span class="ico_dia">◆</span> 정시</button>
+            </li>
+            <li class="tab_item" data-category="global">
+              <button type="button" class="tab_btn"><span class="ico_dia">◆</span> 재외국민외국인</button>
+            </li>
+            <li class="tab_item" data-category="transfer">
+              <button type="button" class="tab_btn"><span class="ico_dia">◆</span> 편입학</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 우측 메인 콘텐츠 영역 -->
+        <div class="m_board_main">
+
+          <!-- 1. 공지사항 섹션 -->
+          <div class="m_board_sec sec_notice">
+            <div class="sec_header">
+              <h3 class="sec_title">공지사항</h3>
+              <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice" class="btn_more_notice" title="공지사항 전체보기">
+                전체보기 <span class="ico_plus">+</span>
+              </a>
+            </div>
+
+            <div class="notice_slider_wrap">
+              <div class="swiper notice_swiper">
+                <div class="swiper-wrapper">
+                  <!-- 슬라이드 1 (대표 공지 - 와인레드 카드) -->
+                  <div class="swiper-slide">
+                    <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice" class="notice_card card_featured">
+                      <div class="card_content">
+                        <h4 class="card_title">2028학년도 대학입학전형 시행안내</h4>
+                        <span class="card_date">2024.02.22</span>
+                      </div>
+                      <div class="card_watermark">SW</div>
+                    </a>
+                  </div>
+                  <!-- 슬라이드 2 (일반 공지) -->
+                  <div class="swiper-slide">
+                    <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice" class="notice_card">
+                      <div class="card_content">
+                        <h4 class="card_title">인공지능전공 신설</h4>
+                        <span class="card_date">2024.02.22</span>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- 슬라이드 3 (일반 공지) -->
+                  <div class="swiper-slide">
+                    <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice" class="notice_card">
+                      <div class="card_content">
+                        <h4 class="card_title">전공자율선택제 및 전공결정 범위 안내</h4>
+                        <span class="card_date">2024.02.22</span>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- 슬라이드 4 (일반 공지) -->
+                  <div class="swiper-slide">
+                    <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice" class="notice_card">
+                      <div class="card_content">
+                        <h4 class="card_title">2027학년도 대학입학전형 기본계획 안내</h4>
+                        <span class="card_date">2024.02.20</span>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- 슬라이드 5 (일반 공지) -->
+                  <div class="swiper-slide">
+                    <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice" class="notice_card">
+                      <div class="card_content">
+                        <h4 class="card_title">2025학년도 입학설명회 및 전형 일정 공지</h4>
+                        <span class="card_date">2024.02.15</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 슬라이더 하단 컨트롤 (프로그레스바 + 이전/다음 버튼) -->
+              <div class="notice_controls">
+                <div class="swiper-pagination notice_pagination"></div>
+                <div class="notice_nav_btns">
+                  <button type="button" class="swiper-btn-prev" aria-label="이전 공지">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                  </button>
+                  <button type="button" class="swiper-btn-next" aria-label="다음 공지">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. 주요정보 섹션 -->
+          <div class="m_board_sec sec_info">
+            <div class="sec_header">
+              <h3 class="sec_title">주요정보</h3>
+            </div>
+
+            <!-- [입학공통] 주요정보 그리드 (배너 1 + 퀵링크 3) -->
+            <div class="info_grid info_grid_common tab_info_content" data-category="common">
+              <!-- 배너 카드 1 -->
+              <!-- [기존 이미지 배너 소스 보존]
+              <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice" class="info_banner_card" target="_blank" title="2028학년도 대학입학전형 시행 안내">
+                <img src="theme/swu/img/main/m_board_banner.jpg" alt="2028학년도 대학입학전형 시행 안내" class="banner_img pc-only">
+                <img src="theme/swu/img/main/m_board_banner_m.jpg" alt="2028학년도 대학입학전형 시행 안내" class="banner_img mobile">
+                <span class="sound_only">2028학년도 대학입학전형 시행 안내</span>
+              </a>
+              -->
+              <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=notice" class="info_banner_card" target="_blank" title="2028학년도 대학입학전형 시행 안내">
+                <img src="theme/swu/img/main/img_board_banner.jpg" alt="" class="banner_bg_img">
+                <div class="banner_overlay"></div>
+                <div class="banner_content">
+                  <div class="banner_txt">
+                    <span class="banner_sub">2028학년도</span>
+                    <strong class="banner_tit">대학입학전형 시행 안내</strong>
+                  </div>
+                  <span class="btn_arrow_circle" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </div>
+              </a>
+
+              <!-- 퀵링크 카드 3종 묶음 -->
+              <div class="info_quick_group">
+                <!-- 퀵링크 1: 입시점수산출 -->
+                <a href="https://admission.swu.ac.kr/bbs/content.php?co_id=student_point" class="quick_card" target="_blank">
+                  <div class="card_head">
+                    <span class="card_name">입시점수산출</span>
+                    <span class="card_icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5 12.95V11.05C21.5 7.01949 21.5 5.00424 20.1088 3.75212C18.7175 2.5 16.4783 2.5 12 2.5C7.52166 2.5 5.28249 2.5 3.89124 3.75212C2.5 5.00424 2.5 7.01949 2.5 11.05V12.95C2.5 16.9805 2.5 18.9958 3.89124 20.2479C5.28249 21.5 7.52166 21.5 12 21.5C16.4783 21.5 18.7175 21.5 20.1088 20.2479C21.5 18.9958 21.5 16.9805 21.5 12.95Z" stroke="white" stroke-width="1.5"/>
+                        <path d="M18 8H14M16 6L16 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 17.5H14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 14.5H14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 17.5L8.25 15.75M8.25 15.75L6.5 14M8.25 15.75L10 14M8.25 15.75L6.5 17.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 8H6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="btn_arrow_circle" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
+
+                <!-- 퀵링크 2: 공식블로그 -->
+                <a href="https://blog.naver.com/seoul_womens" class="quick_card" target="_blank">
+                  <div class="card_head">
+                    <span class="card_name">공식블로그</span>
+                    <span class="card_icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.40503 7.02658C7.96076 7.02658 6.62233 7.48921 5.52335 8.27713V2.47378H2.3335V20.4981H5.52335V19.6031C6.62233 20.3908 7.96076 20.8536 9.40503 20.8536C13.142 20.8536 16.1714 17.7584 16.1714 13.9402C16.1714 10.122 13.1418 7.02658 9.40503 7.02658ZM9.10126 17.834C7.06382 17.834 5.41216 16.0893 5.41216 13.9373C5.41216 11.7852 7.06382 10.0405 9.10126 10.0405C11.1387 10.0405 12.7903 11.7852 12.7903 13.9373C12.7903 16.0893 11.1387 17.834 9.10126 17.834ZM20.0576 1H21.3335V22H20.0576V1Z" fill="white" stroke="white" stroke-miterlimit="10"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="btn_arrow_circle" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
+
+                <!-- 퀵링크 3: 입시자료 -->
+                <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=enterinfo" class="quick_card" target="_blank">
+                  <div class="card_head">
+                    <span class="card_name">입시자료</span>
+                    <span class="card_icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5 17V7C18.5 5.11438 18.5 4.17157 17.9142 3.58579C17.3284 3 16.3856 3 14.5 3H9.5C7.61438 3 6.67157 3 6.08579 3.58579C5.5 4.17157 5.5 5.11438 5.5 7V17C5.5 18.8856 5.5 19.8284 6.08579 20.4142C6.67157 21 7.61438 21 9.5 21H14.5C16.3856 21 17.3284 21 17.9142 20.4142C18.5 19.8284 18.5 18.8856 18.5 17Z" stroke="white" stroke-width="1.5"/>
+                        <path d="M18.5 6H19C20.4142 6 21.1213 6 21.5607 6.43934C22 6.87868 22 7.58579 22 9V16C22 17.4142 22 18.1213 21.5607 18.5607C21.1213 19 20.4142 19 19 19H18.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M5.5 6H5C3.58579 6 2.87868 6 2.43934 6.43934C2 6.87868 2 7.58579 2 9V16C2 17.4142 2 18.1213 2.43934 18.5607C2.87868 19 3.58579 19 5 19H5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14.5 8L9.5 8M14.5 12L9.5 12M14.5 16H9.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <span class="btn_arrow_circle" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- [수시] 주요정보 그리드 (5종 퀵링크 카드) -->
+            <div class="info_grid info_grid_susi tab_info_content" data-category="susi" style="display: none;">
+              <!-- 1: 모집요강 -->
+              <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=flashpaper&sca=수시" class="quick_card" target="_blank">
+                <div class="card_head">
+                  <span class="card_name">모집요강</span>
+                  <span class="card_icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 9V15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 9H6C5.06812 9 4.60218 9 4.23463 9.15224C3.74458 9.35523 3.35523 9.74458 3.15224 10.2346C3 10.6022 3 11.0681 3 12C3 12.9319 3 13.3978 3.15224 13.7654C3.35523 14.2554 3.74458 14.6448 4.23463 14.8478C4.60218 15 5.06812 15 6 15H7L15.0796 17.4239C16.0291 17.7087 16.5039 17.8512 16.9257 18.1014L16.9459 18.1135C17.3663 18.3663 17.7167 18.7167 18.4177 19.4177L18.5858 19.5858C18.7051 19.7051 18.7647 19.7647 18.831 19.8123C18.9561 19.9021 19.1003 19.9619 19.2523 19.9868C19.3327 20 19.4171 20 19.5858 20C19.9713 20 20.1641 20 20.3196 19.9475C20.6155 19.8477 20.8477 19.6155 20.9475 19.3196C21 19.1641 21 18.9713 21 18.5858V5.41421C21 5.02866 21 4.83589 20.9475 4.68039C20.8477 4.38452 20.6155 4.15225 20.3196 4.05245C20.1641 4 19.9713 4 19.5858 4C19.4171 4 19.3327 4 19.2523 4.0132C19.1003 4.03815 18.9561 4.09787 18.831 4.18771C18.7647 4.23526 18.7051 4.29491 18.5858 4.41421L18.4177 4.5823C17.7167 5.28326 17.3663 5.63374 16.9459 5.88649L16.9257 5.89856C16.5039 6.14884 16.0291 6.29126 15.0796 6.57611L7 9Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M8 15.5V18.0458C8 19.1251 8.87491 20 9.95416 20C10.6075 20 11.2177 19.6735 11.5801 19.1298L13 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </div>
+                <span class="btn_arrow_circle" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+
+              <!-- 2: 입시결과 -->
+              <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=result&sca=수시" class="quick_card" target="_blank">
+                <div class="card_head">
+                  <span class="card_name">입시결과</span>
+                  <span class="card_icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 8.5C14 5.73858 11.7614 3.5 9 3.5C6.23858 3.5 4 5.73858 4 8.5C4 11.2614 6.23858 13.5 9 13.5C11.7614 13.5 14 11.2614 14 8.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M16 20.5C16 16.634 12.866 13.5 9 13.5C5.13401 13.5 2 16.634 2 20.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M16 12.3929C16 12.3929 17.2 13.0447 17.8 14C17.8 14 19.6 10.25 22 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </div>
+                <span class="btn_arrow_circle" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+
+              <!-- 3: 기출문제 -->
+              <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=gichul&sca=수시" class="quick_card" target="_blank">
+                <div class="card_head">
+                  <span class="card_name">기출문제</span>
+                  <span class="card_icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.5 19H12.5C9.67157 19 8.25736 19 7.37868 18.1213C6.5 17.2426 6.5 15.8284 6.5 13V8C6.5 5.17157 6.5 3.75736 7.37868 2.87868C8.25736 2 9.67157 2 12.5 2H13.8431C14.6606 2 15.0694 2 15.4369 2.15224C15.8045 2.30448 16.0935 2.59351 16.6716 3.17157L19.3284 5.82843C19.9065 6.40648 20.1955 6.69552 20.3478 7.06306C20.5 7.4306 20.5 7.83935 20.5 8.65685V13C20.5 15.8284 20.5 17.2426 19.6213 18.1213C18.7426 19 17.3284 19 14.5 19Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M15 2.5V3.5C15 5.38562 15 6.32843 15.5858 6.91421C16.1716 7.5 17.1144 7.5 19 7.5H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.5 5C4.84315 5 3.5 6.34315 3.5 8V16C3.5 18.8285 3.5 20.2427 4.37868 21.1213C5.25736 22 6.67157 22 9.5 22H14.5004C16.1572 22 17.5004 20.6568 17.5004 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 11H14M10 15H17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </div>
+                <span class="btn_arrow_circle" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+
+              <!-- 4: 경쟁률 -->
+              <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=rate&sca=수시" class="quick_card" target="_blank">
+                <div class="card_head">
+                  <span class="card_name">경쟁률</span>
+                  <span class="card_icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 3.38462V2M19.6306 4.36369L20.6081 3.38462M20.6176 8H22" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.8537 8.00684H15.0758C15.4546 8.00684 15.7617 8.32175 15.7617 8.71022V12.0354M2.76172 13.9583C5.03496 14.2241 10.7393 13.5137 14.8933 8.88963" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </div>
+                <span class="btn_arrow_circle" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+
+              <!-- 5: 제출서류양식 -->
+              <a href="https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&wr_9=doc&sca=수시" class="quick_card" target="_blank">
+                <div class="card_head">
+                  <span class="card_name">제출서류양식</span>
+                  <span class="card_icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.4999 10.5V10C20.4999 6.22876 20.4999 4.34315 19.3284 3.17157C18.1568 2 16.2712 2 12.4999 2H11.5C7.72883 2 5.84323 2 4.67166 3.17156C3.50009 4.34312 3.50007 6.22872 3.50004 9.99993L3.5 14.5C3.49997 17.7874 3.49996 19.4312 4.40788 20.5375C4.57412 20.7401 4.75986 20.9258 4.96242 21.0921C6.06877 22 7.71249 22 10.9999 22" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.5 7H16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.5 12H13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M20.5 20L20.5 17C20.5 15.5706 19.1569 14 17.5 14C15.8431 14 14.5 15.5706 14.5 17L14.5 20.5C14.5 21.3284 15.1716 22 16 22C16.8284 22 17.5 21.3284 17.5 20.5V17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </div>
+                <span class="btn_arrow_circle" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12L12 4M12 9.33333V4H6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- =================== E: 2026 m_board renewal =================== -->
+
+    <script>
+    /* =================== S: 2026 m_board renewal script =================== */
+    $(function() {
+      var noticeSwiper = new Swiper('.notice_swiper', {
+        slidesPerView: 1.15,
+        spaceBetween: 14,
+        speed: 500,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        },
+        pagination: {
+          el: '.notice_pagination',
+          type: 'progressbar',
+        },
+        navigation: {
+          nextEl: '.notice_nav_btns .swiper-btn-next',
+          prevEl: '.notice_nav_btns .swiper-btn-prev',
+        },
+        breakpoints: {
+          641: {
+            slidesPerView: 2,
+            spaceBetween: 18
+          },
+          1025: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          }
+        }
+      });
+
+      // 탭 카테고리 전환 인터랙션
+      $('.m_board_tabs .tab_item').on('click', function(e) {
+        e.preventDefault();
+        $('.m_board_tabs .tab_item').removeClass('active');
+        $(this).addClass('active');
+        var cat = $(this).data('category');
+
+        // 주요정보 탭 전환 (입학공통, 수시 등)
+        $('.tab_info_content').hide();
+        var $targetInfo = $('.tab_info_content[data-category="' + cat + '"]');
+        if ($targetInfo.length > 0) {
+          $targetInfo.fadeIn(200);
+        } else {
+          $('.tab_info_content[data-category="common"]').fadeIn(200);
+        }
+
+        if (noticeSwiper) {
+          noticeSwiper.slideTo(0);
+        }
+      });
+    });
+    /* =================== E: 2026 m_board renewal script =================== */
+    </script>
+
+    <!-- =================== [기존 m_board 소스 보존 시작] ===================
+<!-- =================== [기존 m_board 소스 보존 시작] ===================
+
       <div class="inner">
 	<style>
 		ul.s:has(>li) {
@@ -1025,7 +1391,7 @@ $(".top_nav_m > li > a").click(function(){
 					}
 				);
 			</script>
-			<!-- 모바일용.시작 -->
+			<!-- 모바일용.시작 -- >
 			<div class="s_w_mobile">
 				<ul>
 					<li class="s_w_cell_mobile">
@@ -1074,7 +1440,7 @@ $(".top_nav_m > li > a").click(function(){
 					</li>
 				</ul>
 			</div>
-			<!-- 모바일용.끝 -->
+			<!-- 모바일용.끝 -- >
 
 
         </article>
@@ -1111,7 +1477,7 @@ $(".top_nav_m > li > a").click(function(){
 				</div>
           </div>
         </article>
-		//입시캘린더 -->
+		//입시캘린더 -- >
 
 
         <article id="m4">
@@ -1133,7 +1499,11 @@ $(".top_nav_m > li > a").click(function(){
 
 				</article>
       <//div>
-    </section>
+    
+    =================== [기존 m_board 소스 보존 끝] =================== -- >
+    =================== [기존 m_board 소스 보존 끝] =================== -->
+
+</section>
 
 	<section id="m8">
 		<h2>
@@ -1394,5 +1764,8 @@ ClassumConnect('boot',{
 
 </script>
 
+
+<!-- Swiper JS (2026 m_board renewal) -->
+<script src="theme/swu/js/swiper-bundle.min.js"></script>
 </body>
 </html>
