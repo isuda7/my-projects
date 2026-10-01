@@ -1,0 +1,23 @@
+<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3" y="101" width="118" height="10" rx="1" stroke="white" stroke-width="2"/>
+<path d="M15 111H33V120C33 120.552 32.5523 121 32 121H16C15.4477 121 15 120.552 15 120V111Z" stroke="white" stroke-width="2"/>
+<path d="M91 111H109V120C109 120.552 108.552 121 108 121H92C91.4477 121 91 120.552 91 120V111Z" stroke="white" stroke-width="2"/>
+<path d="M29.4537 34.1907C29.5966 33.6572 30.1449 33.3406 30.6784 33.4836L46.1332 37.6247C46.6667 37.7676 46.9833 38.3159 46.8403 38.8494L30.5347 99.7027C30.3918 100.236 29.8434 100.553 29.31 100.41L13.8552 96.2687C13.3217 96.1258 13.0051 95.5775 13.1481 95.044L29.4537 34.1907Z" stroke="white" stroke-width="2"/>
+<path d="M27.3491 43.9795L43.7699 48.3794" stroke="white" stroke-width="2"/>
+<path d="M24.7593 53.6387L41.18 58.0386" stroke="white" stroke-width="2"/>
+<path d="M18.8081 75.855L35.2288 80.2549" stroke="white" stroke-width="2"/>
+<path d="M16.2183 85.5142L32.639 89.9141" stroke="white" stroke-width="2"/>
+<path d="M93.0005 27C93.0005 26.4477 93.4482 26 94.0005 26H110C110.553 26 111 26.4477 111 27V100C111 100.552 110.553 101 110 101H94.0005C93.4482 101 93.0005 100.552 93.0005 100V27Z" stroke="white" stroke-width="2"/>
+<path d="M93.5005 37H110.5" stroke="white" stroke-width="2"/>
+<path d="M93.5005 45H110.5" stroke="white" stroke-width="2"/>
+<path d="M93.5005 82H110.5" stroke="white" stroke-width="2"/>
+<path d="M93.5005 90H110.5" stroke="white" stroke-width="2"/>
+<path d="M93.5005 60H110.5" stroke="white" stroke-width="2"/>
+<path d="M93.5005 68H110.5" stroke="white" stroke-width="2"/>
+<path d="M48.999 4C48.999 3.44771 49.4467 3 49.999 3H75.999C76.5513 3 76.999 3.44771 76.999 4V100C76.999 100.552 76.5513 101 75.999 101H49.999C49.4467 101 48.999 100.552 48.999 100V4Z" stroke="white" stroke-width="2"/>
+<path d="M48.999 18H76.999" stroke="white" stroke-width="2"/>
+<path d="M48.999 30H76.999" stroke="white" stroke-width="2"/>
+<path d="M48.999 75H76.999" stroke="white" stroke-width="2"/>
+<path d="M48.999 87H76.999" stroke="white" stroke-width="2"/>
+<path d="M76.001 42H93.001" stroke="white" stroke-width="2"/>
+</svg>

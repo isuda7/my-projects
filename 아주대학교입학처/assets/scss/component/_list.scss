@@ -1,0 +1,210 @@
+.list {
+  position: relative;
+  margin: 2em 0;
+
+  li {
+    position: relative;
+    margin: .5rem 0;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+  }
+
+  li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '-';
+  }
+
+  .list {
+    margin: .5em 0;
+  }
+
+  &__bullet {
+    li::before {
+      content: '•';
+    }
+  }
+
+  &__num {
+    li {
+      margin-left: 1.5rem;
+      padding-left: 0;
+      list-style-type: decimal;
+    }
+
+    li::before {
+      display: none;
+    }
+  }
+
+  &__none {
+    li::before {
+      display: none;
+      content: '';
+    }
+  }
+
+  &__ico li[data-ico] {
+    padding-left: 1.5rem;
+  }
+
+  li[data-ico]::before {
+    content: attr(data-ico);
+  }
+}
+
+.txt__note {
+  position: relative;
+  margin: .4rem 0;
+  font-size: 1.4rem;
+
+  &::before {
+    display: inline-block;
+    content: '-';
+  }
+
+  &[data-ico]::before {
+    position: static;
+    content: attr(data-ico);
+  }
+}
+
+@include mq(mobile) {
+  .list {
+    margin: 1em 0;
+
+    li {
+      font-size: 1.2rem;
+    }
+  }
+
+  .txt__note {
+    font-size: 1.2rem;
+  }
+}
+
+.result-list {
+  margin: 2em auto;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 3em 5em;
+    border: 1px solid #ddd;
+  }
+
+  .info {
+    &__text {
+      font-size: 1.3em;
+      color: $grey-lighten-1;
+    }
+
+    &__title {
+      font-size: 2em;
+      font-weight: 500;
+      color: $grey-darken-1;
+    }
+  }
+
+  .pdf-group {
+    position: relative;
+
+    &::after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    > * {
+      float: left;
+    }
+
+    .btn-ico {
+      position: relative;
+      padding-left: 2em;
+      font-size: 1.6em;
+      font-weight: 500;
+      line-height: 2em;
+      vertical-align: middle;
+
+      &:hover {
+        color: $orange-base;
+      }
+    }
+
+    .btn-ico__look {
+      margin-right: 2em;
+      padding-right: 2em;
+      background: url('../images/common/ico-pdf-look.png') no-repeat left center;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 2.5em;
+        background-color: #ddd;
+        content: '';
+        transform: translateY(-50%);
+      }
+    }
+
+    .btn-ico__down {
+      background: url('../images/common/ico-download.png') no-repeat left center;
+    }
+  }
+}
+
+@include mq(tablet) {
+  .result-list {
+    &__item {
+      display: block;
+      padding: 0;
+    }
+
+    .info {
+      padding: 1.5em 2em;
+    }
+
+    .pdf-group {
+      border-top: 1px solid #ddd;
+
+      > * {
+        width: 50%;
+        text-align: center;
+
+        &:first-child {
+          border-right: 1px solid #ddd;
+        }
+      }
+
+      .btn-ico {
+        line-height: 3.125em;
+      }
+
+      .btn-ico__look {
+        margin-right: 0;
+        padding-right: 0;
+      }
+      .btn-ico__look::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@include mq(mobile) {
+  .result-list {
+    .pdf-group {
+      .btn-ico {
+        padding-left: 1.5em;
+        background-size: 1em;
+      }
+    }
+  }
+}
