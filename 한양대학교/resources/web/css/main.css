@@ -44,7 +44,7 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 .maincontents .section .ii {position:relative; top:10rem; opacity:0}
 .maincontents .section.active .ii {top:0; opacity:1; transition:all 0.6s ease-out; -webkit-transition:all 0.6s ease-out; -webkit-transition-delay:.4s; transition-delay:.4s}
 
-.maincontents .section1 h1 {position:relative; width:126.8rem; max-width:96%; height:100%; flex-direction:column; padding-top:0; margin:0 auto; background:url('../images/bg_hanyang_lion.png') no-repeat 50% 50%; overflow:hidden; font-size:0}
+.maincontents .section1 h1 {position:relative; width:126.8rem; max-width:96%; height:100%; padding: 2rem 0 6rem 0; flex-direction:column; padding-top:0; margin:0 auto; background:url('../images/bg_hanyang_lion.png') no-repeat 50% 50%; overflow:hidden; font-size:0}
 .maincontents .section1 h1 strong {opacity:0; margin-bottom: 3rem; font-size:4.8rem; line-height: 1.6; color:#fff; font-weight:200; -webkit-animation:bottomToTop .5s linear; animation:bottomToTop .5s linear}
 .maincontents .section1 h1 strong b {font-weight:700}
 .maincontents .section1 h1 font {display: block;}
@@ -72,7 +72,7 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 .maincontents .section1 .section1-swiper {
 	position: relative;
 	width: 100%;
-	padding: 2rem 0 6rem 0;
+	height: 100%;
 }
 .maincontents .section1 .section1-swiper .swiper-wrapper {
 	height: 100%;
@@ -86,7 +86,7 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 }
 .section1-swiper .swiper-control {
     position: absolute;
-    bottom: 2rem;
+    bottom: 12rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -422,6 +422,7 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 
 	.maincontents .section1 h1 {max-width:90%}
 	.maincontents .section1 h1 strong {font-size: 4rem;}
+	.section1-swiper .swiper-control {bottom: 10rem;}
 
 	.maincontents .section2 > div h1 span {font-size:4.6rem}
 	.maincontents .section2 .major-notice {max-width:90%; height:30rem}
@@ -458,6 +459,7 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 	.maincontents .section1 h1 {max-width: 80%; height:100%; background-size:80% auto}
 	.maincontents .section1 h1 strong {font-size:4rem;}
 	.maincontents .section1 h1 strong .mobile-only {display:none !important}
+	.section1-swiper .swiper-control {bottom: 10rem;}
 
 	.maincontents .section2 .major-notice {width:calc(100% - 8rem); max-width:calc(100% - 8rem); height:30rem}
 	.maincontents .section2 .major-notice ul li > div {padding:8%}
@@ -563,8 +565,9 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 	body .maincontents .fp-overflow::-webkit-scrollbar-thumb {background-color:#d5d9dc; border:0}
 
 	/* .maincontents .section1 h1 strong font {font-size: 3rem;} */
-	.maincontents .section1 .section1-swiper {height: 100%; padding-bottom: 2rem;}
+	.maincontents .section1 h1 {padding-bottom: 2rem;}
 	.maincontents .section1 h1 .btn-group.full button {flex: none;}
+	.section1-swiper .swiper-control {bottom: 2.5rem;}
 
 	.maincontents .section2 > div h1 {height:40%; padding-top:21%; padding-bottom:3%}
 	.maincontents .section2 > div h1 span {font-size:4.2rem; line-height:1.4}
@@ -687,10 +690,10 @@ body#main .header .btn-allmenu .icon-X:after {background-color:#fff}
 @media only screen and (max-width:639px) {
 	.scrolldown {left:9%}
 
-	.maincontents .section1 .section1-swiper {padding-bottom: 8rem;}
-	.maincontents .section1 h1 {width:85%; max-width:85%; padding:0; align-items:center; background-size:60% auto; text-align: center;}
+	.maincontents .section1 h1 {width:85%; max-width:85%; padding:0; padding-bottom: 8rem; align-items:center; background-size:60% auto; text-align: center;}
 	.maincontents .section1 h1 span {font-size:2.8rem; font-weight:400}
 	.maincontents .section1 h1 strong {font-size:5rem}
+	.section1-swiper .swiper-control {bottom: 4rem;}
 
 	.maincontents .section2 > div h1 {width:100%; height:50%; padding-top:24%}
 	.maincontents .section2 > div h1 span {line-height:1.4; font-size:4.5}
