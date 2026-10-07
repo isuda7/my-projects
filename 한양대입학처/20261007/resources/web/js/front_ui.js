@@ -42,6 +42,19 @@ var frontUI = function() {
 		me.searchToggle();
 	});
 
+	// 추천 검색어 클릭 시 검색창 입력 (레이어 및 페이지 검색창)
+	$(".search-layer-recom .recom-tag").click(function(e){
+		e.preventDefault();
+		var tagTxt = $(this).text().replace('#', '').trim();
+		$("#layerSearchKeyword").val(tagTxt).focus();
+	});
+
+	$(".totalcnt-schbox2 .sch-recom-wrap .recom-tag").click(function(e){
+		e.preventDefault();
+		var tagTxt = $(this).text().replace('#', '').trim();
+		$("#s").val(tagTxt).focus();
+	});
+
 	$(".footer-inner .btn-gotop").click(function(){			
 		if ($("body").attr("id") === "main"){
 			fullpage_api.moveTo('page1', 0);			

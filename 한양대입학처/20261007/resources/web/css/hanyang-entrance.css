@@ -207,18 +207,27 @@ body.fp-viewing-page5 .header.menuOpen .btn-allmenu .icon-X:after {background-co
 .header .allmenubox > ul > li > strong {display:block; font-size:4rem; color:#fff; font-weight:700}
 
 /* 2026-07-09 검색 레이어 추가 */
-.header .search-layer {position:fixed; left:0; top:-200rem; opacity:0; z-index:60; width:100%; height:50vh; padding: 0 40px; min-height:45rem; display:flex; align-items:center; justify-content:center; flex-direction:column; background:#004483 url("../images/bg_srch_logo.png") no-repeat bottom right 6rem / 53rem 39.7rem; transition: all 0.6s 0.2s ease-in-out; -webkit-transition: all 0.6s 0.2s ease-in-out;}
+/* 2026-10-07 검색 레이어 수정 */
+.header .search-layer {position:fixed; left:0; top:-200rem; opacity:0; z-index:60; width:100%; height:auto; min-height:54rem; padding: 6rem 40px; display:flex; align-items:center; justify-content:center; flex-direction:column; background:#004483 url("../images/bg_srch_logo.png") no-repeat bottom right 6rem / 53rem 39.7rem; transition: all 0.6s 0.2s ease-in-out; -webkit-transition: all 0.6s 0.2s ease-in-out; box-sizing:border-box;}
 .header.searchOpen .search-layer {opacity:1; top:0; z-index:71;}
-.header .search-layer .search-layer-inner {position:relative; width:100%; margin:0 auto; text-align:center;}
-.header .search-layer .search-layer-inner h1 {position:relative; z-index:10; text-align:center; padding-top:0; margin-bottom:4rem;}
-.header .search-layer .search-layer-inner h1 strong {display:inline-block; position:relative; font-size:5.2rem; font-weight:700; color:#fff; line-height:1.2;}
+.header .search-layer .search-layer-inner {position:relative; width:100%; max-width:84rem; margin:0 auto; text-align:center;}
+.header .search-layer .search-layer-inner h1 {position:relative; z-index:10; text-align:center; padding-top:0; margin-bottom:1.6rem;}
+.header .search-layer .search-layer-inner h1 strong {display:inline-block; position:relative; font-size:5.2rem; font-weight:700; color:#fff; line-height:1.2; letter-spacing:-0.02em;}
+.header .search-layer .search-layer-desc {margin:0 0 3.6rem; font-size:1.8rem; color:#fff; opacity:0.8; font-weight:300; line-height:1.4; letter-spacing:-0.01em;}
 .header .search-layer-form {max-width:64rem; width: 100%; margin:0 auto;}
 .header .search-layer-form fieldset {width:100%;}
 .header .search-layer-form .inp-area {position:relative; width:100%; height:6rem; background:#fff; border-radius:0.8rem; padding:1.2rem 6rem 1.2rem 2.4rem; box-sizing:border-box;}
 .header .search-layer-form .inp-area input {width:100%; height:100%; border:0; font-size:1.8rem; color:#000; background:transparent; outline:none;}
 .header .search-layer-form .inp-area input::placeholder {color:#999;}
 .header .search-layer-form .inp-area .btn-layer-search {position:absolute; right:1.6rem; top:50%; transform: translateY(-50%); width:3rem; height:3rem; background:url('../images/icon_search_01.png') no-repeat 50%; background-size:2.4rem 2.4rem; border:0; font-size:0; text-indent:-9999rem; cursor:pointer;}
-.header .search-layer-form .search-layer-desc {margin-top:2.4rem; font-size:1.6rem; color:#fff; opacity:0.6; font-weight:300;}
+
+/* 2026-10-07 추천 검색어 추가 */
+.header .search-layer-recom {margin-top:3.6rem; text-align:center;}
+.header .search-layer-recom .recom-title {display:block; font-size:1.8rem; font-weight:700; color:#00d0ff; margin-bottom:1.6rem; line-height:1.2;}
+.header .search-layer-recom .recom-tags {display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:1rem;}
+.header .search-layer-recom .recom-tags li {display:inline-flex;}
+.header .search-layer-recom .recom-tag {display:inline-flex; align-items:center; justify-content:center; height:3.8rem; padding:0 2rem; background:rgba(255,255,255,0.1); border-radius:9999px; font-size:1.5rem; font-weight:400; color:#fff; text-decoration:none; transition:background-color 0.2s ease; cursor:pointer; line-height:1;}
+.header .search-layer-recom .recom-tag:hover {background:rgba(255,255,255,0.4); color:#fff;}
 
 .header .allmenubox > ul > li > strong + ul {margin-top:4rem}
 .header .allmenubox > ul > li > ul li {margin-top:2.6rem; line-height:1}
@@ -594,7 +603,7 @@ input[type="checkbox"]:checked + label::after {content:''; width:2.2rem; height:
 	body#apply.briefing .subvisual .svgbox {background:url('../images/img_subvisual_08_m.jpg') no-repeat 50% 50%; background-size:cover}
 	body#vod .subvisual .svgbox {background:url('../images/img_subvisual_09_m.jpg') no-repeat 50% 50%; background-size:cover}
 	body#vod .subvisual .picto {height:23rem}
-	body#vod .subvisual .picto span:first-child {background-size:32rem auto}	
+	body#vod .subvisual .picto span:first-child {background-size:32rem auto}
 	body#apply .subvisual .svgbox {background:url('../images/img_subvisual_search_m.png') no-repeat 50% 50%; background-size:cover}/* 20260708 검색추가건 */
 }
 
@@ -746,14 +755,19 @@ input[type="checkbox"]:checked + label::after {content:''; width:2.2rem; height:
 	.header .btn-allmenu.open .icon-X:after {background:#fff}
 
 	/* 2026-07-09 검색 레이어 모바일 추가 */
-	.header .search-layer {height:384px; padding:0 22px; background-position:center center; background-size:30rem auto;}
-	.header .search-layer .search-layer-inner h1 {margin-bottom:28px;}
-	.header .search-layer .search-layer-inner h1 strong {font-size:32px;}
+	/* 2026-10-07 검색 레이어 모바일 수정 */
+	.header .search-layer {height:100svh; min-height:380px; padding:80px 22px 40px 22px; background-position:center center; background-size:30rem auto;}
+	.header .search-layer .search-layer-inner h1 {margin-bottom:10px;}
+	.header .search-layer .search-layer-inner h1 strong {font-size:28px;}
+	.header .search-layer .search-layer-desc {max-width: 270px; font-size:14px; line-height: 20px; margin:0 auto 32px; word-break:keep-all; line-height:1.4;}
 	.header .search-layer-form {width:100%; max-width: 100%;}
-	.header .search-layer-form .inp-area {height:48px; padding:12px 48px 12px 16px  ;}
+	.header .search-layer-form .inp-area {height:48px; padding:12px 48px 12px 16px;}
 	.header .search-layer-form .inp-area input {font-size:16px;}
 	.header .search-layer-form .inp-area .btn-layer-search {width: 24px; height:24px; right:8px; background-size:20px auto;}
-	.header .search-layer-form .search-layer-desc {font-size:14px; margin-top:24px; word-break:keep-all; line-height:1.4;}
+	.header .search-layer-recom {margin-top:40px;}
+	.header .search-layer-recom .recom-title {font-size:16px; line-height: 24px; margin-bottom:16px;}
+	.header .search-layer-recom .recom-tags {gap:8px;}
+	.header .search-layer-recom .recom-tag {height:32px; padding:0 14px; font-size:13px;}
 
 	.header ul.util > li img {
   		height: 4rem;

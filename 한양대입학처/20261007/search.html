@@ -224,11 +224,12 @@
                     <strong>A BETTER WORLD</strong>
                 </h2>
             </div>
-            
+
             <!-- 2026-07-08 검색추가건: 검색 레이어 추가 -->
             <div class="search-layer">
                 <div class="search-layer-inner">
                     <h1><strong>자료 검색</strong></h1>
+                    <p class="search-layer-desc">검색어를 입력 하시면 입학처 자료를 한번에 검색할 수 있습니다.</p>
                     <div class="search-layer-form">
                         <fieldset>
                             <legend>통합검색</legend>
@@ -237,7 +238,15 @@
                                 <button type="button" class="btn-layer-search" title="검색">검색</button>
                             </div>
                         </fieldset>
-                        <p class="search-layer-desc">ⓘ 검색어를 입력 하시면 입학처 자료를 한번에 검색할 수 있습니다.</p>
+                    </div>
+                    <div class="search-layer-recom">
+                        <strong class="recom-title">추천 검색어</strong>
+                        <ul class="recom-tags">
+                            <li><a href="javascript:void(0);" class="recom-tag">#수시 모집요강</a></li>
+                            <li><a href="javascript:void(0);" class="recom-tag">#합격자 조회</a></li>
+                            <li><a href="javascript:void(0);" class="recom-tag">#입학전형 시행계획</a></li>
+                            <li><a href="javascript:void(0);" class="recom-tag">#재외국민 특별전형 모집요강</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -281,12 +290,24 @@
                     <!-- totalcnt-schbox2 -->
                     <div class="totalcnt-schbox2">
                         <form id="form" name="frm" onsubmit="" method="get">
+							<!-- 2026-10-07 추천검색어 추가건 -->
                             <fieldset>
                                 <legend>검색 결과</legend>
-                                <div>
-                                    <span class="inpbox"><input type="text" placeholder="검색어를 입력하세요" name="s" id="s" value="정시모집"></span>
+                                <div class="sch-top">
+                                    <div class="sch-inp-box">
+                                        <span class="inpbox"><input type="text" placeholder="검색어를 입력하세요" name="s" id="s" value="정시모집"></span>
+                                    </div>
+                                    <button type="button" class="btn-navy btn-large">검색</button>
                                 </div>
-                                <button type="button" class="btn-navy btn-large">검색</button>
+                                <div class="sch-recom-wrap">
+                                    <strong class="recom-title">추천 검색어</strong>
+                                    <ul class="recom-tags">
+                                        <li><a href="javascript:void(0);" class="recom-tag">#수시 모집요강</a></li>
+                                        <li><a href="javascript:void(0);" class="recom-tag">#합격자 조회</a></li>
+                                        <li><a href="javascript:void(0);" class="recom-tag">#입학전형 시행계획</a></li>
+                                        <li><a href="javascript:void(0);" class="recom-tag">#재외국민 모집요강</a></li>
+                                    </ul>
+                                </div>
                             </fieldset>
                         </form>
 
@@ -366,7 +387,7 @@
                                 <li onclick="js_encode_view('notice_view.do?bn=21017&amp;m_type=SUSI&amp;nPage=1');">
                                     <div class="board-info-title hover-outlined">
                                         <div class="category">
-                                            <span class="name">한양인 스토리</span>                                            
+                                            <span class="name">한양인 스토리</span>
                                         </div>
                                         <strong>2027학년도 <span class="keyword">정시모집</span> 한양대학교 수시 예체능 실기고사 안내사항<button type="button" class="btn-attachment" title="첨부파일">첨부파일</button></strong>
                                         <p><span class="date">2026.06.26</span><span class="readcnt">483</span></p>
@@ -412,7 +433,7 @@
 				<p><span>재외국민</span><strong>02-2220-3082~3085</strong></p>
 				<p><span>FAX</span><strong>02-2220-0717</strong></p>
 				-->
-                    <!--  
+                    <!--
 				<p><span>신입학 문의</span><strong>02-2220-3064 ~ 3075</strong></p>
 				<p><span>편입/재외국민 문의</span><strong>02-2220-3080 ~ 3083</strong></p>
 				<p><span>FAX</span><strong>02-2220-0717</strong></p>
